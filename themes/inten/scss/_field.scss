@@ -1,0 +1,36 @@
+.field {
+  margin-bottom: 1.5em;
+}
+
+.field__label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.field--label-inline .field__label,
+.field--label-inline .field__items {
+  float: left; /* LTR */
+}
+
+.field--label-inline .field__label,
+.field--label-inline > .field__item,
+.field--label-inline .field__items {
+  padding-right: 0.5em;
+}
+
+[dir="rtl"] .field--label-inline .field__label,
+[dir="rtl"] .field--label-inline .field__items {
+  padding-right: 0;
+  padding-left: 0.5em;
+}
+
+.field--label-inline .field__label::after {
+  content: ":";
+}
+
+.field--name-field-place, .field--name-field-time-range, .field--name-field-tags {
+  .field__item {
+    font-size: 1rem;
+  }
+}

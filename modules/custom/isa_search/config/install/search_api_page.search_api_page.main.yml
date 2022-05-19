@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.index.contents
+id: main
+label: Buscar
+path: buscar
+clean_url: false
+show_all_when_no_keys: false
+index: contents
+limit: 10
+searched_fields:
+  body: body
+  field_subtitle: field_subtitle
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: search_index
+    overrides:
+      activity: ''
+      authorities: ''
+      communication: ''
+      document: ''
+      expiration: ''
+      news: ''
+      page: ''
+      procedure: ''
+      resolution: ''
+      service: ''
+show_search_form: false
+parse_mode: phrase

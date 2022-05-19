@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set featured_news = rows|first %}
+{% set featured_news_content = featured_news.content | merge({'#view_mode' :'featured_news'}) %}
+{{- featured_news_content -}}
+
+<div class="otrasNoticias col-lg-6">
+  {% for row in rows|slice(1) %}
+    {{- row.content -}}
+  {% endfor %}
+</div>
+
+<div class="seguirLeyendo verMas col-12">
+  <a href="/noticias">{{'see more news'|t}}<i class="ionicons ion-ios-arrow-thin-right"></i></a>
+</div>

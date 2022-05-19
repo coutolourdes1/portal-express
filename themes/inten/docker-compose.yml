@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  app:
+    image: registry.gitlab.com/digitalprojex-public/dockerfiles/node-sass:latest
+    environment:
+      NPM_INSTALL: 'false'
+      NPM_LINK: 'true'
+    volumes:
+      - ./:/var/app

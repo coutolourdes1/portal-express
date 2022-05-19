@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: map
+label: Mapa
+icon_uuid: null
+icon_default: null
+description: "Iframe para agregar un mapa.\t\r\n"
+behavior_plugins: {  }

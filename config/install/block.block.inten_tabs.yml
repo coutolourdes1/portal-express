@@ -1,0 +1,26 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - inten
+id: inten_tabs
+theme: inten
+region: content
+weight: -10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

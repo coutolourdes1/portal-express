@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.download_list.field_files
+    - field.field.paragraph.download_list.field_title
+    - paragraphs.paragraphs_type.download_list
+  module:
+    - file
+id: paragraph.download_list.default
+targetEntityType: paragraph
+bundle: download_list
+mode: default
+content:
+  field_files:
+    weight: 1
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

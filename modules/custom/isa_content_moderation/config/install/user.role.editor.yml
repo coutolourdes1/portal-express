@@ -1,0 +1,122 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.activity
+    - node.type.authorities
+    - node.type.communication
+    - node.type.document
+    - node.type.news
+    - node.type.procedure
+    - node.type.resolution
+    - node.type.service
+    - workflows.workflow.content_publishing
+  module:
+    - content_moderation
+    - empty_page
+    - media
+    - node
+    - search
+    - search_api_page
+    - sitemap
+    - system
+    - toolbar
+id: editor
+label: Editor
+weight: -2
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access sitemap'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create activity content'
+  - 'create authorities content'
+  - 'create communication content'
+  - 'create document content'
+  - 'create news content'
+  - 'create page content'
+  - 'create procedure content'
+  - 'create resolution content'
+  - 'create service content'
+  - 'delete activity revisions'
+  - 'delete all revisions'
+  - 'delete any activity content'
+  - 'delete any authorities content'
+  - 'delete any communication content'
+  - 'delete any document content'
+  - 'delete any news content'
+  - 'delete any page content'
+  - 'delete any procedure content'
+  - 'delete any resolution content'
+  - 'delete any service content'
+  - 'delete authorities revisions'
+  - 'delete communication revisions'
+  - 'delete document revisions'
+  - 'delete news revisions'
+  - 'delete own activity content'
+  - 'delete own authorities content'
+  - 'delete own communication content'
+  - 'delete own document content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own procedure content'
+  - 'delete own resolution content'
+  - 'delete own service content'
+  - 'delete page revisions'
+  - 'delete procedure revisions'
+  - 'delete resolution revisions'
+  - 'delete service revisions'
+  - 'edit any activity content'
+  - 'edit any authorities content'
+  - 'edit any communication content'
+  - 'edit any document content'
+  - 'edit any news content'
+  - 'edit any page content'
+  - 'edit any procedure content'
+  - 'edit any resolution content'
+  - 'edit any service content'
+  - 'edit own activity content'
+  - 'edit own authorities content'
+  - 'edit own communication content'
+  - 'edit own document content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own procedure content'
+  - 'edit own resolution content'
+  - 'edit own service content'
+  - 'revert activity revisions'
+  - 'revert all revisions'
+  - 'revert authorities revisions'
+  - 'revert communication revisions'
+  - 'revert document revisions'
+  - 'revert news revisions'
+  - 'revert page revisions'
+  - 'revert procedure revisions'
+  - 'revert resolution revisions'
+  - 'revert service revisions'
+  - 'search content'
+  - 'use advanced search'
+  - 'use content_publishing transition archive_content'
+  - 'use content_publishing transition create_new_draft'
+  - 'use content_publishing transition publish'
+  - 'use content_publishing transition ready_for_review'
+  - 'use content_publishing transition to_correct'
+  - 'view activity revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view authorities revisions'
+  - 'view communication revisions'
+  - 'view document revisions'
+  - 'view empty pages'
+  - 'view media'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view procedure revisions'
+  - 'view resolution revisions'
+  - 'view search api pages'
+  - 'view service revisions'
+  - 'view the administration theme'

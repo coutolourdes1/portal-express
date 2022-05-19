@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: adf6cbb7-6f36-4d7e-88c0-f9bc2abe81fb
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    29bc614b-04a8-439f-a20f-572e25457a3b: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Políticas de privacidad'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      target_uuid: 29bc614b-04a8-439f-a20f-572e25457a3b
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 1
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

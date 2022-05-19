@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+
+msgid "Provides Procedure tipo de contenido and related configuration. Immigration and other procedures."
+msgstr "Proporciona el tipo de contenido del Trámites y la configuración relacionada. Inmigración y otros procedimientos."
+
+msgid "Procedure"
+msgstr "Trámite"
+
+msgid "procedure"
+msgstr "trámite"
+
+msgid "Procedures"
+msgstr "Trámites"
+
+msgid "procedures"
+msgstr "trámites"
+
+msgid "Immigration and other procedures."
+msgstr "Inmigración y otros trámites."

@@ -1,0 +1,26 @@
+msgid ""
+msgstr ""
+
+msgid "Provides Resolution content type and related configuration. Resolutions of an Institution."
+msgstr "Proporciona el tipo de contenido Resolución y la configuración relacionada. Resoluciones de una institución."
+
+msgid "Resolution"
+msgstr "Resolución"
+
+msgid "resolution"
+msgstr "resolución"
+
+msgid "Resolutions"
+msgstr "Resoluciones"
+
+msgid "resolutions"
+msgstr "resoluciones"
+
+msgid "Resolutions of an Institution."
+msgstr "Resoluciones de una institución."
+
+msgid "View to show the Resolutions of an Institution, List of Resolutions, Resolution TC, Resolution Block."
+msgstr "Vista para mostrar las Resoluciones de una Institución, Lista de Resoluciones, Resolución TC, Bloque de Resolución."
+
+msgid "Resolution file or files."
+msgstr "Archivo o archivos de resolución."

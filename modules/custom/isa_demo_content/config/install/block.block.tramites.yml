@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:14542248-e7b5-4637-b57c-2c0f60727fdd'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: tramites
+theme: bisa
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:14542248-e7b5-4637-b57c-2c0f60727fdd'
+settings:
+  id: 'block_content:14542248-e7b5-4637-b57c-2c0f60727fdd'
+  label: Trámites
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /tramites
+    negate: false
+    context_mapping: {  }

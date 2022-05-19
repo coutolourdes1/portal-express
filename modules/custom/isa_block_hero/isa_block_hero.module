@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains the definition of isa_block_hero.
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * {@inheritDoc}
+ */
+function isa_block_hero_help($route_name) {
+  switch ($route_name) {
+    // Main module help for the isa_block_hero module.
+    case 'help.page.isa_block_hero':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('ISA Block Hero') . '</p>';
+      return $output;
+
+    default:
+      return '';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * {@inheritdoc}
+ */
+function isa_block_hero_theme() {
+  return [
+    'block__hero' => [
+      'template' => 'block--hero',
+      'base hook' => 'block',
+    ],
+  ];
+}

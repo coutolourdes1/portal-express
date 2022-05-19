@@ -1,0 +1,15 @@
+<button
+    class="btn-only-icon"
+    data-toggle="popover"
+    data-popover-content=".block-social-media"
+    data-placement="bottom"
+    data-container="body"
+  >
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+  </button>
+
+  <div class="block-social-media hidden">
+    <div class="popover-body">
+      {{ drupal_block('social_sharing_block') }}
+    </div>
+  </div>

@@ -1,0 +1,86 @@
+# ==============================================================================
+# List of extra isa components, which they will be listed in the
+# Extra components form, when we install isa.
+# ==============================================================================
+config_bit:
+  type: list
+  for: isa.info.yml
+  when:
+    show_extra_components: true
+    list:
+      dependencies:
+        isa_activity:
+          title: "Actividades"
+          description: "Calendario de Actividades"
+          selected: false
+          config_form: false
+        isa_authorities:
+          title: "Autoridades"
+          description: "Personas o Entidades rectores de la organización"
+          selected: false
+          config_form: false
+        isa_block_slider:
+          title: "Bloque Carrusel"
+          description: "Crear un tipo de bloque con un carrusel de imágenes y algunos textos"
+          selected: false
+          config_form: false
+        isa_chatbot:
+          title: "ChatBot"
+          description: "Integración del sitio con un BotPress"
+          selected: false
+          config_form: false
+        isa_communication:
+          title: "Comunicados"
+          description: "Tipo de contenidos y vistas para mostrar comunicados"
+          selected: false
+          config_form: false
+        isa_document:
+          title: "Documentos"
+          description: "Tipo de contenidos para mostrar documentos."
+          selected: false
+          config_form: false
+        isa_feedback:
+          title: "Retroalimentación"
+          description: "Permite obtener comentarios de los usuarios del sitio."
+          selected: false
+          config_form: false
+        isa_magnific_popup:
+          title: "Magnific Popup"
+          description: "Muestra las imágenes multiples como una galería en una ventana emergente."
+          selected: false
+          config_form: false
+        isa_news:
+          title: "Noticias"
+          description: "Vistas y tipo de contenidos para mostrar noticias"
+          selected: false
+          config_form: false
+        isa_procedure:
+          title: "Trámites"
+          description: "Tipo de contenido para mostrar información de tramites."
+          selected: false
+          config_form: false
+        isa_resolution:
+          title: "Resoluciones"
+          description: "Vitas y tipo de contenidos para mostrar resoluciones."
+          selected: false
+          config_form: false
+        isa_service:
+          title: "Servicios"
+          description: "Muestra los servicios de la integración."
+          selected: false
+          config_form: false
+        isa_tuid_login:
+          title: "Tuid login"
+          description: "Integración del inico de session con TUID."
+          selected: false
+          config_form: false
+        isa_demo_content:
+          title: "Demo"
+          description: "Contenidos y bloques por defecto para mostrar las funcionalidades del sitio."
+          selected: false
+          config_form: false
+        isa_content_moderation:
+          title: "Moderación de contenido"
+          description: "El proceso de publicación de contenidos se realiza pasando por un flujo de revisiones y aprobación."
+          selected: false
+          config_form: false

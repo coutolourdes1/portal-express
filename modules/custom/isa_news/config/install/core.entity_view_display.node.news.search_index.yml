@@ -1,0 +1,91 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.default.default
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.body
+    - field.field.node.news.field_comments
+    - field.field.node.news.field_date
+    - field.field.node.news.field_image
+    - field.field.node.news.field_meta_tags
+    - field.field.node.news.field_municipalities
+    - field.field.node.news.field_sections
+    - field.field.node.news.field_subtitle
+    - field.field.node.news.field_tags
+    - field.field.node.news.field_weight
+    - field.field.node.news.field_yoast_seo
+    - node.type.news
+  module:
+    - comment
+    - datetime
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_comments:
+    type: comment_default
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: large
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  body: true
+  field_meta_tags: true
+  field_municipalities: true
+  field_sections: true
+  field_weight: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

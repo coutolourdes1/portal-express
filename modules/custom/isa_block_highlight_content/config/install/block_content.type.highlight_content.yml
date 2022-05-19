@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: highlight_content
+label: 'Destacar contenido'
+revision: 0
+description: ''

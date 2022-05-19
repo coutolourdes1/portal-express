@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ea97bec2-8454-4d6d-9d1c-660096c8601c
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: carrousel02.jpg
+  uri:
+    -
+      value: 'public://2020-09/carrousel02.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 79424
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1600710968

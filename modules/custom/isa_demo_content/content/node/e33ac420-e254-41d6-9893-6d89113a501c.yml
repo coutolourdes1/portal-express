@@ -1,0 +1,75 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e33ac420-e254-41d6-9893-6d89113a501c
+  bundle: news
+  default_langcode: es
+  depends:
+    d5035769-8e24-4474-aaef-caa147df517d: file
+    0a20fefd-b288-4520-8fe5-39bc5d6a18a7: taxonomy_term
+    eb2ec3c5-eae0-445b-8a5c-dfd732f9fadf: taxonomy_term
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Distribución de Contenedores, poda y trabajos de jardinería'
+  created:
+    -
+      value: 1606255336
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /noticias/distribucion-contenedores-poda-trabajos-jardineria
+      langcode: es
+      pathauto: 1
+  field_comments:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1636900997
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_date:
+    -
+      value: '2020-11-04'
+  field_image:
+    -
+      entity: d5035769-8e24-4474-aaef-caa147df517d
+      alt: 'Adipiscing elit venenatis facilisis. '
+      title: 'Adipiscing elit venenatis facilisis. '
+      width: 362
+      height: 268
+  field_subtitle:
+    -
+      value: 'Vivamus iaculis sem vitae urna vulputate, nec pharetra turpis porttitor. Nulla blandit sollicitudin velit, at laoreet dolor vehicula et. Cras interdum erat a luctus suscipit. Donec vitae neque volutpat urna interdum mattis sed eget tellus. Nunc auctor pharetra eros.'
+  field_tags:
+    -
+      entity: 0a20fefd-b288-4520-8fe5-39bc5d6a18a7
+    -
+      entity: eb2ec3c5-eae0-445b-8a5c-dfd732f9fadf
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

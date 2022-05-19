@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: publication_thumbnail
+label: 'Publication Thumbnail'
+effects:
+  79b6bf0d-b037-4e93-a5bb-6cfbc7eb9c0a:
+    uuid: 79b6bf0d-b037-4e93-a5bb-6cfbc7eb9c0a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 120
+      anchor: center-center

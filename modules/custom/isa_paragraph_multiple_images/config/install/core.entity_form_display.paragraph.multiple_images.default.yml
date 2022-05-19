@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multiple_images.field_images
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.multiple_images
+  module:
+    - image
+id: paragraph.multiple_images.default
+targetEntityType: paragraph
+bundle: multiple_images
+mode: default
+content:
+  field_images:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,9 @@
+isa_menu_admin.pemenu:
+  path: '/admin/portal-express'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Portal Express'
+  requirements:
+    _permission: 'access admin menu'
+
+

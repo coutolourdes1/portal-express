@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for the FORM_ID() form.
+ */
+function isa_public_information_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if($form_id=== 'webform_submission_access_public_information_form_add_form') {
+    $form['#validate'][] = '_isa_public_information_form_validate';
+  }
+}
+
+/**
+ * Validates submission values in the FORM_ID() form.
+ */
+function _isa_public_information_form_validate(array &$form, FormStateInterface $form_state) {
+  $terms = $form_state->getValue('terms');
+  if($terms !== 'Acepto los términos') {
+    $form_state->setErrorByName('', 'Debe aceptar los términos la cláusula.');
+  }
+}

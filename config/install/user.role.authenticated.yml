@@ -1,0 +1,11 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - google_analytics
+id: authenticated
+label: 'Usuario autenticado'
+weight: -1
+is_admin: false
+permissions:
+  - 'opt-in or out of google analytics tracking'

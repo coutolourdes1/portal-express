@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 06396b64-2ec2-4cf4-8f28-e37d65b20dcf
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: _fondoSeccion.jpg
+  uri:
+    -
+      value: 'public://2021-02/_fondoSeccion.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 142603
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1614015931

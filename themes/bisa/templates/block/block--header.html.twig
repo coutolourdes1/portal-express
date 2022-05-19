@@ -1,0 +1,13 @@
+{% set title = content.field_title|field_value %}
+{% set subtitle = content.field_subtitle|field_value %}
+{% set image = content.field_image|field_value %}
+
+<div class="h-100 intro-text d-flex align-items-center">
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {{ image }}
+  <div class="titulos">
+    <h2>{{ title }}</h2>
+    <p>{{ subtitle }}</p>
+  </div>
+</div>

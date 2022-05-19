@@ -1,0 +1,5 @@
+bundle: isa
+excluded:
+  - bootstrap_layout_builder.layout_option.blb_col_2_4col_8col
+  - bootstrap_layout_builder.layout_option.blb_col_2_8col_4col
+required: true

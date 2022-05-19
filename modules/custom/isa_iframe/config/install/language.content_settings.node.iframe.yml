@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iframe
+id: node.iframe
+target_entity_type_id: node
+target_bundle: iframe
+default_langcode: site_default
+language_alterable: false

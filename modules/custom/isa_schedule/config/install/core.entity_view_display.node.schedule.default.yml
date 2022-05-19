@@ -1,0 +1,45 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.schedule.field_municipio
+    - field.field.node.schedule.field_schedule
+    - field.field.node.schedule.field_weight
+    - node.type.schedule
+  module:
+    - user
+id: node.schedule.default
+targetEntityType: node
+bundle: schedule
+mode: default
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_municipio:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_schedule:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_weight: true
+  langcode: true
+  search_api_excerpt: true

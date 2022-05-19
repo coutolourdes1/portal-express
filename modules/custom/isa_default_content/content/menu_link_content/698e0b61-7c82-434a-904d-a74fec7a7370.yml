@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 698e0b61-7c82-434a-904d-a74fec7a7370
+  bundle: menu_link_content
+  default_langcode: es
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Provident eum mollitia ullam?'
+  menu_name:
+    -
+      value: footer-col-1
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

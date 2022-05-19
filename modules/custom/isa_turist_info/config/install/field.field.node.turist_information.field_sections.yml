@@ -1,0 +1,76 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.turist_information
+    - paragraphs.paragraphs_type.audios
+    - paragraphs.paragraphs_type.download_list
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.links_list
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.rich_text
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.turist_information.field_sections
+field_name: field_sections
+entity_type: node
+bundle: turist_information
+label: Secciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      audios: audios
+      download_list: download_list
+      gallery: gallery
+      images: images
+      links_list: links_list
+      map: map
+      quote: quote
+      rich_text: rich_text
+      video: video
+    negate: 0
+    target_bundles_drag_drop:
+      audios:
+        weight: 12
+        enabled: true
+      download_list:
+        weight: 13
+        enabled: true
+      gallery:
+        weight: 14
+        enabled: true
+      images:
+        weight: 15
+        enabled: true
+      links_list:
+        weight: 16
+        enabled: true
+      map:
+        weight: 17
+        enabled: true
+      multiple_images:
+        weight: 18
+        enabled: false
+      quote:
+        weight: 19
+        enabled: true
+      rich_text:
+        weight: 20
+        enabled: true
+      text_item:
+        weight: 21
+        enabled: false
+      video:
+        weight: 22
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,13 @@
+name: 'Block Lista de Descargas'
+description: 'Contiene una lista de descargas.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:language'
+  - 'drupal:link'
+  - 'isa_field_storage:isa_field_storage'
+version: 1.1.0
+package: isa

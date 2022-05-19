@@ -1,0 +1,57 @@
+.form-checkbox{
+  float: left;
+  width: inherit;
+  padding: 5px !important;
+  margin: 8px;
+  height: auto;
+}
+
+.layout-builder__layout {
+  // esto es para poder poner el bloque de highlighted con un flex:1 para que ocupe toda la altura
+  & > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout-builder-block {
+    padding: 0;
+  }
+}
+
+.layout-builder__message {
+  display: none;
+}
+
+
+.layout-builder-form {
+  .btn {
+    padding: 15px 15px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    background-color: #246293;
+  }
+
+  .btn-warning {
+    background-color: #f59c27;
+  }
+}
+
+
+.layout-builder--content-preview-disabled {
+  .layout-builder-block {
+    padding: 1.5em !important;
+    background-color: #fff !important;
+    background-image: none !important;
+  }
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-dialog-off-canvas.ui-dialog-position-side {
+  z-index: 9999999;
+}

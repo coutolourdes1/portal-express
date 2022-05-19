@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: large
+label: Larga
+locked: false
+pattern: 'd \d\e F, Y'

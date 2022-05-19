@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.highlight_content
+label: 'Destacar contenido'
+targetEntityType: node
+cache: true

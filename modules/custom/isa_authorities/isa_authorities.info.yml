@@ -1,0 +1,30 @@
+name: Authorities
+type: module
+description: 'Provides Authorities content type and related configuration. Provides the ability to create and manage information about the authorities of the agency.'
+version: 1.1.0
+package: isa
+dependencies:
+  - 'drupal:content_moderation'
+  - 'drupal:datetime'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:layout_builder'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_department:isa_department'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_tags:isa_tags'
+  - 'scheduler:scheduler'
+  - 'smart_trim:smart_trim'
+  - 'yoast_seo:yoast_seo'
+'interface translation project': isa_authorities
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_authorities/translations/%language.po
+core_version_requirement: '^8.9 || ^9'

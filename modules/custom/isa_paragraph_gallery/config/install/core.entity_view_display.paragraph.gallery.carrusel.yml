@@ -1,0 +1,32 @@
+langcode: es
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.carrusel
+    - field.field.paragraph.gallery.field_medias
+    - field.field.paragraph.gallery.field_title
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.gallery.carrusel
+targetEntityType: paragraph
+bundle: gallery
+mode: carrusel
+content:
+  field_medias:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_title: true
+  search_api_excerpt: true

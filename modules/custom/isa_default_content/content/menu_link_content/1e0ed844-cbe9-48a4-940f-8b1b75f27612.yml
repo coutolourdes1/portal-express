@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 1e0ed844-cbe9-48a4-940f-8b1b75f27612
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    3c6c016d-9503-4850-8b88-0c05d60e33e6: menu_link_content
+    606e085e-88d8-44bc-a142-6bef83f32fe7: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Reseña Histórica'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: 606e085e-88d8-44bc-a142-6bef83f32fe7
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:3c6c016d-9503-4850-8b88-0c05d60e33e6'
+  revision_translation_affected:
+    -
+      value: true

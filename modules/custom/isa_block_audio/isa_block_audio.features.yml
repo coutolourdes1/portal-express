@@ -1,0 +1,4 @@
+bundle: isa
+excluded:
+  - field.storage.block_content.field_audio
+required: true

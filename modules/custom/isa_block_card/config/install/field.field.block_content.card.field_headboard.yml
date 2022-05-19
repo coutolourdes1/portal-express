@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_headboard
+id: block_content.card.field_headboard
+field_name: field_headboard
+entity_type: block_content
+bundle: card
+label: Headboard
+description: 'Text to display in head of card.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

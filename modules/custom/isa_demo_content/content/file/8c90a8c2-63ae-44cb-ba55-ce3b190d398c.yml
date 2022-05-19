@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 8c90a8c2-63ae-44cb-ba55-ce3b190d398c
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 720x350-yellow_1.png
+  uri:
+    -
+      value: 'public://2021-11/720x350-yellow_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 14853
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636901801

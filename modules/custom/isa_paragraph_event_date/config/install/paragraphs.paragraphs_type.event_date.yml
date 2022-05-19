@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: event_date
+label: 'Fecha y Hora'
+icon_uuid: null
+icon_default: null
+description: 'Fecha con hora de inicio y fin para eventos.'
+behavior_plugins: {  }

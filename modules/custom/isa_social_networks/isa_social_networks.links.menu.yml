@@ -1,0 +1,6 @@
+isa_social_networks.config_form:
+  title: 'Social Networks Config'
+  route_name: isa_social_networks.config_form
+  description: 'Configure site social networks'
+  parent: isa_menu_admin.pemenu
+  weight: 2

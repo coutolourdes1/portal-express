@@ -1,0 +1,83 @@
+#header #logo h1 {
+	font-size: 36px;
+	margin: -4px 0 0 0;
+}
+#header #logo img {
+	max-height: none;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+  
+	&.interna {
+	  height: 40vh;
+	}
+  }
+
+#intro h2 {
+	font-size: 48px;
+	line-height: 56px;
+}
+
+#intro p {
+	font-size: 24px;
+}
+
+/* CALENDARIO
+--------------------------------*/
+
+#calendario {
+	border-bottom: none;
+}
+
+
+/* -----------------------------------------------------------
+
+LISTADO TIPO (PAGINA INTERNA)
+
+--------------------------------------------------------------*/
+
+.listadoTipo {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+/* -----------------------------------------------------------
+
+AMPLIADO TIPO (PAGINA INTERNA)
+
+--------------------------------------------------------------*/
+.ampliadoTipo {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}
+
+/* -----------------------------------------------------------
+
+SIDEBAR
+
+--------------------------------------------------------------*/
+
+.sidebar {
+	padding-top: 60px;
+	padding-bottom: 100px;
+  }
+
+
+/* -----------------------------------------------------------
+
+BREADCRUMB
+
+--------------------------------------------------------------*/
+
+.breadCrumb {
+	display: block;
+}
+
+.listadoCalendario {
+	padding-top: 60px;
+	padding-bottom: 100px;
+}

@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple
+    - field.storage.block_content.field_color
+  module:
+    - options
+id: block_content.simple.field_color
+field_name: field_color
+entity_type: block_content
+bundle: simple
+label: 'Color del borde'
+description: 'Dejar en blanco para no agregar color al borde'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

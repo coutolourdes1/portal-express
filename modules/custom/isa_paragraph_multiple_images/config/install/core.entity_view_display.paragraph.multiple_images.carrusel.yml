@@ -1,0 +1,31 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.carrusel
+    - field.field.paragraph.multiple_images.field_images
+    - image.style.gallery_720x350
+    - paragraphs.paragraphs_type.multiple_images
+  module:
+    - layout_builder
+    - paragraph_owl
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.multiple_images.carrusel
+targetEntityType: paragraph
+bundle: multiple_images
+mode: carrusel
+content:
+  field_images:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: gallery_720x350
+      image_link: ''
+    third_party_settings: {  }
+    type: paragraph_owl_item_field_formatter
+    region: content
+hidden:
+  search_api_excerpt: true

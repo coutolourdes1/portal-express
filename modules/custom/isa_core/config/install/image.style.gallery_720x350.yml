@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: gallery_720x350
+label: 'Gallery (720x350)'
+effects:
+  1e0e87ad-e5eb-40ba-a67a-7c625a2b669b:
+    uuid: 1e0e87ad-e5eb-40ba-a67a-7c625a2b669b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 350
+      anchor: center-center

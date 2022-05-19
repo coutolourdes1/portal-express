@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+
+msgid "Set front page"
+msgstr "Establecer portada"
+
+msgid "Set as front page"
+msgstr "Establecer como portada"
+
+msgid "Homepage"
+msgstr "Página de inicio"
+
+msgid "This action changes the home page of the site, you can disassemble by setting another home page"
+msgstr "Esta acción cambia la página de inicio del sitio, puede desaserce estableciendo otra pagina de inicio"
+
+msgid 'Do you want set the url "@alias" as front page?'
+msgstr '¿Quieres establecer la URL "@alias" como página principal?'
+
+msgid "ISA Layouts"
+msgstr "Diseños ISA"
+
+msgid "One column"
+msgstr "Una columnas"
+
+msgid "Two column"
+msgstr "Dos columnas"
+
+msgid "Three column"
+msgstr "Tres columnas"
+
+msgid "Left Sidebar"
+msgstr "Barra lateral izquierda"
+
+msgid "Right Sidebar"
+msgstr "Barra lateral derecha"

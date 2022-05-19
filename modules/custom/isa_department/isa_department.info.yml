@@ -1,0 +1,11 @@
+name: Departamento
+description: 'Provides Departamento vocabulario de taxonomía and related configuration. Organiza las diferentes divisiones de las autoridades.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - isa_field_storage
+  - language
+  - taxonomy
+version: 0.1.0
+package: isa

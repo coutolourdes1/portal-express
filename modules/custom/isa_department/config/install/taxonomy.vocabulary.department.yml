@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Departamento
+vid: department
+description: 'Organiza las diferentes divisiones de las autoridades.'
+weight: 0

@@ -1,0 +1,56 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ee4b6f01-c378-4b99-b0ee-7fb496127e7e
+  bundle: file
+  default_langcode: es
+  depends:
+    ffd731fb-0876-484d-879c-616e7c147672: file
+    ededcd62-a567-40b1-aa14-41e076f27a74: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Lorem ipsum dolor sit.'
+  created:
+    -
+      value: 1636209458
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: es
+      pathauto: 0
+  field_date:
+    -
+      value: '2021-11-06'
+  field_description:
+    -
+      value: ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consectetur, dignissimos nam voluptate molestias sed. Dolorem quam ipsum omnis, ex consequatur, praesentium officiis quasi harum repellat laboriosam, vel quisquam voluptatem. '
+  field_file:
+    -
+      entity: ffd731fb-0876-484d-879c-616e7c147672
+      display: true
+      description: ''
+  field_type_file:
+    -
+      entity: ededcd62-a567-40b1-aa14-41e076f27a74
+  field_weight:
+    -
+      value: 0

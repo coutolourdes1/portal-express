@@ -1,0 +1,6 @@
+isa_menu_admin.pemenu:
+  title: 'Portal Express'
+  parent: system.admin
+  route_name: isa_menu_admin.pemenu
+  description: 'Portal Express profile admin menu'
+  weight: 9

@@ -1,0 +1,84 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content_permissions
+    - empty_page
+    - file
+    - filter
+    - layout_builder
+    - media
+    - node
+    - scheduler
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+id: editor_prensa
+label: 'Editor Prensa'
+weight: -7
+is_admin: null
+permissions:
+  - 'access admin menu'
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access shortcuts'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'configure editable layout_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create audio block content'
+  - 'create download_list block content'
+  - 'create gallery block content'
+  - 'create highlight_content block content'
+  - 'create highlighted_circle block content'
+  - 'create highlighted_image block content'
+  - 'create layout_page content'
+  - 'create link block content'
+  - 'create links block content'
+  - 'create news content'
+  - 'create simple block content'
+  - 'create slider block content'
+  - 'create terms in file_type'
+  - 'create terms in tags'
+  - 'delete all revisions'
+  - 'delete any news content'
+  - 'delete news revisions'
+  - 'delete own news content'
+  - 'delete terms in file_type'
+  - 'edit any news content'
+  - 'edit own layout_page content'
+  - 'edit own news content'
+  - 'edit terms in file_type'
+  - 'edit terms in tags'
+  - 'revert layout_page revisions'
+  - 'revert news revisions'
+  - 'schedule publishing of nodes'
+  - 'update any download_list block content'
+  - 'update any gallery block content'
+  - 'update any highlight_content block content'
+  - 'update any highlighted_circle block content'
+  - 'update any highlighted_image block content'
+  - 'update any link block content'
+  - 'update any links block content'
+  - 'update any simple block content'
+  - 'use content_publishing transition archive_content'
+  - 'use content_publishing transition create_new_draft'
+  - 'use content_publishing transition publish'
+  - 'use content_publishing transition ready_for_review'
+  - 'use content_publishing transition to_correct'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view any unpublished content'
+  - 'view empty pages'
+  - 'view latest version'
+  - 'view layout_page revisions'
+  - 'view media'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view scheduled content'
+  - 'view the administration theme'

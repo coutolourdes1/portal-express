@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+
+msgid "Social Networks"
+msgstr "Redes Sociales"
+
+msgid "Enter a valid Facebook url"
+msgstr "Ingrese una url de Facebook valida"
+
+msgid "Enter a valid Twitter url"
+msgstr "Ingrese una url de Twitter valida"
+
+msgid "Enter a valid Linkedin url"
+msgstr "Ingrese una url de Linkedin valida"
+
+msgid "Enter a valid Instagram url"
+msgstr "Ingrese una url de Instagram valida"
+
+msgid "Enter a valid Google+ url"
+msgstr "Ingrese una url de Google+ valida"
+
+msgid "Social Networks Configuration"
+msgstr "Configuración de Redes Sociales"
+
+msgid "Social Networks Config"
+msgstr "Configuración de Redes Sociales"
+
+msgid "Configure site social networks"
+msgstr "Configurar las redes sociales del sitio"
+

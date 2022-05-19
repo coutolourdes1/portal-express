@@ -1,0 +1,14 @@
+name: 'Paragraph Imágenes Múltiples'
+description: 'Provides Imágenes Múltiples tipo de paragraphs and related configuration. Permite crear varias imágenes en un solo elemento.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - image
+  - isa_core
+  - isa_field_storage
+  - layout_builder
+  - paragraph_owl
+  - paragraphs
+version: 0.1.0
+package: isa

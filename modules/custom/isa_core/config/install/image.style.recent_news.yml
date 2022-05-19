@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: recent_news
+label: 'Recent News'
+effects:
+  aa3e007c-1b08-457f-bad7-cca5854c1fd3:
+    uuid: aa3e007c-1b08-457f-bad7-cca5854c1fd3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 140
+      anchor: center-center

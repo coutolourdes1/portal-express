@@ -1,0 +1,24 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.authorities
+id: node.authorities.field_weight
+field_name: field_weight
+entity_type: node
+bundle: authorities
+label: Peso
+description: 'Orden en que se muestra la autoridad, mayor numero se muestra mas arriba.'
+required: true
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

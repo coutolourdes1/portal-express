@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 16434384-dc32-4232-8136-29599e5c3c88
+  bundle: activity
+  default_langcode: es
+  depends:
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Torquent scelerisque.'
+  created:
+    -
+      value: 1606256836
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /actividades/torquent-scelerisque
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis facilisis, ultrices ad diam torquent scelerisque a lacinia suspendisse nec, auctor hendrerit posuere magna hac laoreet orci parturient.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_date:
+    -
+      value: '2020-12-17'
+  field_place:
+    -
+      value: 'Estadio Centenario / Montevideo'
+  field_subtitle:
+    -
+      value: 'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_time_range:
+    -
+      start: '12:30 PM'
+      end: '06:30 PM'
+      locate: ''
+  field_yoast_seo:
+    -
+      status: ''
+      focus_keyword: ''
+      title: ''
+      description: ''

@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+
+msgid "Words to classify the contents and to be able to group them and filter them depending on their theme."
+msgstr "Palabras para clasificar los contenidos y poder agruparlos y filtrarlos según su tema"

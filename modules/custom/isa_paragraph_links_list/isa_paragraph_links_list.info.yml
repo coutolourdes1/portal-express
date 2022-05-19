@@ -1,0 +1,10 @@
+name: 'Paragraph Enlaces'
+description: 'Provides Enlaces tipo de paragraphs and related configuration. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:link'
+  - 'isa_field_storage:isa_field_storage'
+  - 'paragraphs:paragraphs'
+package: isa

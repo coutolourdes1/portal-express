@@ -1,0 +1,4 @@
+bundle: isa
+excluded:
+  - empty_page.settings
+required: true

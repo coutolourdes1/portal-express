@@ -1,0 +1,24 @@
+{% if node.field_image %}
+    {% set image_uri = node.field_image.entity.uri.value %}
+{% endif %}
+
+{% if node.body %}
+    {% set summary = content.body|field_value %}
+{% elseif node.field_description %}
+    {% set summary = content.field_description|field_value %}
+{% endif %}
+
+{% if image_uri %}
+    <div class="media-image">
+        <img src="{{ image_uri | image_style('publication_thumbnail') }}" class="img-fluid">
+    </div>
+{% endif %}
+
+<div{{ attributes.addClass(['media-body']) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <h3><a href="{{ url }}">{{ label }}</a></h3>
+    <p>{{ summary }}</p>
+</div>
+
+

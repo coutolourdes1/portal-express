@@ -1,0 +1,64 @@
+one_column:
+  label: 'One column'
+  category: 'ISA Layouts'
+  template: templates/one-column
+  default_region: main
+  regions:
+    main:
+      label: Main content
+  icon_map:
+    - [content]
+
+two_column:
+  label: 'Two column'
+  category: 'ISA Layouts'
+  template: templates/two-column
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+three_column:
+  label: 'Three column'
+  category: 'ISA Layouts'
+  template: templates/three-column
+  default_region: second
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+left_sidebar:
+  label: 'Left Sidebar'
+  category: 'ISA Layouts'
+  template: templates/left-sidebar
+  default_region: main
+  regions:
+    sidebar:
+      label: Sidebar
+    main:
+      label: Main content
+  icon_map:
+    - [left, right, right]
+
+right_sidebar:
+  label: 'Right Sidebar'
+  category: 'ISA Layouts'
+  template: templates/right-sidebar
+  default_region: main
+  regions:
+    main:
+      label: Main content
+    sidebar:
+      label: Sidebar
+  icon_map:
+    -  [first, first, third]

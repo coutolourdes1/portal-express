@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+
+msgid "General Config"
+msgstr "Configuración General"
+
+msgid "ISA Profile General Config"
+msgstr "Configuración General del profile ISA"
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Address"
+msgstr "Dirección"
+
+msgid "Site address map"
+msgstr "Mapa dirección del sitio"
+
+msgid "Site contact information"
+msgstr "Información de contacto del sitio"
+
+msgid "Home page"
+msgstr "Página de inicio"
+
+msgid "Header block type"
+msgstr "Tipo de bloque de cabecera"
+
+msgid "Select the type of block to be displayed on the home page."
+msgstr "Seleccione el tipo de bloque que se mostrara en la pagina de inicio."
+
+msgid "Text displayed in the header of the contact form"
+msgstr "Texto que se muestra en la cabecera del formulario de contacto"
+
+msgid "Purpose of the contact form"
+msgstr "Objetivo del formulario de contacto"
+
+msgid "Purpose"
+msgstr "Finalidad"
+
+msgid "Contact Form"
+msgstr "Formulario de contacto"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "Schedule"
+msgstr "Horario"
+
+
+

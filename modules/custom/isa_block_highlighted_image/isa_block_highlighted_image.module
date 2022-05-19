@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function isa_block_highlighted_image_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, [
+    'block_content_highlighted_image_form',
+    'block_content_highlighted_image_edit_form',
+  ])) {
+    $form['#validate'][] = 'isa_block_highlighted_image_validate';
+  }
+}
+
+/**
+ * Custom validation function.
+ */
+function isa_block_highlighted_image_validate(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $variant = $form_state->getValue('field_variant');
+  if ($variant[0]['value'] !== 'solid') {
+    $image = $form_state->getValue('field_image')[0];
+    if (!count($image['fids'])) {
+      $form_state->setErrorByName('', 'La imagen es obligatoria.');
+    }
+  }
+}

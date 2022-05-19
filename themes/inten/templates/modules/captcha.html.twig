@@ -1,0 +1,11 @@
+{% if details %}
+  {{ details }}
+{% else %}
+  <fieldset>
+    <legend>Verificación de seguridad</legend>
+    <div class="captcha-section">
+      <p> Comprobación de seguridad: </p>
+      <div {{ attributes.addClass('captcha') }}>{{ element }}</div>
+    </div>
+  </fieldset>
+{% endif %}

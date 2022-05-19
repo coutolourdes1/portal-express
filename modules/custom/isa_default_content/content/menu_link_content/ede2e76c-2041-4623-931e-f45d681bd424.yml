@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: ede2e76c-2041-4623-931e-f45d681bd424
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    73982bb1-01c7-4053-a291-98eb140e80a2: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Declaración de accesibilidad'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      target_uuid: 73982bb1-01c7-4053-a291-98eb140e80a2
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 2
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

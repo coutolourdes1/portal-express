@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlighted_circle
+    - field.storage.block_content.field_background
+  module:
+    - options
+id: block_content.highlighted_circle.field_background
+field_name: field_background
+entity_type: block_content
+bundle: highlighted_circle
+label: Fondo
+description: 'Estilo de fondo del bloque, no seleccionar ninguno para no mostrar ninguno.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

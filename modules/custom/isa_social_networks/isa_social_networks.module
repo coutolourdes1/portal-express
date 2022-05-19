@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_site_config.module.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+/**
+ * Implements hook_help().
+ */
+function isa_social_networks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isa_site_config module.
+    case 'help.page.isa_social_networks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Social Networks Configuration') . '</p>';
+      return $output;
+    default:
+  }
+}
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function isa_social_networks_preprocess_page(array &$variables) {
+  $config = Drupal::config('isa_social_networks.settings');
+  $variables['facebook'] = $config->get('facebook');
+  $variables['twitter'] = $config->get('twitter');
+  $variables['instagram'] = $config->get('instagram');
+  $variables['linkedin'] = $config->get('linkedin');
+  $variables['youtube'] = $config->get('youtube');
+
+  $variables['social_networks'] = false;
+  if ($variables['facebook'] || $variables['twitter']
+    || $variables['instagram'] ||  $variables['linkedin']||  $variables['youtube'])  {
+      $variables['social_networks'] = true;
+  }
+}

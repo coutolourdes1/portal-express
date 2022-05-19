@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.alert
+    - field.storage.block_content.field_color_class
+  module:
+    - options
+id: block_content.alert.field_color_class
+field_name: field_color_class
+entity_type: block_content
+bundle: alert
+label: 'Color class'
+description: 'Class that defines the color, according to those that define <a href="https://getbootstrap.com/docs/4.0/components/alerts/#link-color">Bootstrap 4</a>.'
+required: true
+translatable: false
+default_value:
+  -
+    value: primary
+default_value_callback: ''
+settings: {  }
+field_type: list_string

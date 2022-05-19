@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Contains paragraph_owl.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function paragraph_owl_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the paragraph_owl module.
+    case 'help.page.paragraph_owl':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integration of owl carousel with Paragraph.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function paragraph_owl_theme() {
+  return [
+    'paragraph_owl' => [
+      'variables' => ['items' => NULL, 'settings' => NULL],
+    ],
+    'paragraph_owl_item' => [
+      'variables' => [
+        'url' => NULL,
+        'title' => NULL
+      ],
+    ],
+  ];
+}
+
+/**
+ * Themeable for owlcarousel.
+ */
+function template_preprocess_paragraph_owl(&$variables) {
+  $items = $variables['items'];
+
+  $variables['attributes']['class'] = ['owl-slider-wrapper', 'owl-carousel', 'owl-theme', 'galeria-imagenes'];
+
+  $html = '';
+  if (!empty($items)) {
+    $i = 0;
+    foreach ($items as $item) {
+      $html .= render($item);
+      $i++;
+    }
+  }
+  $output = [
+    '#type' => 'markup',
+    '#markup' => $html,
+    '#allowed_tags' => ['iframe', 'img', 'a', 'div', 'p', 'span'],  
+  ];
+  $variables['output'] = render($output);
+}

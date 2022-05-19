@@ -1,0 +1,85 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.highlight_content
+    - field.field.node.news.body
+    - field.field.node.news.field_comments
+    - field.field.node.news.field_date
+    - field.field.node.news.field_image
+    - field.field.node.news.field_meta_tags
+    - field.field.node.news.field_municipalities
+    - field.field.node.news.field_sections
+    - field.field.node.news.field_subtitle
+    - field.field.node.news.field_tags
+    - field.field.node.news.field_weight
+    - field.field.node.news.field_yoast_seo
+    - node.type.news
+  module:
+    - datetime
+    - image
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.highlight_content
+targetEntityType: node
+bundle: news
+mode: highlight_content
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: large
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_comments: true
+  field_meta_tags: true
+  field_municipalities: true
+  field_sections: true
+  field_subtitle: true
+  field_tags: true
+  field_weight: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

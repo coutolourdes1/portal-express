@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: slider
+label: Carrusel
+revision: 0
+description: Carrusel

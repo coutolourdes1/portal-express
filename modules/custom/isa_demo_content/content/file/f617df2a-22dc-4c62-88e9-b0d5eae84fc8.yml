@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f617df2a-22dc-4c62-88e9-b0d5eae84fc8
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: publicacion02.jpg
+  uri:
+    -
+      value: 'public://2020-11/publicacion02_0_2_7_0_4_1_3_16_0_3_0_3.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 204785
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1606257251

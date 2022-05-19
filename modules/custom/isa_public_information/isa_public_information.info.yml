@@ -1,0 +1,8 @@
+name: 'Información Pública'
+description: 'Módulo que permite crear el formulario de solicitud de acceso a la información pública.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'webform:webform'
+version: 0.1.0
+package: isa

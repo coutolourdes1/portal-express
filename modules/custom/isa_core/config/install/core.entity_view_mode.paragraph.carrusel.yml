@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.carrusel
+label: Carrusel
+targetEntityType: paragraph
+cache: true

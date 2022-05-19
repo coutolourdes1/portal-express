@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.iframe
+    - field.storage.block_content.field_iframe_type
+  module:
+    - options
+id: block_content.iframe.field_iframe_type
+field_name: field_iframe_type
+entity_type: block_content
+bundle: iframe
+label: Tipo
+description: 'Define el modo de visualización del iframe.'
+required: true
+translatable: false
+default_value:
+  -
+    value: free
+default_value_callback: ''
+settings: {  }
+field_type: list_string

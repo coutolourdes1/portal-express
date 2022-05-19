@@ -1,0 +1,7 @@
+services:
+  isa_language.commands:
+    class: \Drupal\isa_language\Commands\IsaLanguageCommands
+    arguments:
+      - '@isa_language.generator'
+    tags:
+      - { name: drush.command }

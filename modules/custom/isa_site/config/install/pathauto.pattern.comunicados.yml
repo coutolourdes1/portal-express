@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: comunicados
+label: comunicados
+type: 'canonical_entities:node'
+pattern: 'comunicados/[node:title]'
+selection_criteria:
+  c7c3cc5a-6902-43b5-8d6e-b808205cb087:
+    id: node_type
+    negate: false
+    uuid: c7c3cc5a-6902-43b5-8d6e-b808205cb087
+    context_mapping:
+      node: node
+    bundles:
+      communication: communication
+  c850be3e-3548-4522-ba72-4e6d1adcee31:
+    id: language
+    negate: false
+    uuid: c850be3e-3548-4522-ba72-4e6d1adcee31
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

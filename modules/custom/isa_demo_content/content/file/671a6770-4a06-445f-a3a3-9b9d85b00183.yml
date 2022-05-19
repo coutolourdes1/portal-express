@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 671a6770-4a06-445f-a3a3-9b9d85b00183
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: destacada.png
+  uri:
+    -
+      value: 'public://2020-11/destacada_1_2_7_0_4_1_3_16_0_3_0_3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 49274
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1606255203

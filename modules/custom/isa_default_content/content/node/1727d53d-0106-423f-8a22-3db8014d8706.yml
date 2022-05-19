@@ -1,0 +1,172 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 1727d53d-0106-423f-8a22-3db8014d8706
+  bundle: page
+  default_langcode: es
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Misión - Visión - Valores'
+  created:
+    -
+      value: 1598905456
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /mision-vision-valores
+      langcode: es
+      pathauto: 0
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales nulla augue, id eleifend diam eleifend a. Quisque aliquam commodo elit. Curabitur at placerat eros. Fusce malesuada neque consequat risus aliquam tincidunt. Fusce nibh enim, rutrum pretium volutpat non, pretium posuere massa. Aenean id odio vel dolor consectetur mattis. Curabitur pulvinar orci erat, ac tincidunt eros sodales at. Integer consequat dui tellus, ac pellentesque urna faucibus at. Pellentesque mi libero, convallis sit amet laoreet vel, mollis id sapien. Etiam vitae mi justo. Sed quis purus ac dui finibus elementum eu sit amet sem. Quisque blandit gravida leo a rutrum. Fusce id orci enim. Nulla nisl nulla, viverra vel urna vel, dictum eleifend erat.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cb149902-8242-4ae8-84ad-07c3854c1e04:
+            uuid: cb149902-8242-4ae8-84ad-07c3854c1e04
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_subtitle'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          5115bcf5-5f6e-40d3-813e-6b5d1e36dffd:
+            uuid: 5115bcf5-5f6e-40d3-813e-6b5d1e36dffd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+          614a82cf-1e5f-4b4f-b28b-fa6c6aba89d9:
+            uuid: 614a82cf-1e5f-4b4f-b28b-fa6c6aba89d9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          875de6db-cb28-4b55-8ff6-917d0b4e2af1:
+            uuid: 875de6db-cb28-4b55-8ff6-917d0b4e2af1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_images'
+              formatter:
+                label: hidden
+                settings:
+                  thumbnail_image_style: thumbnail_big
+                  popup_image_style: ''
+                  gallery_type: all_items
+                third_party_settings: {  }
+                type: magnific_popup
+            additional: {  }
+            weight: 3
+          02c4a385-0020-4e47-af9a-488ae04724d1:
+            uuid: 02c4a385-0020-4e47-af9a-488ae04724d1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_links'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 4
+          18a1009f-3155-494d-a314-c25613c71354:
+            uuid: 18a1009f-3155-494d-a314-c25613c71354
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_attachments'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 5
+          a2a71dfb-b8e4-4cdc-8177-66f02894234d:
+            uuid: a2a71dfb-b8e4-4cdc-8177-66f02894234d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_meta_tags'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: metatag_empty_formatter
+            additional: {  }
+            weight: 7
+        third_party_settings: {  }

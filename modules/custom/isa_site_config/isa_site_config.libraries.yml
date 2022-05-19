@@ -1,0 +1,7 @@
+time_picker:
+  js:
+    //cdn.jsdelivr.net/npm/clocklet@0.3.0: { }
+  css:
+    component:
+      //cdn.jsdelivr.net/npm/clocklet@0.3.0/css/clocklet.min.css: {}
+

@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: gallery
+label: Galería
+revision: 0
+description: 'Vídeos e imágenes en forma de carrusel. '

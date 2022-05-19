@@ -1,0 +1,4 @@
+content:
+  comment_body:
+    settings:
+      placeholder: 'Escribe tu comentario aquí ...'

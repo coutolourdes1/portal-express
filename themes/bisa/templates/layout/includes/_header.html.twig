@@ -1,0 +1,31 @@
+<header role="banner" id="header" class="fixed-top">
+  {% if social_networks %}
+
+    <nav class="navbar navbar-expand-lg navbar-light m-0 p-1 pr-3 preNav">
+      {% if user_info %}
+        {{ user_name }}
+      {% endif %}
+
+      <div class="container nav-menu-container">
+        <div class="social-links ml-auto">
+          {% if twitter %}
+            <a href="{{ twitter }}" class="twitter ml-2"><i class="fa fa-twitter"></i></a>
+          {% endif %}
+
+          {% if facebook %}
+            <a href="{{ facebook }}" class="facebook ml-2"><i class="fa fa-facebook"></i></a>
+          {% endif %}
+
+          {% if instagram %}
+            <a href="{{ instagram }}" class="instagram ml-2"><i class="fa fa-instagram"></i></a>
+          {% endif %}
+
+          {% if linkedin %}
+            <a href="{{ linkedin }}" class="linkedin ml-2"><i class="fa fa-linkedin"></i></a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+  {% endif %}
+  {{ page.header }}
+</header>

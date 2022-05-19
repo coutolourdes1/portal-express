@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_activity.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function isa_activity_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isa_site_config module.
+    case 'help.page.isa_activity':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Activity Settings') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function isa_activity_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['node_activity_form', 'node_activity_edit_form'])) {
+    $form['#validate'][] = '_isa_activity_validate';
+  }
+}
+
+/**
+ * Custom validation function.
+ */
+function _isa_activity_validate(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $dates = [];
+
+  foreach ($form_state->getValue('field_dates') as $date){
+    if(isset($date['subform'])){
+      $dates[] = $date['subform']['field_date'][0]['value'];
+    }
+  }
+
+  if(count(array_unique($dates)) != count($dates)){
+    $form_state->setErrorByName('field_dates', 'La fecha no puede repetirse en "DÍAS DE LA ACTIVIDAD"');
+  }
+}
+

@@ -1,0 +1,9 @@
+name: Chatbot
+description: Allows integration of botpress chatbot in the site
+package: isa
+type: module
+core_version_requirement: ^8 || ^9
+configure: isa_chatbot.admin_settings
+
+'interface translation project': isa_chatbot
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_chatbot/translations/%language.po

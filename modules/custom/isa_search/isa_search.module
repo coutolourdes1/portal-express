@@ -1,0 +1,32 @@
+<?php
+
+
+/**
+ * Implements hook_form_alter() to add classes to the search form.
+ */
+
+function isa_search_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+    if($form_id === 'search_block_form'){
+        $form['actions']['submit']['#attributes']['data-search-button'] = 'search-button';
+        $form['keys']['#attributes']['data-search-input'] = 'search-input';
+    }
+}
+
+function isa_search_search_api_page_alter(&$build, $query_result, $search_api_page) {
+  $search_title = 'Search criteria were not specified';
+  $key = \Drupal::requestStack()->getCurrentRequest()->query->get('keys');
+
+  if($key) {
+    $search_title = \Drupal::translation()->translate(
+      'Search results for <strong>"@key"</strong>',
+      [
+        '@key' => $key
+      ]
+    );
+  }
+
+  $build['#search_title'] = [
+    '#markup' => $search_title,
+  ];
+
+}

@@ -1,0 +1,6 @@
+isa_site_config.config_form:
+  title: 'General Config'
+  route_name: isa_site_config.config_form
+  description: 'ISA Profile General Config'
+  parent: isa_menu_admin.pemenu
+  weight: 1

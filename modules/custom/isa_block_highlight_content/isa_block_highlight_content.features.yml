@@ -1,0 +1,5 @@
+bundle: isa
+excluded:
+  - field.storage.block_content.field_content
+  - core.entity_view_display.node.activity.highlight_content
+required: true

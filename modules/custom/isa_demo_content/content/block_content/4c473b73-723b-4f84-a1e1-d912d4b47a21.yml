@@ -1,0 +1,181 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 4c473b73-723b-4f84-a1e1-d912d4b47a21
+  bundle: gallery
+  default_langcode: es
+  depends:
+    d7256509-f701-4224-99b3-d4a7bae00136: file
+    567c2f38-a45c-46fd-b67e-f86981f19347: file
+    103b77e3-e088-420a-a12d-bb877fc10700: file
+    a393934d-fd8a-4f78-b32e-661576633293: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Imágenes y Vídeos'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_medias:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 39500ae4-5a32-46a2-bac4-c76ba083fff0
+          bundle: images
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636845194
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          field_image:
+            -
+              entity: d7256509-f701-4224-99b3-d4a7bae00136
+              alt: ''
+              title: ''
+              width: 720
+              height: 350
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2c760122-e1d1-4c54-817c-c229e514fdb3
+          bundle: images
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636845199
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          field_image:
+            -
+              entity: 567c2f38-a45c-46fd-b67e-f86981f19347
+              alt: ''
+              title: ''
+              width: 720
+              height: 350
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2671a078-1950-4a5e-9bac-e5bbf4d05118
+          bundle: video
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636845215
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          field_video:
+            -
+              uri: 'https://www.youtube.com/embed/s9sVUqOhcPU'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 69d194c6-163c-4b20-aeea-3c4cabd4ed1c
+          bundle: images
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636845341
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          field_image:
+            -
+              entity: 103b77e3-e088-420a-a12d-bb877fc10700
+              alt: ''
+              title: ''
+              width: 720
+              height: 350
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 1db67e84-900a-419f-85c5-f7abb532b2fc
+          bundle: images
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636845348
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+          field_image:
+            -
+              entity: a393934d-fd8a-4f78-b32e-661576633293
+              alt: ''
+              title: ''
+              width: 720
+              height: 350
+  field_subtitle:
+    -
+      value: 'Galería de imágenes y vídeos de ejemplo.'

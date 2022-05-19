@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: e9953da9-f537-4766-8a73-9b4b46b9d7ca
+  bundle: link
+  default_langcode: en
+  depends:
+    c40f6f56-9089-4ada-a73c-938334cd19c3: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Obras en ejecución'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: c40f6f56-9089-4ada-a73c-938334cd19c3
+      alt: ''
+      title: ''
+      width: 68
+      height: 68
+  field_link:
+    -
+      uri: 'internal:/'
+      title: 'Obras en ejecución'
+      options: {  }

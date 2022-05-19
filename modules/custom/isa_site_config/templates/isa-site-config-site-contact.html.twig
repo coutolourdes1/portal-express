@@ -1,0 +1,52 @@
+<div id="contact" class="sinForm">
+  <div class="container">
+    <div class="row wow fadeInUp">
+      <div class="col-lg-12 col-md-12 text-center">
+        <div class="contact-about">
+          <div class="row justify-content-center">
+            <h3>{{ site_name }}</h3>
+            <p>{{ site_description }}</p>
+            <div class="col-12 social-links">
+              {% if twitter %}
+                <a href="{{ twitter }}"  target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+              {% endif %}
+
+              {% if facebook %}
+                <a href="{{ facebook }}" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              {% endif %}
+
+              {% if instagram %}
+                <a href="{{ instagram }}" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              {% endif %}
+
+              {% if linkedin %}
+                <a href="{{ linkedin }}" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              {% endif %}
+            </div>
+
+            <div class="info">
+              {% if site_phone %}
+                <div>
+                  <p class="tel">{{ site_phone }}</p>
+                </div>
+              {% endif %}
+
+              {% if site_email %}
+                <div>
+                  <p class="mail">{{ site_email }}</p>
+                </div>
+              {% endif %}
+
+              {% if site_address %}
+                <div>
+                  <p>{{ site_address }}</p>
+                </div>
+              {% endif %}
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

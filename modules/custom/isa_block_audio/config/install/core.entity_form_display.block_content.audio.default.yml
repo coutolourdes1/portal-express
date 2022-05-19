@@ -1,0 +1,39 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.audio
+    - field.field.block_content.audio.field_audio
+    - field.field.block_content.audio.field_title
+  module:
+    - file
+id: block_content.audio.default
+targetEntityType: block_content
+bundle: audio
+mode: default
+content:
+  field_audio:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.expiration.field_date
+    - field.field.node.expiration.field_link
+    - node.type.expiration
+  module:
+    - user
+id: node.expiration.teaser
+targetEntityType: node
+bundle: expiration
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_date: true
+  field_link: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,9 @@
+name: 'Paragraph Cita'
+description: 'Provides Cita tipo de paragraphs and related configuration. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - isa_field_storage
+  - paragraphs
+package: isa

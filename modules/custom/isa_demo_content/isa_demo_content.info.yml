@@ -1,0 +1,115 @@
+name: 'ISA Demo Content'
+type: module
+description: 'Site demo contents'
+core_version_requirement: '^8.9 || ^9'
+package: 'isa'
+dependencies:
+  - isa_communication
+  - isa_service
+  - isa_news
+  - isa_tags
+  - default_content
+  - isa_activity
+#  - isa_chatbot
+  - isa_feedback
+  - isa_authorities
+  - isa_procedure
+  - pathauto
+  - isa_document
+  - isa_resolution
+  - isa_expiration
+  - isa_turist_info
+default_content:
+  taxonomy_term:
+    - eb2ec3c5-eae0-445b-8a5c-dfd732f9fadf
+    - b787a2d8-a050-46ae-8098-82e2a496c7f0
+    - e6badace-c890-420f-af98-48a62c57819b
+    - e3935913-46fb-4e05-85fe-b5d6e74ecd30
+    - 0a20fefd-b288-4520-8fe5-39bc5d6a18a7
+    - a60643ec-97c6-4023-8134-0038aa5601f5
+    # Tipo de archivo
+    - ededcd62-a567-40b1-aa14-41e076f27a74
+  node:
+    - cb57c73b-6170-4fbe-bcc2-d5b38ad59c95
+    - 59a122c0-d58c-4cee-948c-c867da47444b
+    - e1667493-9622-4614-bc99-5ee0e43312cd
+    - be629445-12a9-4236-8a48-0b6a387a7ad4
+    - 004d837d-dad6-4762-b252-412b2c7d8ed9
+    - 025c3894-2c85-404e-a397-2c32667323d8
+    - 2b60c1bb-5f89-4455-aad7-fa61aa869beb
+    - 2ebc19cc-2407-44fc-9a14-4fbb0e0aa7d0
+    - 203b3a3d-9e03-4578-8c5c-609f0a4fb9c5
+    - b472a449-5f4b-4ee2-97c6-905477d04322
+    - 563c52cb-ecc1-4cf1-9f10-d4cb97e7ed18
+    - 6877ad87-0c98-4662-a376-e38e248292a3
+    - 3c1de079-9bde-4cc8-9748-24278c1662b1
+    - a2a56bf9-aad4-4f56-9524-c1471814e822
+    - 5287668c-1a46-41e4-b9cd-e657623ccc79
+    - d6569201-c2af-4572-98c6-710f576646d3
+    - 324f7860-854e-40e7-85ae-3e7605979b1c
+    - 300177b9-bd7e-45ff-8cdf-1a104ed3e0c1
+    - d9f52d24-1120-492c-9e09-94c94bb30999
+    - de223efb-3485-4d93-81ce-f069a55e4965
+    - 178ac5d6-2d5b-49eb-8531-3812348011ec
+    - e64a76fa-00c1-452c-8520-e783773a130a
+    - 24ec9213-14e6-4fea-8d2e-055479b11fa1
+    - afb7951b-bf91-480f-b8f4-b6983ad2a204
+    - 16434384-dc32-4232-8136-29599e5c3c88
+    - e26a9f28-b933-4d59-8c97-d4c416e6b279
+    - 4d27c1a0-eef3-4357-95de-b6c06a7afa2d
+    - 2811d370-101c-4a53-8316-40fcd503e44b
+    - 70990228-eca2-4052-b2b7-50765f6fa993
+    - 0eea8500-d1a4-4f0a-a88a-ac7ca8b21cd9
+    - f92459bf-7485-4605-86d0-70f62d95f4fd
+    - f97848a4-4631-42c1-80ab-a7607102a43c
+    - e33ac420-e254-41d6-9893-6d89113a501c
+    - 9360ef36-4c31-4217-a5a9-d1723201587d
+    # Vencimientos
+    - 2799257d-4349-432b-94b3-e2dd79e7f1cb
+    - 8323e982-5f49-4eef-bfb3-ca518cf2eed0
+    - 519fd20f-572c-475a-92b8-6251fa78515d
+    # Pagina de inicio
+    - df958420-b35f-4851-9b10-1765bf0bcd0e
+    # Horario
+    - ca912359-562d-434a-b667-f4e897b2aa98
+    - a2a5b252-dadc-493f-bad0-a61ea577bfca
+    - 40d9db21-8ed4-4317-bc52-7dd7cbcc73eb
+    - 87e8485e-114b-44a8-9cc4-4adb9bfe9b5a
+    - 21c001c7-e9ee-477c-9330-a06adf99a781
+    - 397d8ec9-1761-4e17-9767-277394c3d959
+    - ab3a6195-5e20-43df-94fb-035bc9f44d74
+    - bdc0bcaf-a1bb-450a-b31e-698435d07c02
+    - e7f48cfa-c550-45f2-a2ca-0fd8f3b71d11
+    - 5ef823a2-91f5-48c7-a1bc-3beff2f637a0
+    - 2e60608d-ce21-4b91-aa1a-3ea7f3e9cc89
+    - 53e5e6aa-b4c0-4281-aa09-857cff1d8422
+    - ea5c74de-c41c-44a4-8e00-b42c45067517
+    # Archivo: Normativa
+    - ee4b6f01-c378-4b99-b0ee-7fb496127e7e
+  file:
+    - 213697e6-6969-4179-9990-d8636ffde2d3
+    - f9814f97-c43b-4ad8-a799-b0dfa6d80e80
+    - d5035769-8e24-4474-aaef-caa147df517d
+    - d35e8003-31ae-48a7-a20d-060f29af5244
+    - f617df2a-22dc-4c62-88e9-b0d5eae84fc8
+    - 65ce803b-1e48-4c75-9917-522cd9707607
+    - 4e923a26-a6d5-4f63-926a-68fac0bd60f8
+    - 05383db3-5c74-49a5-8cd4-1d57dc010981
+    - 285de130-98d9-41a6-acc4-e2c75cefdcf0
+    - ed7564f6-57f2-433a-9fc7-3a4a0552e9d1
+    - 671a6770-4a06-445f-a3a3-9b9d85b00183
+    # File del normativas
+    - ffd731fb-0876-484d-879c-616e7c147672
+    # Ejemplo de galeria
+    - d7256509-f701-4224-99b3-d4a7bae00136
+    - 567c2f38-a45c-46fd-b67e-f86981f19347
+    - 103b77e3-e088-420a-a12d-bb877fc10700
+    - a393934d-fd8a-4f78-b32e-661576633293
+    # Noticia de ejemplo
+    - b742c2eb-96ff-41ac-bb9a-aff1919b4f4b # Delain – Suckerpunch.mp3
+    - bb849da6-8cc9-4334-9506-f9d932877f97 # lorem_ipsum_10.pdf
+    - 8c90a8c2-63ae-44cb-ba55-ce3b190d398c # 720x350-yellow_1.png
+    - 2f9271e5-8bd5-4016-9de1-c6b36f0bf04a # 720x350-green_1.png
+  block_content:
+    # Ejemplo de galeria
+    - 4c473b73-723b-4f84-a1e1-d912d4b47a21

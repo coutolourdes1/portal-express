@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links_list.field_links
+    - field.field.paragraph.links_list.field_title
+    - paragraphs.paragraphs_type.links_list
+  module:
+    - link
+id: paragraph.links_list.default
+targetEntityType: paragraph
+bundle: links_list
+mode: default
+content:
+  field_links:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

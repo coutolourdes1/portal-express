@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:86de1263-33a5-473c-88ae-047c44d4fa30'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: documentos
+theme: bisa
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:86de1263-33a5-473c-88ae-047c44d4fa30'
+settings:
+  id: 'block_content:86de1263-33a5-473c-88ae-047c44d4fa30'
+  label: Documentos
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /documentos
+    negate: false
+    context_mapping: {  }

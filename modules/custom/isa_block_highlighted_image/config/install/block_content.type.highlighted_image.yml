@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: highlighted_image
+label: 'Destacado Imagen'
+revision: 0
+description: 'Bloque destacado con imágen. '

@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlighted_circle
+    - field.storage.block_content.field_icon
+  module:
+    - material_icons
+id: block_content.highlighted_circle.field_icon
+field_name: field_icon
+entity_type: block_content
+bundle: highlighted_circle
+label: Icono
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: material_icons

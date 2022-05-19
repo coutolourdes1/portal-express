@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.turist_information
+id: node.turist_information
+target_entity_type_id: node
+target_bundle: turist_information
+default_langcode: site_default
+language_alterable: false

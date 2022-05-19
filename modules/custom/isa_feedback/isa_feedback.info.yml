@@ -1,0 +1,11 @@
+name: Feedback
+description: 'Module that allows create a Feedback Block and a Help us to improve form.'
+package: isa
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'isa_menu_admin:isa_menu_admin'
+  - 'webform:webform (>=8.x-5.x)'
+'interface translation project': isa_feedback
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_feedback/translations/%language.po
+version: 0.1.0

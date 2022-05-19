@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.turist_information
+  module:
+    - link
+id: node.turist_information.field_link
+field_name: field_link
+entity_type: node
+bundle: turist_information
+label: 'Página web'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

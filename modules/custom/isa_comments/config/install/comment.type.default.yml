@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: default
+label: Default
+target_entity_type_id: node
+description: 'Comment type for site content.'

@@ -1,0 +1,66 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: e26a9f28-b933-4d59-8c97-d4c416e6b279
+  bundle: activity
+  default_langcode: es
+  depends:
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: ' Posuere magna hac laoreet orci parturient, cueto.'
+  created:
+    -
+      value: 1606256835
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /actividades/posuere-magna-hac-laoreet-orci-parturient-cueto
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis facilisis, ultrices ad diam torquent scelerisque a lacinia suspendisse nec, auctor hendrerit posuere magna hac laoreet orci parturient.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_date:
+    -
+      value: '2020-12-01'
+  field_place:
+    -
+      value: 'Estadio Centenario / Montevideo'
+  field_subtitle:
+    -
+      value: 'Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_time_range:
+    -
+      start: '09:20 AM'
+      end: '03:20 PM'
+      locate: ''
+  field_yoast_seo:
+    -
+      status: ''
+      focus_keyword: ''
+      title: ''
+      description: ''

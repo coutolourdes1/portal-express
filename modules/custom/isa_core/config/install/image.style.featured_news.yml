@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: featured_news
+label: 'Featured News'
+effects:
+  8a0a1eca-6ce8-4263-9d95-5ec922208095:
+    uuid: 8a0a1eca-6ce8-4263-9d95-5ec922208095
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 260
+      height: 260
+      anchor: center-center

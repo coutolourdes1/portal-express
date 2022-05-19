@@ -1,0 +1,42 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.expiration.field_date
+    - field.field.node.expiration.field_link
+    - node.type.expiration
+  module:
+    - datetime
+    - link
+    - user
+id: node.expiration.default
+targetEntityType: node
+bundle: expiration
+mode: default
+content:
+  field_date:
+    weight: 0
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    type: datetime_time_ago
+    region: content
+  field_link:
+    weight: 1
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

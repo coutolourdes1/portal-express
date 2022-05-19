@@ -1,0 +1,26 @@
+name: 'Intendencia'
+type: theme
+description: 'Theme for Intendencia'
+package: ISAPY
+core_version_requirement: '^8.9 || ^9'
+base theme: false
+
+regions:
+  header: Header
+  nav: Main navigation
+  hero: Hero
+  breadcrumb: Breadcrumb
+  highlight: Highlight
+  left: Left
+  content: Content
+  right: Right
+  footer: Footer
+  footer_bar: Footer Bar
+  footer_addresses: Footer Addresses
+  footer_bottom: Footer Bottom
+
+'interface translation project': inten
+'interface translation server pattern': profiles/contrib/isa/themes/inten/translations/%language.po
+
+libraries:
+  - inten/global-styling

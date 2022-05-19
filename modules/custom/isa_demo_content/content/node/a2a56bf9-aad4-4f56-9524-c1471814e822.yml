@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: a2a56bf9-aad4-4f56-9524-c1471814e822
+  bundle: document
+  default_langcode: es
+  depends:
+    285de130-98d9-41a6-acc4-e2c75cefdcf0: file
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Amet Defui Iustum'
+  created:
+    -
+      value: 1606978426
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /documentos/amet-defui-iustum
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, metus eu pretium lectus in diam libero potenti nascetur, blandit imperdiet sollicitudin cum porta fermentum nostra. Sem potenti ultrices placerat scelerisque eget morbi faucibus massa ultricies turpis, mauris litora nulla vivamus fusce dictumst metus natoque mus malesuada convallis, volutpat odio hendrerit nascetur sagittis parturient diam porttitor platea.</p>\r\n\r\n<p>Eu fusce at torquent primis tristique dui vehicula eros, nec blandit in nunc morbi egestas mollis tempus, aliquam dictum pharetra phasellus mauris auctor sem vitae, rutrum semper libero varius ac convallis magnis. Fusce ut rutrum primis posuere habitasse vulputate natoque aliquet consequat accumsan lobortis praesent quam risus, id scelerisque dictumst suspendisse aenean velit semper quis tempor laoreet aliquam potenti. Tempus facilisi nec fermentum curae nullam erat, placerat posuere habitant cubilia lacinia cras pulvinar, fusce nunc quam nascetur dapibus. Feugiat magnis rhoncus sem eros mattis aliquet morbi blandit felis, rutrum luctus scelerisque nibh gravida viverra sagittis tincidunt quisque aliquam, euismod suscipit molestie cum porttitor nam mollis pretium.</p>\r\n\r\n<p>Neque sociis laoreet velit hac litora, nunc curae platea in mus cubilia, nisi molestie lacus gravida. Augue sed fermentum bibendum ultrices fames placerat dis litora sollicitudin diam ac, cubilia malesuada curae sodales venenatis vitae nunc commodo nascetur rhoncus. Eleifend varius donec cum conubia dignissim luctus ut, phasellus orci sollicitudin praesent dui molestie, interdum natoque etiam quisque tempor purus. Blandit viverra risus volutpat rutrum sapien vel et venenatis, nulla montes litora conubia dui sociosqu cubilia tincidunt imperdiet, morbi duis neque hendrerit sociis pellentesque dis.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_attachments:
+    -
+      entity: 285de130-98d9-41a6-acc4-e2c75cefdcf0
+      display: true
+      description: ''
+  field_subtitle:
+    -
+      value: 'Lorem ipsum dolor sit amet consectetur adipiscing elit, risus fringilla bibendum'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

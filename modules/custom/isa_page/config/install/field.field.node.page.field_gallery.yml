@@ -1,0 +1,57 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery
+    - node.type.page
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - entity_reference_revisions
+id: node.page.field_gallery
+field_name: field_gallery
+entity_type: node
+bundle: page
+label: Galería
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+    negate: 0
+    target_bundles_drag_drop:
+      audios:
+        weight: 11
+        enabled: false
+      download_list:
+        weight: 12
+        enabled: false
+      gallery:
+        weight: 13
+        enabled: true
+      images:
+        weight: 14
+        enabled: false
+      links_list:
+        weight: 15
+        enabled: false
+      map:
+        weight: 16
+        enabled: false
+      quote:
+        weight: 17
+        enabled: false
+      rich_text:
+        weight: 18
+        enabled: false
+      text_item:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions

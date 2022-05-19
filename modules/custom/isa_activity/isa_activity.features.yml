@@ -1,0 +1,4 @@
+bundle: isa
+excluded:
+  - field.storage.node.field_place
+required: true

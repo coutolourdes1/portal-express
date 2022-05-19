@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: pagina_de_diseno
+label: 'Página de diseño'
+type: 'canonical_entities:node'
+pattern: '/pagina/[node:title]'
+selection_criteria:
+  ac9cb404-21cf-4253-bfff-b39b6965f034:
+    id: node_type
+    negate: false
+    uuid: ac9cb404-21cf-4253-bfff-b39b6965f034
+    context_mapping:
+      node: node
+    bundles:
+      layout_page: layout_page
+selection_logic: and
+weight: -5
+relationships: {  }

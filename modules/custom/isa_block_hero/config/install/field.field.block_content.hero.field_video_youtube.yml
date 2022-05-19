@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_video_youtube
+  module:
+    - link
+id: block_content.hero.field_video_youtube
+field_name: field_video_youtube
+entity_type: block_content
+bundle: hero
+label: 'Video Youtube'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

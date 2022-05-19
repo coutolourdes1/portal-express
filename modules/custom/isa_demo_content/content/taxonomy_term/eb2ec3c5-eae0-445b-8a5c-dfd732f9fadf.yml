@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: eb2ec3c5-eae0-445b-8a5c-dfd732f9fadf
+  bundle: tags
+  default_langcode: es
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Actualidad
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /actualidad
+      langcode: es
+      pathauto: 1

@@ -1,0 +1,117 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 7441ce92-d13b-4fa7-9b50-404c1641e090
+  bundle: slider
+  default_langcode: en
+  depends:
+    c57584ec-b0df-4b99-b051-fa7d02e6b93f: file
+    ea97bec2-8454-4d6d-9d1c-660096c8601c: file
+    42b2522b-8fc3-49ef-bc4a-63aa51769f95: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: Home
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_images_list:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 3aa2813f-ac61-489d-94c3-59a3883aa34b
+          bundle: images
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1600710957
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis facilisis, ultrices ad diam torquent scelerisque a lacinia suspendisse nec.'
+          field_image:
+            -
+              entity: c57584ec-b0df-4b99-b051-fa7d02e6b93f
+              alt: 'PORTAL EXPRESS'
+              title: 'PORTAL EXPRESS'
+              width: 1100
+              height: 500
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7b2e2e6a-3402-40ed-bfd3-a757ef3ea59f
+          bundle: images
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1600710964
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis.'
+          field_image:
+            -
+              entity: ea97bec2-8454-4d6d-9d1c-660096c8601c
+              alt: 'Segundo Slide'
+              title: 'Segundo Slide'
+              width: 1100
+              height: 500
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 2a58355d-fb87-4cdf-ae55-1199f648a064
+          bundle: images
+          default_langcode: en
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1600710979
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_description:
+            -
+              value: 'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis facilisis, ultrices ad diam torquent scelerisque a lacinia suspendisse nec, Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis facilisis, ultrices ad diam torquent scelerisque '
+          field_image:
+            -
+              entity: 42b2522b-8fc3-49ef-bc4a-63aa51769f95
+              alt: Tercero
+              title: Tercero
+              width: 1100
+              height: 500

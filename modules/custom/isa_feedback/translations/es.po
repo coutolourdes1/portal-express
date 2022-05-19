@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+
+msgid "If you found any errors on this site:"
+msgstr "Si encontraste algún error en este sitio:"
+
+msgid "help us to improve"
+msgstr "ayudanos a mejorarlo"
+
+msgid "Feedback Results"
+msgstr "Resultados de Feedback"
+
+msgid "Feedback result list"
+msgstr "Listado de resultados de feedback"

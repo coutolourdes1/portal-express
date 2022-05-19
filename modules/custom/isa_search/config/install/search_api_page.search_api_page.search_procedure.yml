@@ -1,0 +1,24 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - search_api.index.procedure
+id: search_procedure
+label: 'Buscar Trámites'
+path: buscar-tramites
+clean_url: false
+show_all_when_no_keys: false
+index: procedure
+limit: 10
+searched_fields:
+  body: body
+  field_subtitle: field_subtitle
+  title: title
+style: view_modes
+view_mode_configuration:
+  'entity:node':
+    default: search_index
+    overrides:
+      procedure: ''
+show_search_form: false
+parse_mode: phrase

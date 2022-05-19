@@ -1,0 +1,345 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 0eea8500-d1a4-4f0a-a88a-ac7ca8b21cd9
+  bundle: news
+  default_langcode: es
+  depends:
+    671a6770-4a06-445f-a3a3-9b9d85b00183: file
+    d1a5100a-4ff2-4f8a-8213-994049c7e090: taxonomy_term
+    41e585d2-63fa-44f8-9d6c-2af138e4e516: file
+    8c90a8c2-63ae-44cb-ba55-ce3b190d398c: file
+    2f9271e5-8bd5-4016-9de1-c6b36f0bf04a: file
+    b742c2eb-96ff-41ac-bb9a-aff1919b4f4b: file
+    bb849da6-8cc9-4334-9506-f9d932877f97: file
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+    e6badace-c890-420f-af98-48a62c57819b: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Encuentro entre mujeres: "Autoconocimiento y Manifestación"'
+  created:
+    -
+      value: 1606255339
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /noticias/encuentro-entre-mujeres-autoconocimiento-manifestacion
+      langcode: es
+      pathauto: 1
+  field_comments:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1636900997
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_date:
+    -
+      value: '2020-11-13'
+  field_image:
+    -
+      entity: 671a6770-4a06-445f-a3a3-9b9d85b00183
+      alt: ''
+      title: ''
+      width: 180
+      height: 140
+  field_municipio:
+    -
+      entity: d1a5100a-4ff2-4f8a-8213-994049c7e090
+  field_sections:
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8557eb90-cb8d-4305-90cf-6aea89e59d79
+          bundle: images
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636901891
+          behavior_settings:
+            -
+              value: {  }
+          field_image:
+            -
+              entity: 41e585d2-63fa-44f8-9d6c-2af138e4e516
+              alt: ''
+              title: ''
+              width: 180
+              height: 140
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 486f0070-5d41-48e8-a6fc-22e90b04327b
+          bundle: rich_text
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636904001
+          behavior_settings:
+            -
+              value: {  }
+          field_rich_text:
+            -
+              value: "<h2>Encabezado de segundo nivel</h2>\r\n\r\n<p>Lorem ipsum dolor sit amet,&nbsp;<strong>consectetur adipisicing elit</strong>. Nemo esse beatae, nihil doloribus dolor perferendis&nbsp;<em>quas voluptatem atque impedit</em>&nbsp;ab nulla omnis libero neque&nbsp;<a href=\"http://127.0.0.1:8080/documento.html#\">delectus veritatis laborum</a>&nbsp;consequatur repudiandae! Voluptatem?</p>\r\n\r\n<p>Consectetur adipisicing elit. Iste quae,&nbsp;<strong>odit natus molestiae neque quam dolor eum</strong>, repellat ad id hic architecto rerum cum est suscipit&nbsp;<a href=\"http://127.0.0.1:8080/documento.html#\">laudantium quibusdam expedita tempore</a>&nbsp;recusandae optio dolorum, illo?&nbsp;<strong>Quas Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Beatae distinctio tempore, laborum hic doloribus? Dolores facilis eum, accusantium non eveniet!</p>\r\n\r\n<p>Consectetur adipisicing elit. Iste quae, repellat ad id hic architecto rerum cum est suscipit recusandae optio dolorum, illo?&nbsp;<strong>Quas Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Beatae distinctio tempore, laborum hic doloribus? Dolores facilis eum, accusantium non eveniet!</p>\r\n"
+              format: basic_html
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: b8df877f-dd5b-42a4-8acd-969d65fda730
+          bundle: gallery
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636901793
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_medias:
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: 7de38a4d-e95f-4c18-b34b-11687f6379a2
+                  bundle: images
+                  default_langcode: es
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636901795
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_description:
+                    -
+                      value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                  field_image:
+                    -
+                      entity: 8c90a8c2-63ae-44cb-ba55-ce3b190d398c
+                      alt: ''
+                      title: ''
+                      width: 720
+                      height: 350
+            -
+              entity:
+                _meta:
+                  version: '1.0'
+                  entity_type: paragraph
+                  uuid: eac0f7e7-dea0-4107-9f17-adb2d153c017
+                  bundle: images
+                  default_langcode: es
+                default:
+                  status:
+                    -
+                      value: true
+                  created:
+                    -
+                      value: 1636901808
+                  behavior_settings:
+                    -
+                      value: {  }
+                  field_description:
+                    -
+                      value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+                  field_image:
+                    -
+                      entity: 2f9271e5-8bd5-4016-9de1-c6b36f0bf04a
+                      alt: ''
+                      title: ''
+                      width: 720
+                      height: 350
+          field_title:
+            -
+              value: 'Título - Galería de imágenes'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: e4c16e55-56f9-4bc6-a863-1d0bcacb2480
+          bundle: audios
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636903854
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_audios:
+            -
+              entity: b742c2eb-96ff-41ac-bb9a-aff1919b4f4b
+              display: true
+              description: 'Delain – Suckerpunch'
+          field_title:
+            -
+              value: 'Audios de ejemplo'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7baaa96c-e2b0-4048-a046-8ca84d62b450
+          bundle: video
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636903765
+          behavior_settings:
+            -
+              value: {  }
+          field_description:
+            -
+              value: 'Nightwish - Wish I Had An Angel (OFFICIAL VIDEO)'
+          field_video:
+            -
+              uri: 'https://www.youtube.com/embed/wEERFBI9eCg'
+              title: ''
+              options: {  }
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 88560d7e-be39-4dba-be87-b290aca40c97
+          bundle: download_list
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636903905
+          behavior_settings:
+            -
+              value: {  }
+          revision_translation_affected:
+            -
+              value: true
+          field_files:
+            -
+              entity: bb849da6-8cc9-4334-9506-f9d932877f97
+              display: true
+              description: 'Documento de ejemplo'
+          field_title:
+            -
+              value: 'Descargas de ejemplo'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 7d3988cc-4e9b-4826-9ea6-98847c2f7f94
+          bundle: links_list
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636903941
+          behavior_settings:
+            -
+              value: {  }
+          field_links:
+            -
+              uri: 'https://www.google.com/'
+              title: Google
+              options: {  }
+            -
+              uri: 'https://www.youtube.com/'
+              title: Youtube
+              options: {  }
+          field_title:
+            -
+              value: 'Enlaces de ejemplo'
+    -
+      entity:
+        _meta:
+          version: '1.0'
+          entity_type: paragraph
+          uuid: 8965fa0d-694a-4cef-8c85-bfc771545f3e
+          bundle: quote
+          default_langcode: es
+        default:
+          status:
+            -
+              value: true
+          created:
+            -
+              value: 1636906132
+          behavior_settings:
+            -
+              value: {  }
+          field_text:
+            -
+              value: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nostrum iure quae ratione delectus suscipit aperiam eius iste sequi quaerat.'
+  field_subtitle:
+    -
+      value: 'Vivamus iaculis sem vitae urna vulputate, nec pharetra turpis porttitor. Nulla blandit sollicitudin velit, at laoreet dolor vehicula et. Cras interdum erat a luctus suscipit. Donec vitae neque volutpat urna interdum mattis sed eget tellus. Nunc auctor pharetra eros.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+    -
+      entity: e6badace-c890-420f-af98-48a62c57819b
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

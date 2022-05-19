@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.download_list
+id: block_content.download_list
+target_entity_type_id: block_content
+target_bundle: download_list
+default_langcode: site_default
+language_alterable: false

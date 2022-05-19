@@ -1,0 +1,14 @@
+{% if content %}
+    <div {{ attributes.addClass(['grid']) }}>
+        {% if content.sidebar %}
+            <div {{ region_attributes.sidebar.addClass(['grid-item', 'u-md-size3of4']) }}>
+                {{ content.sidebar }}
+            </div>
+        {% endif %}
+        {% if content.main %}
+            <div {{ region_attributes.main.addClass(['grid-item', 'u-md-size1of4']) }}>
+                {{ content.main }}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

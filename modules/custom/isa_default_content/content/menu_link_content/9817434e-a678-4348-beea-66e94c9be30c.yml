@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 9817434e-a678-4348-beea-66e94c9be30c
+  bundle: menu_link_content
+  default_langcode: es
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Exercitationem in esse error.'
+  menu_name:
+    -
+      value: footer-col-3
+  link:
+    -
+      uri: 'http://google.com'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

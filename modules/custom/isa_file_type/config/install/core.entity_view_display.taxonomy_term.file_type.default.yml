@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.file_type
+  module:
+    - text
+id: taxonomy_term.file_type.default
+targetEntityType: taxonomy_term
+bundle: file_type
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

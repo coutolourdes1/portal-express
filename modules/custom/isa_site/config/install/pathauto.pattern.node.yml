@@ -1,0 +1,41 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: node
+label: Nodo
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  258950c8-4658-478d-8434-8cf86e13df53:
+    id: node_type
+    negate: false
+    uuid: 258950c8-4658-478d-8434-8cf86e13df53
+    context_mapping:
+      node: node
+    bundles:
+      activity: activity
+      authorities: authorities
+      communication: communication
+      document: document
+      news: news
+      page: page
+      procedure: procedure
+      resolution: resolution
+      service: service
+  d7ed445a-808a-47d6-ac30-44c1ee2f86d4:
+    id: language
+    negate: false
+    uuid: d7ed445a-808a-47d6-ac30-44c1ee2f86d4
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      es: es
+selection_logic: and
+weight: 10
+relationships:
+  'node:langcode:language':
+    label: Idioma

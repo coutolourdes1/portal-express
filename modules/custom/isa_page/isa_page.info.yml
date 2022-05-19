@@ -1,0 +1,42 @@
+name: Page
+description: 'Provides Page content type and related configuration. To create generic content that does not need a specific structure or organization.'
+type: module
+dependencies:
+  - 'captcha:captcha'
+  - 'drupal:content_moderation'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:layout_builder'
+  - 'drupal:layout_discovery'
+  - 'drupal:link'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_paragraph_audios:isa_paragraph_audios'
+  - 'isa_paragraph_download_list:isa_paragraph_download_list'
+  - 'isa_paragraph_gallery:isa_paragraph_gallery'
+  - 'isa_paragraph_image:isa_paragraph_image'
+  - 'isa_paragraph_links_list:isa_paragraph_links_list'
+  - 'isa_paragraph_map:isa_paragraph_map'
+  - 'isa_paragraph_multiple_images:isa_paragraph_multiple_images'
+  - 'isa_paragraph_video:isa_paragraph_video'
+  - 'isa_tags:isa_tags'
+  - 'layout_builder_restrictions:layout_builder_restrictions'
+  - 'magnific_popup:magnific_popup'
+  - 'metatag:metatag'
+  - 'paragraphs:paragraphs'
+  - 'scheduler:scheduler'
+  - 'smart_trim:smart_trim'
+  - 'yoast_seo:yoast_seo'
+version: 8.x-1.0
+package: isa
+'interface translation project': isa_page
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_page/translations/%language.po
+core_version_requirement: '^8.9 || ^9'

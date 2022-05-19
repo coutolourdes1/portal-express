@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 65ce803b-1e48-4c75-9917-522cd9707607
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: publicacion05_0.jpg
+  uri:
+    -
+      value: 'public://2020-11/publicacion05_0_0_2_7_0_9_1_3_16_0_3_0_3.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 253201
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1606257056

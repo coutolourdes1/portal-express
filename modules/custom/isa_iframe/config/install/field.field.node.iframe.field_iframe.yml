@@ -1,0 +1,29 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_iframe
+    - node.type.iframe
+  module:
+    - iframe
+id: node.iframe.field_iframe
+field_name: field_iframe
+entity_type: node
+bundle: iframe
+label: Iframe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: null
+  scrolling: null
+  transparency: null
+  allowfullscreen: '1'
+  tokensupport: null
+  title: null
+  height: null
+  width: null
+field_type: iframe

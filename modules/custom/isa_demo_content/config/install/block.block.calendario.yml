@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:3e59bfe7-203b-4079-9b0f-c26778d00346'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: calendario
+theme: bisa
+region: title
+weight: -7
+provider: null
+plugin: 'block_content:3e59bfe7-203b-4079-9b0f-c26778d00346'
+settings:
+  id: 'block_content:3e59bfe7-203b-4079-9b0f-c26778d00346'
+  label: Calendario
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /actividades
+    negate: false
+    context_mapping: {  }

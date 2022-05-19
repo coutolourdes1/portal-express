@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 6e88366a-14a2-4905-9772-182cbc341c80
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    99e34df8-eec7-4273-b308-496114f5fb68: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Cómo llegar'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:99e34df8-eec7-4273-b308-496114f5fb68'
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 0a20fefd-b288-4520-8fe5-39bc5d6a18a7
+  bundle: tags
+  default_langcode: es
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Tecnología
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tecnologia
+      langcode: es
+      pathauto: 1

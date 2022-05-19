@@ -1,0 +1,11 @@
+isa_layout_builder.confirm_set_front:
+  path: '/admin/layout-pages/confirm-set-front'
+  defaults:
+    _form: '\Drupal\isa_layout_builder\Form\SetFrontFormConfirm'
+    _title: 'Set front page'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    parameters:
+      alias:
+        type: entity:user

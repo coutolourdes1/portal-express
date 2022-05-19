@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: a4c2017f-320b-4dbc-adb9-d022985c4bb8
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    fa0f755c-3742-4ba3-9e11-4eab2188d0ff: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Términos de uso'
+  menu_name:
+    -
+      value: footer
+  link:
+    -
+      target_uuid: fa0f755c-3742-4ba3-9e11-4eab2188d0ff
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

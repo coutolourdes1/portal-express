@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 103b77e3-e088-420a-a12d-bb877fc10700
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 720x350-red_0.png
+  uri:
+    -
+      value: 'public://2021-11/720x350-red_0_3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 15129
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636845345

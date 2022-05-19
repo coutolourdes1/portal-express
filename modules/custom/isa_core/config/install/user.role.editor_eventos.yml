@@ -1,0 +1,42 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - empty_page
+    - filter
+    - media
+    - node
+    - system
+    - toolbar
+id: editor_eventos
+label: 'Editor Eventos'
+weight: -9
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create activity content'
+  - 'delete activity revisions'
+  - 'delete all revisions'
+  - 'delete any activity content'
+  - 'delete own activity content'
+  - 'edit any activity content'
+  - 'edit own activity content'
+  - 'revert activity revisions'
+  - 'use content_publishing transition archive_content'
+  - 'use content_publishing transition create_new_draft'
+  - 'use content_publishing transition publish'
+  - 'use content_publishing transition ready_for_review'
+  - 'use content_publishing transition to_correct'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view activity revisions'
+  - 'view any unpublished content'
+  - 'view empty pages'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

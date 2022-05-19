@@ -1,0 +1,27 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - shortcut
+    - system
+    - toolbar
+id: gestor
+label: Gestor
+weight: -4
+is_admin: null
+permissions:
+  - 'access admin menu'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer account settings'
+  - 'administer permissions'
+  - 'administer site configuration'
+  - 'administer users'
+  - 'cancel account'
+  - 'change own username'
+  - 'select account cancellation method'
+  - 'view the administration theme'
+  - 'view user email addresses'

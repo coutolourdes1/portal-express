@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.procedure
+id: node.procedure
+target_entity_type_id: node
+target_bundle: procedure
+default_langcode: site_default
+language_alterable: false

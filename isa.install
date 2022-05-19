@@ -1,0 +1,82 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the isa installation profile.
+ */
+
+use Drupal\config_filter\Config\FilteredStorage;
+use Drupal\user\Entity\User;
+use Drupal\shortcut\Entity\Shortcut;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function isa_install() {
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->addRole('administrator');
+  $user->save();
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  // Populate the default shortcut set.
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('Add content'),
+    'weight' => -20,
+    'link' => ['uri' => 'internal:/node/add'],
+  ]);
+  $shortcut->save();
+
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('All content'),
+    'weight' => -19,
+    'link' => ['uri' => 'internal:/admin/content'],
+  ]);
+  $shortcut->save();
+
+  if (\Drupal::moduleHandler()->moduleExists('features_ui')) {
+      $shortcut = Shortcut::create([
+        'shortcut_set' => 'default',
+        'title' => t('Features'),
+        'weight' => -18,
+        'link' => ['uri' => 'internal:/admin/config/development/features'],
+      ]);
+  }
+
+  $shortcut->save();
+
+  \Drupal::configFactory()
+    ->getEditable('system.site')
+    ->set('page.front', '/home')
+    ->save();
+}
+
+// Add code here to make nodes, terms, etc.
+/**
+ * Helper para importar la configuración de  los modulos
+ *
+ * @param $modules
+ */
+function _isa_import_config($modules) {
+  if (!is_array($modules)) {
+    $modules = [$modules];
+  }
+  foreach ($modules as $module) {
+    \Drupal::service('config.installer')
+      ->installDefaultConfig('module', $module);
+  }
+}
+
+require_once 'updates/updates.php';
+
+
+

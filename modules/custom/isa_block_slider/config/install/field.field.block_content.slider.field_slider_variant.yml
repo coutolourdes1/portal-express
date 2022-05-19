@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.slider
+    - field.storage.block_content.field_slider_variant
+  module:
+    - options
+id: block_content.slider.field_slider_variant
+field_name: field_slider_variant
+entity_type: block_content
+bundle: slider
+label: Variante
+description: 'Define la altura del bloque. Grande: 480px y Pequeña: 240px. '
+required: true
+translatable: false
+default_value:
+  -
+    value: big
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - empty_page
+    - media
+    - search
+    - search_api_page
+    - sitemap
+    - system
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access sitemap'
+  - 'post comments'
+  - 'search content'
+  - 'use advanced search'
+  - 'view empty pages'
+  - 'view media'
+  - 'view search api pages'

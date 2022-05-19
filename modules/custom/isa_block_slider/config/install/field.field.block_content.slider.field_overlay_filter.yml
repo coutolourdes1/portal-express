@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.slider
+    - field.storage.block_content.field_overlay_filter
+  module:
+    - options
+id: block_content.slider.field_overlay_filter
+field_name: field_overlay_filter
+entity_type: block_content
+bundle: slider
+label: Filtro
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

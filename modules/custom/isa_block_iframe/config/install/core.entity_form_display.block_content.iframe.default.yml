@@ -1,0 +1,83 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.iframe
+    - field.field.block_content.iframe.field_height
+    - field.field.block_content.iframe.field_iframe_type
+    - field.field.block_content.iframe.field_link
+    - field.field.block_content.iframe.field_municipality
+    - field.field.block_content.iframe.field_tags
+    - field.field.block_content.iframe.field_title
+    - field.field.block_content.iframe.field_width
+  module:
+    - link
+id: block_content.iframe.default
+targetEntityType: block_content
+bundle: iframe
+mode: default
+content:
+  field_height:
+    weight: 4
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_iframe_type:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_municipality:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tags:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_width:
+    weight: 5
+    settings:
+      size: 10
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

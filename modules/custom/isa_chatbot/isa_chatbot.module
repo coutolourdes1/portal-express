@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_chatbot.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function isa_chatbot_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isa_site_config module.
+    case 'help.page.isa_chatbot':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Botpress chatbot configuration') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function isa_chatbot_theme($existing, $type, $theme, $path) {
+  return [
+    'isa_chatbot_block'     => [
+      'variables' => [
+        'host' => NULL,
+        'bot_id' => NULL,
+        'src' => NULL,
+        'extra_stylesheet' => NULL,
+      ],
+    ],
+  ];
+}

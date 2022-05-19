@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+
+msgid "Turist information content module"
+msgstr "Modulo del tipo de contenido Información Turística"

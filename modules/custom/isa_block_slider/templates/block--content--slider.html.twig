@@ -1,0 +1,85 @@
+{#
+/**
+ * @file
+ * Theme override to display a block type container_hero.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ */
+#}
+
+{% set items = content.items %}
+{% set variant = content.field_slider_variant|field_value|render %}
+{% set filter = content.field_overlay_filter|field_value|render %}
+{% set blockClass = '' %}
+{% set itemClass = '' %}
+{% if variant == 'small' %}
+  {% set blockClass = 'bloque-carousel-interno' %}
+{% endif %}
+
+{% if filter == 'filter' %}
+  {% set itemClass = 'carousel-bgcolor' %}
+{% endif %}
+
+<div{{ attributes.addClass(['bloque-carousel',blockClass]) }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div id="carouselPage" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      {% for item in items %}
+        <button type="button"
+                data-bs-target="#carouselPage"
+                data-bs-slide-to="{{ loop.index0 }}"
+                class="{% if loop.first %}active{% endif %}"
+                {#aria-label="{{ item['image_title'] }}#}">
+                
+        </button>
+      {% endfor %}
+    </div>
+
+    <div class="carousel-inner">
+      {% for item in items %}
+      {% if item['url'] %}
+      <a href="{{ item['url'] }}" class="carousel-item {{ itemClass }} {% if loop.first %}active{% endif %}">
+        {% else %}
+        <div class="carousel-item {{ itemClass }} {% if loop.first %}active{% endif %}">
+          {% endif %}
+
+          <img src="{{ item['image_url'] }}" class="img-fluid w-100 {% if item['image_mobile_url'] %}img-desktop{% endif %}" alt="{{ item['image_alt'] }}">
+          {% if item['image_mobile_url'] %}
+            <img src="{{ item['image_mobile_url'] }}" class="img-fluid w-100 img-mobile"
+                 alt="{{ item['image_mobile_alt'] }}">
+          {% endif %}
+          <div class="carousel-caption container">
+            <h1>{{ item['image_title'] }}</h1>
+            <p>{{ item['description'] }}</p>
+          </div>
+
+          {% if item['url'] %}
+      </a>
+      {% else %}
+    </div>
+    {% endif %}
+
+    {% endfor %}
+  </div>
+</div>
+</div>

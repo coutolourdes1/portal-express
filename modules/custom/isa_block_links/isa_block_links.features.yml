@@ -1,0 +1,4 @@
+bundle: isa
+excluded:
+  - block.block.views_block__our_services_block_1
+required: true

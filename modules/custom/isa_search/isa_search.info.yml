@@ -1,0 +1,19 @@
+name: Search
+description: 'Configuracion del buscador del sitio'
+type: module
+dependencies:
+  - 'drupal:node'
+  - 'drupal:search'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_procedure:isa_procedure'
+  - 'search_api:search_api'
+  - 'search_api:search_api_db'
+  - 'search_api_page:search_api_page'
+version: 1.0.1
+package: isa
+core_version_requirement: '^8.9 || ^9'
+'interface translation project': isa_search
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_search/translations/%language.po

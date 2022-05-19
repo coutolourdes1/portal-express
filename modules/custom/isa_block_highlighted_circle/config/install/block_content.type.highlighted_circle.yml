@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: highlighted_circle
+label: 'Destacado Círculo'
+revision: 0
+description: 'Bloque destacado con una imágen circular. '

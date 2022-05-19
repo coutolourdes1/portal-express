@@ -1,0 +1,20 @@
+name: Vencimiento
+description: 'Provides Vencimiento tipo de contenido and related configuration. Almacena una fecha y enlace de algo que se vence.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:datetime'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:layout_builder'
+  - 'drupal:link'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:system'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+version: 0.1.1
+package: isa

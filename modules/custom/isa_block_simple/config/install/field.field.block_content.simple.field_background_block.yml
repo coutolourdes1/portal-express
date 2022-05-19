@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple
+    - field.storage.block_content.field_background_block
+  module:
+    - options
+id: block_content.simple.field_background_block
+field_name: field_background_block
+entity_type: block_content
+bundle: simple
+label: Fondo
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

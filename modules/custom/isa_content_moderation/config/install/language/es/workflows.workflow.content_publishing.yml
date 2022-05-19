@@ -1,0 +1,20 @@
+label: 'Publicación de contenido'
+type_settings:
+  states:
+    archived:
+      label: Archivado
+    draft:
+      label: Borrador
+    published:
+      label: Publicado
+    review:
+      label: Revisión
+  transitions:
+    archive_content:
+      label: 'Archivar contenido'
+    create_new_draft:
+      label: 'Crear nuevo borrador'
+    publish:
+      label: Publicar
+    ready_for_review:
+      label: 'Listo para revisión'

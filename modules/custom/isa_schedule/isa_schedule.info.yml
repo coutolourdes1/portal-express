@@ -1,0 +1,19 @@
+name: Horario
+description: 'Provides Horario tipo de contenido and related configuration. '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:content_moderation'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_municipios:isa_municipios'
+  - 'scheduler:scheduler'
+version: 1.1.0
+package: isa

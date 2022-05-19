@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: c40f6f56-9089-4ada-a73c-938334cd19c3
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: worker.jpg
+  uri:
+    -
+      value: 'public://2021-09/worker.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1202
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1631982186

@@ -1,0 +1,5 @@
+.toolbar-icon-isa-menu-admin-pemenu:before,
+.toolbar-icon-isa-menu-admin-pemenu:active:before,
+.toolbar-icon-isa-menu-admin-pemenu.is-active:before {
+    background-image: url(../images/wrench.svg);
+}

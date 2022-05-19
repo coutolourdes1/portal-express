@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.featured_news
+label: 'Featured News'
+targetEntityType: node
+cache: true

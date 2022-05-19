@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: gallery
+label: Galería
+icon_uuid: null
+icon_default: null
+description: 'Galería de imágenes y vídeos mixta que se muestra como un carrusel.'
+behavior_plugins: {  }

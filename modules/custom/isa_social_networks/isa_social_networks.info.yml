@@ -1,0 +1,9 @@
+name: Social Networks
+description: Allows configure the urls of social networks
+package: isa
+type: module
+core_version_requirement: ^8 || ^9
+configure: isa_social_networks.admin_settings
+
+'interface translation project': isa_social_networks
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_social_networks/translations/%language.po

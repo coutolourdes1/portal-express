@@ -1,0 +1,9 @@
+msgid ""
+msgstr ""
+
+msgid "Provides core components required by other features."
+msgstr "Proporciona los componentes básicos requeridos por otras características."
+
+
+msgid "Search Results"
+msgstr "Resultados de la búsqueda"

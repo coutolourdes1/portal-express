@@ -1,0 +1,68 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.document.body
+    - field.field.node.document.field_attachments
+    - field.field.node.document.field_meta_tags
+    - field.field.node.document.field_subtitle
+    - field.field.node.document.field_tags
+    - field.field.node.document.field_yoast_seo
+    - node.type.document
+  module:
+    - file
+    - metatag
+    - text
+    - user
+id: node.document.default
+targetEntityType: node
+bundle: document
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachments:
+    weight: 4
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_meta_tags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_subtitle:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tags:
+    weight: 5
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true

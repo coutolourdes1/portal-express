@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 53e5e6aa-b4c0-4281-aa09-857cff1d8422
+  bundle: schedule
+  default_langcode: es
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Desconcentradas
+  created:
+    -
+      value: 1635877907
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: es
+      pathauto: 0
+  field_schedule:
+    -
+      value: 'Parada 1 de 8:30 a 17:00 hs.'
+    -
+      value: '19 y Gorlero de 9:00 a 18:00 hs.'

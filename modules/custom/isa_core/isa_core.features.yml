@@ -1,0 +1,21 @@
+bundle: isa
+excluded:
+  - field.field.block_content.hero.field_image
+  - field.field.block_content.hero.field_subtitle
+  - field.field.block_content.hero.field_title
+  - field.field.paragraph.images.field_description
+  - field.field.paragraph.images.field_image
+  - field.field.block_content.audio.field_audio
+  - core.entity_form_display.block_content.hero.default
+  - core.entity_form_display.block_content.audio.default
+  - core.entity_view_display.block_content.hero.default
+  - core.entity_view_display.block_content.audio.default
+  - block_content.type.hero
+  - field.storage.block_content.field_image
+  - field.storage.block_content.field_subtitle
+  - field.storage.block_content.field_title
+  - field.storage.paragraph.field_description
+  - field.storage.paragraph.field_image
+  - field.storage.block_content.field_audio
+  - core.entity_view_mode.config_split.token
+required: true

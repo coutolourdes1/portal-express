@@ -1,0 +1,25 @@
+name: BIsa
+type: theme
+description: 'Base theme for ISA profile'
+package: ISA
+core_version_requirement: '^8.9 || ^9'
+libraries:
+  - bisa/global-styling
+
+base theme: false
+
+regions:
+  header: Header
+  title: Title
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  contact: Contact
+  footer: Footer
+
+'interface translation project': bisa
+'interface translation server pattern': profiles/contrib/isa/themes/custom/bisa/translations/%language.po
+
+libraries-override:
+  back_to_top/back_to_top_text: false
+  back_to_top/back_to_top_icon: false

@@ -1,0 +1,24 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.municipios.field_email
+    - taxonomy.vocabulary.municipios
+  module:
+    - text
+id: taxonomy_term.municipios.default
+targetEntityType: taxonomy_term
+bundle: municipios
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_email: true
+  langcode: true
+  search_api_excerpt: true

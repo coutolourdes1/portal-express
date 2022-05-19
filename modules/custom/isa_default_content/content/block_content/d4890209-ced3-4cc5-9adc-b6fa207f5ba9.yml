@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: d4890209-ced3-4cc5-9adc-b6fa207f5ba9
+  bundle: simple
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Dirección - Oficina en Montevideo'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_formatted_body:
+    -
+      value: "<p>Dirección: Constituyente 1467 - Piso 6</p>\r\n\r\n<p>Teléfono: [598 2] 4023717</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: 'Oficina en Montevideo'

@@ -1,0 +1,29 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.default
+    - field.field.comment.default.comment_body
+  module:
+    - text
+id: comment.default.default
+targetEntityType: comment
+bundle: default
+mode: default
+content:
+  author:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  comment_body:
+    type: text_textarea
+    weight: 1
+    settings:
+      rows: 3
+      placeholder: 'Write you comment here ...'
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  subject: true

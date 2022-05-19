@@ -1,0 +1,6 @@
+isa_feedback.result:
+  title: 'Feedback Results'
+  description: 'Feedback result list'
+  parent: isa_menu_admin.pemenu
+  url: internal:/admin/structure/webform/manage/isa_feedback_webform/results/submissions
+  weight: 3

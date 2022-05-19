@@ -1,0 +1,19 @@
+name: 'Block Enlace'
+description: 'Muestra una imagen con un enlace.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:link'
+  - 'drupal:options'
+  - 'drupal:system'
+  - 'drupal:views'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_core:isa_core'
+  - 'material_icons:material_icons'
+version: 0.1.0
+package: isa

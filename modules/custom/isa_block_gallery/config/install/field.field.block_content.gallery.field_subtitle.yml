@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.gallery
+    - field.storage.block_content.field_subtitle
+id: block_content.gallery.field_subtitle
+field_name: field_subtitle
+entity_type: block_content
+bundle: gallery
+label: Subtítulo
+description: 'Descripción de la galería.  '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

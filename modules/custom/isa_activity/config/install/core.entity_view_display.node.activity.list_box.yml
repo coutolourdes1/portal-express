@@ -1,0 +1,61 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list_box
+    - field.field.node.activity.field_dates
+    - field.field.node.activity.field_municipio
+    - field.field.node.activity.field_place
+    - field.field.node.activity.field_sections
+    - field.field.node.activity.field_subtitle
+    - field.field.node.activity.field_tags
+    - field.field.node.activity.field_yoast_seo
+    - node.type.activity
+  module:
+    - user
+id: node.activity.list_box
+targetEntityType: node
+bundle: activity
+mode: list_box
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_place:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_subtitle:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_dates: true
+  field_municipio: true
+  field_sections: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true

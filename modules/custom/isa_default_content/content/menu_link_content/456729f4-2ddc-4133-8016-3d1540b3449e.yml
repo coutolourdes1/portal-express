@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 456729f4-2ddc-4133-8016-3d1540b3449e
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    cd254ffa-5122-48a3-b80b-03d366be3d93: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Llamados y Concursos'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -47
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd254ffa-5122-48a3-b80b-03d366be3d93'
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: multiple_images
+label: 'Imágenes Múltiples'
+icon_uuid: null
+icon_default: null
+description: 'Permite crear varias imágenes en un solo elemento.'
+behavior_plugins: {  }

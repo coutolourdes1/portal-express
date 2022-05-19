@@ -1,0 +1,62 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.simple
+    - field.field.block_content.simple.field_background_block
+    - field.field.block_content.simple.field_color
+    - field.field.block_content.simple.field_date
+    - field.field.block_content.simple.field_formatted_body
+    - field.field.block_content.simple.field_title
+  module:
+    - datetime
+    - text
+id: block_content.simple.default
+targetEntityType: block_content
+bundle: simple
+mode: default
+content:
+  field_background_block:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_color:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_formatted_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

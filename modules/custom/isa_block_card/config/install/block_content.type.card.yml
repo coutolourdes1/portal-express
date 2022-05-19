@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: card
+label: Tarjeta
+revision: 0
+description: 'Similar to card of Bootstrap 4.'

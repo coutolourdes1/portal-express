@@ -1,0 +1,54 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.slider
+    - field.field.paragraph.images.field_description
+    - field.field.paragraph.images.field_image
+    - field.field.paragraph.images.field_image_mobile
+    - field.field.paragraph.images.field_link
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.images
+  module:
+    - image
+    - link
+id: paragraph.images.slider
+targetEntityType: paragraph
+bundle: images
+mode: slider
+content:
+  field_description:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_image_mobile:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

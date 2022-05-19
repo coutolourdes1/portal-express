@@ -1,0 +1,27 @@
+bundle: isa
+excluded:
+  - field.field.paragraph.images.field_description
+  - field.field.paragraph.images.field_image
+  - field.field.block_content.link.field_image
+  - field.field.block_content.link.field_link
+  - field.field.block_content.download_list.field_title
+  - field.field.block_content.highlighted_circle.field_image
+  - field.field.block_content.highlighted_circle.field_link
+  - field.field.block_content.highlighted_circle.field_subtitle
+  - field.field.block_content.highlighted_image.field_image
+  - field.field.block_content.highlighted_image.field_link
+  - field.field.block_content.highlighted_image.field_subtitle
+  - field.field.block_content.audio.field_title
+  - core.entity_form_display.block_content.link.default
+  - core.entity_form_display.block_content.highlighted_circle.default
+  - core.entity_form_display.block_content.highlighted_image.default
+  - core.entity_form_display.paragraph.video.default
+  - core.entity_form_display.block_content.audio.default
+  - core.entity_form_display.paragraph.images.slider
+  - core.entity_view_display.block_content.link.default
+  - core.entity_view_display.block_content.highlighted_circle.default
+  - core.entity_view_display.block_content.highlighted_image.default
+  - core.entity_view_display.paragraph.images.carrusel
+  - core.entity_view_display.block_content.audio.default
+  - views.view.archivos_por_municipio
+required: true

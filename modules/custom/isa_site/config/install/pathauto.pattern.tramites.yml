@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: tramites
+label: tramites
+type: 'canonical_entities:node'
+pattern: 'tramites/[node:title]'
+selection_criteria:
+  f10e6457-58b8-4472-9b03-ad7d87a270cd:
+    id: node_type
+    negate: false
+    uuid: f10e6457-58b8-4472-9b03-ad7d87a270cd
+    context_mapping:
+      node: node
+    bundles:
+      procedure: procedure
+  25630af8-70e2-4bfa-8ed6-87e99656e087:
+    id: language
+    negate: false
+    uuid: 25630af8-70e2-4bfa-8ed6-87e99656e087
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

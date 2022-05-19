@@ -1,0 +1,75 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.featured_news
+    - field.field.node.news.body
+    - field.field.node.news.field_comments
+    - field.field.node.news.field_date
+    - field.field.node.news.field_image
+    - field.field.node.news.field_meta_tags
+    - field.field.node.news.field_municipalities
+    - field.field.node.news.field_sections
+    - field.field.node.news.field_subtitle
+    - field.field.node.news.field_tags
+    - field.field.node.news.field_weight
+    - field.field.node.news.field_yoast_seo
+    - node.type.news
+  module:
+    - datetime
+    - image
+    - user
+id: node.news.featured_news
+targetEntityType: node
+bundle: news
+mode: featured_news
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: large
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  body: true
+  field_comments: true
+  field_meta_tags: true
+  field_municipalities: true
+  field_sections: true
+  field_weight: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

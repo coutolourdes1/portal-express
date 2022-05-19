@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: a9a3d086-17b7-436d-95a8-9e267d73aff9
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    cd254ffa-5122-48a3-b80b-03d366be3d93: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Participación
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -45
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:cd254ffa-5122-48a3-b80b-03d366be3d93'
+  revision_translation_affected:
+    -
+      value: true

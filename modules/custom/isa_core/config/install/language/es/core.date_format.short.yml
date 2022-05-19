@@ -1,0 +1,2 @@
+label: 'Fecha corta predeterminada'
+pattern: 'Y-m-d h:i A'

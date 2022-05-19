@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 9360ef36-4c31-4217-a5a9-d1723201587d
+  bundle: news
+  default_langcode: es
+  depends:
+    671a6770-4a06-445f-a3a3-9b9d85b00183: file
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+    e6badace-c890-420f-af98-48a62c57819b: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Taller "Mujeres - Formación y Trabajo"'
+  created:
+    -
+      value: 1606255094
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /noticias/taller-mujeres-formacion-trabajo
+      langcode: es
+      pathauto: 1
+  field_comments:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1636900997
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_date:
+    -
+      value: '2020-09-24'
+  field_image:
+    -
+      entity: 671a6770-4a06-445f-a3a3-9b9d85b00183
+      alt: 'Lorem Ipsum is'
+      title: 'Lorem Ipsum is'
+      width: 850
+      height: 477
+  field_subtitle:
+    -
+      value: 'Vivamus iaculis sem vitae urna vulputate, nec pharetra turpis porttitor. Nulla blandit sollicitudin velit, at laoreet dolor vehicula et. Cras interdum erat a luctus suscipit. Donec vitae neque volutpat urna interdum mattis sed eget tellus. Nunc auctor pharetra eros.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+    -
+      entity: e6badace-c890-420f-af98-48a62c57819b
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

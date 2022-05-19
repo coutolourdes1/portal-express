@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: ed7564f6-57f2-433a-9fc7-3a4a0552e9d1
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: lorem-ipsum.zip
+  uri:
+    -
+      value: 'public://2020-12/lorem-ipsum_8_1_3_16_0_3_0_3.zip'
+  filemime:
+    -
+      value: application/zip
+  filesize:
+    -
+      value: 70483
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1607447523

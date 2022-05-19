@@ -1,0 +1,31 @@
+version: "3.2"
+services:
+  expressdb:
+    image: gitlab.isaltda.com.uy:5005/portal/infra-express/mariadb 
+    volumes:
+      - /opt/local_data/express/mariadb_data:/var/lib/mysql
+      - /opt/local_data/express/mariadb_backup:/var/backups
+    environment:
+      MYSQL_ROOT_PASSWORD: PortalExpress 
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: PortalExpress
+      MYSQL_DATABASE: express
+      HOSTNAME: expressdb
+
+  app:
+    image: gitlab.isaltda.com.uy:5005/portal/infra-express/drupal
+    environment:
+      ENVIRONMENT: 'local'
+      ROOT_DIR: /var/app/web
+      SERVER_NAME: 'isa.portal-express.com'
+      DB_PASSWORD: PortalExpress
+      DB_NAME: express
+      COMPOSER_MEMORY_LIMIT: '-1'
+    working_dir: /var/app
+    volumes:
+      - ./:/var/app
+    links:
+      - expressdb
+    ports:
+      - 8083:80
+

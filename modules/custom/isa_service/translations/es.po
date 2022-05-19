@@ -1,0 +1,47 @@
+msgid ""
+msgstr ""
+
+msgid "Service"
+msgstr "Servicio"
+
+msgid "Services"
+msgstr "Servicios"
+
+msgid "service"
+msgstr "servicio"
+
+msgid "services"
+msgstr "servicios"
+
+msgid "Provides Service content type and related configuration. Services of an institution."
+msgstr "Proporciona el tipo de contenido del Servicio y la configuración relacionada. Servicios de una institución."
+
+msgid "Cap or additional text displayed in the contents."
+msgstr "Tapa o texto adicional que se muestra en el contenido."
+
+msgid "Services of an institution."
+msgstr "Servicios de una institución."
+
+msgid "View to show the Services of an Institution, List of Services, Service TC, Service Block."
+msgstr "Vista para mostrar los Servicios de una Institución, Lista de Servicios, Servicio TC, Bloque de Servicios."
+
+msgid "Our services"
+msgstr "Nuestros Servicios"
+
+msgid "Block to display services on the home page."
+msgstr "Bloque para mostrar los servicios en la página de inicio"
+
+msgid "Icon"
+msgstr "Icono"
+
+msgid "Name of the icon that represents the service, The collection of icons that is being used is ionicons in its version 2 (https://ionicons.com/v2/cheatsheet.html), just put the name, for example if you want to put * ion -plane * adds the * plane * to the field."
+msgstr "Nombre del icono que representa al servicio, La coleccion de iconos que se esta isando es ionicons en su version 2 ( https://ionicons.com/v2/cheatsheet.html), solo poner el nombre, por ejemplo si quiere poner *ion-plane* agrega el *plane* al campo."
+
+msgid "Sorting criteria to display services on the home page, it is ordered from smallest to largest."
+msgstr "Criterio de ordenamiento para mostrar los servicios en la página de inicio, se ordena de menor a mayor."
+
+msgid "Our"
+msgstr "Nuestros"
+
+msgid "Description shown in the services block on the home page."
+msgstr "Descripción que se muestra en el bloque de servicios de la pagina de inicio."

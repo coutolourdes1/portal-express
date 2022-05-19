@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Contains the definition of isa_menu_admin.
+ */
+
+function isa_menu_admin_toolbar_alter(&$items) {
+
+  $items['administration']['#attached']['library'][] =
+    'isa_menu_admin/isa_menu_admin.css';
+}
+
+

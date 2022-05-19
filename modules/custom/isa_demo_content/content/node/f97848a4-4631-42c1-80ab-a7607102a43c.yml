@@ -1,0 +1,72 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f97848a4-4631-42c1-80ab-a7607102a43c
+  bundle: news
+  default_langcode: es
+  depends:
+    f9814f97-c43b-4ad8-a799-b0dfa6d80e80: file
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+    e3935913-46fb-4e05-85fe-b5d6e74ecd30: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Trabajos de la dirección de obras en distintas zonas del departamento'
+  created:
+    -
+      value: 1606255337
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /noticias/trabajos-direccion-obras-distintas-zonas-del-departamento
+      langcode: es
+      pathauto: 1
+  field_comments:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1636900997
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_date:
+    -
+      value: '2020-11-07'
+  field_image:
+    -
+      entity: f9814f97-c43b-4ad8-a799-b0dfa6d80e80
+      alt: 'Lorem Ipsum is simply.'
+      title: 'Lorem Ipsum is simply.'
+      width: 352
+      height: 263
+  field_subtitle:
+    -
+      value: 'Vivamus iaculis sem vitae urna vulputate, nec pharetra turpis porttitor. Nulla blandit sollicitudin velit, at laoreet dolor vehicula et. Cras interdum erat a luctus suscipit. Donec vitae neque volutpat urna interdum mattis sed eget tellus. Nunc auctor pharetra eros.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+    -
+      entity: e3935913-46fb-4e05-85fe-b5d6e74ecd30
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

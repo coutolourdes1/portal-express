@@ -1,0 +1,11 @@
+bundle: isa
+excluded:
+  - field.field.block_content.highlighted_image.field_image
+  - field.field.block_content.highlighted_image.field_link
+  - field.field.block_content.highlighted_image.field_link_2
+  - field.field.block_content.highlighted_image.field_subtitle
+  - language.content_settings.block_content.highlighted_image
+  - core.entity_form_display.block_content.highlighted_image.default
+  - core.entity_view_display.block_content.highlighted_image.default
+  - block_content.type.highlighted_image
+required: true

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:bb08fffa-7a0c-489f-b1c9-0eb731bfac7d'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: comunicaciones
+theme: bisa
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:bb08fffa-7a0c-489f-b1c9-0eb731bfac7d'
+settings:
+  id: 'block_content:bb08fffa-7a0c-489f-b1c9-0eb731bfac7d'
+  label: Comunicaciones
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /comunicaciones
+    negate: false
+    context_mapping: {  }

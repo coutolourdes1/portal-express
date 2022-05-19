@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: term
+label: Término
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  8096c8e5-5d98-497b-a29d-5df1444b70fe:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 8096c8e5-5d98-497b-a29d-5df1444b70fe
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+  2e0d6f05-8a52-41ab-b603-7b22716e4e4d:
+    id: language
+    negate: false
+    uuid: 2e0d6f05-8a52-41ab-b603-7b22716e4e4d
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Idioma

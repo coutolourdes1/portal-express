@@ -1,0 +1,38 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.file.field_date
+    - field.field.node.file.field_description
+    - field.field.node.file.field_file
+    - field.field.node.file.field_municipio
+    - field.field.node.file.field_type_file
+    - field.field.node.file.field_weight
+    - node.type.file
+  module:
+    - user
+id: node.file.teaser
+targetEntityType: node
+bundle: file
+mode: teaser
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_description: true
+  field_file: true
+  field_municipio: true
+  field_type_file: true
+  field_weight: true
+  langcode: true
+  search_api_excerpt: true

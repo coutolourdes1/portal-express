@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_item.field_rich_text
+    - field.field.paragraph.text_item.field_title
+    - paragraphs.paragraphs_type.text_item
+  module:
+    - text
+id: paragraph.text_item.default
+targetEntityType: paragraph
+bundle: text_item
+mode: default
+content:
+  field_rich_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_tuid_login.module.
+ */
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function isa_tuid_login_preprocess_page(array &$variables) {
+  $current_user = \Drupal::currentUser();
+  if($current_user){
+    $account = $current_user->getAccount();
+    $roles = $account->getRoles();
+    $variables['user_info'] = in_array('authenticated', $roles) && count($roles) == 1;
+    if($variables['user_info']){
+        $variables['user_name'] = $account->name;
+    } 
+  }
+}

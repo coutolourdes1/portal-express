@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.link
+    - field.storage.block_content.field_link_block_variant
+  module:
+    - options
+id: block_content.link.field_link_block_variant
+field_name: field_link_block_variant
+entity_type: block_content
+bundle: link
+label: Variante
+description: 'Icono: Permite seleccionar un icono de material. Imagen: Permite seleccionar una imagen.'
+required: true
+translatable: false
+default_value:
+  -
+    value: imagen
+default_value_callback: ''
+settings: {  }
+field_type: list_string

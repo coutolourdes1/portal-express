@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+
+msgid "To create generic content that does not need a specific structure or organization."
+msgstr "Para crear un contenido genérico que no necesita una estructura u organización específica."
+
+msgid "Provides Page content type and related configuration. To create generic content that does not need a specific structure or organization."
+msgstr "Proporciona el tipo de contenido de la página y la configuración relacionada. Para crear un contenido genérico que no necesita una estructura u organización específica."
+
+msgid "Some content related to the page."
+msgstr "Algunos contenidos relacionados con la página."
+
+msgid "General files to be downloaded."
+msgstr "Archivos generales para ser descargados."
+
+msgid "Select an image to display on the page."
+msgstr "Seleccione una imagen para mostrarla en la página."
+
+msgid "Different images to display in the content as a gallery."
+msgstr "Diferentes imágenes para mostrar en el contenido como una galería."
+

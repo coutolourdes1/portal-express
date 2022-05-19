@@ -1,0 +1,9 @@
+bundle: isa
+excluded:
+  - isa_site_config.config
+  - seven.settings
+  - system.menu.footer
+  - system.menu.main
+  - views.view.glossary
+  - webform.webform.isa_feedback_webform
+required: true

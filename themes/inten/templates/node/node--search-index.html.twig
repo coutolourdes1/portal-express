@@ -1,0 +1,14 @@
+{% if node.body %}
+  {% set summary = content.body|field_value %}
+{% elseif node.field_description %}
+  {% set summary = content.field_description|field_value %}
+{% endif %}
+
+<div{{ attributes.addClass(['media-body']) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <h2><a href="{{ url }}">{{ label }}</a></h2>
+    <span class="url-link">{{ node.type.entity.label }}</span>
+    <p>{{ summary }}</p>
+</div>
+

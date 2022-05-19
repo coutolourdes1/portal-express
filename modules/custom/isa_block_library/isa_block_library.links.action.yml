@@ -1,0 +1,6 @@
+isa_block_library.add_custom_block:
+  route_name: block_content.add_page
+  title: 'Add custom block'
+  appears_on:
+    - view.isa_block_library.page_1
+  class: \Drupal\block_content\Plugin\Menu\LocalAction\BlockContentAddLocalAction

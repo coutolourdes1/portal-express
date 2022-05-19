@@ -1,0 +1,7 @@
+bundle: isa
+excluded:
+  - block.block.views_block__activities_block_1
+  - block.block.views_block__home_communications_block_1
+  - block.block.views_block__our_services_block_1
+  - block.block.views_block__recent_news_block_1
+required: true

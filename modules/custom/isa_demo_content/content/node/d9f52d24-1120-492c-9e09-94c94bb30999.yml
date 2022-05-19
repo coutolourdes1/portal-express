@@ -1,0 +1,61 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: d9f52d24-1120-492c-9e09-94c94bb30999
+  bundle: service
+  default_langcode: es
+  depends:
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Esto es un servicio'
+  created:
+    -
+      value: 1606258141
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /servicios/un-servicio-1
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_icon:
+    -
+      value: plane
+  field_subtitle:
+    -
+      value: 'Iusto olim pecus vicis. Exerci melior nulla paulatim. Adipiscing rusticus sino. Ad aptent ea quadrum scisco sed. Abbas augue defui iusto neque nostrud typicus voco. Cogo duis jus occuro persto saluto utrum verto wisi. Damnum lucidus neque utinam.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_weight:
+    -
+      value: 1
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

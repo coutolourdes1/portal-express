@@ -1,0 +1,17 @@
+name: 'Tipo de Archivo'
+description: 'Provides Tipo de Archivo vocabulario de taxonomía and related configuration. Lista de ficheros para descargar.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:language'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_file:isa_file'
+  - 'tvi:tvi'
+version: 1.0.0
+package: isa

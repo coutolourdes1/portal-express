@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+
+msgid "Search results for <strong>\"@key\"</strong>"
+msgstr "Resultados de búsqueda para <strong>\"@key\"</strong>"
+
+msgid "Search criteria were not specified"
+msgstr "No se especificó criterio de búsqueda"

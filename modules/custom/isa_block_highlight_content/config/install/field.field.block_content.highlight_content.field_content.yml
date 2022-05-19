@@ -1,0 +1,34 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight_content
+    - field.storage.block_content.field_content
+    - node.type.communication
+    - node.type.news
+    - node.type.page
+    - node.type.turist_information
+id: block_content.highlight_content.field_content
+field_name: field_content
+entity_type: block_content
+bundle: highlight_content
+label: Contenido
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      communication: communication
+      news: news
+      page: page
+      turist_information: turist_information
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: communication
+field_type: entity_reference

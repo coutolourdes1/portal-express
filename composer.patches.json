@@ -1,0 +1,13 @@
+{
+       "patches": {
+            "drupal/default_content": {
+                "Add a Normalizer and Denormalizer to support Layout Builder": "https://www.drupal.org/files/issues/2020-08-24/default_content-add-normalizer-denormalizer-for-layout-builder-3160146-25.patch"
+            },
+            "drupal/time_picker":{
+                "Console error when using time range picker": "https://www.drupal.org/files/issues/2020-05-05/console-error-fix.patch"
+            },
+            "drupal/captcha":{
+                "Argument 2 passed to CaptchaService::insertCaptchaElement() must be of the type array": "https://www.drupal.org/files/issues/2020-01-29/captcha-module-check-cache-result-3099456-3.patch"
+            }
+    }
+}

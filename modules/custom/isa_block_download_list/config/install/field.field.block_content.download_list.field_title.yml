@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.download_list
+    - field.storage.block_content.field_title
+id: block_content.download_list.field_title
+field_name: field_title
+entity_type: block_content
+bundle: download_list
+label: Título
+description: 'Texto que se muestra en la cabecera del bloque.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

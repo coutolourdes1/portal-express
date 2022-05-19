@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: actividades
+label: actividades
+type: 'canonical_entities:node'
+pattern: 'actividades/[node:title]'
+selection_criteria:
+  277e6c08-d3f8-4fea-b30e-7e1da89b4f8e:
+    id: node_type
+    negate: false
+    uuid: 277e6c08-d3f8-4fea-b30e-7e1da89b4f8e
+    context_mapping:
+      node: node
+    bundles:
+      activity: activity
+  9f506da7-7a34-4c6a-b901-a32961ebfc34:
+    id: language
+    negate: false
+    uuid: 9f506da7-7a34-4c6a-b901-a32961ebfc34
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

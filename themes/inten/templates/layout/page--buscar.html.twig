@@ -1,0 +1,37 @@
+{% extends 'page.html.twig' %}
+
+{% block main %}
+  <div class="layout-content_internas">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 layoyt-grid-wrapper">
+          <div class="layout-grid-box layout-fullwidth">
+            <div class="bloque-resultado-busqueda">
+              {% if page.title %}
+                <h1 class="Page-title">Resultados de búsqueda para <strong>"clave"</strong></h1>
+              {% endif %}
+              {{ page.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{#  <div class="search-results">#}
+{#    <div class="search-results-container">#}
+{#      <div class="grid">#}
+{#        <div class="grid-item">#}
+{#          <div class="page">#}
+{#            <div class="page-document">#}
+{#              {% if page.title %}#}
+{#                <h2 class="page-title">{{ page.title }}</h2>#}
+{#              {% endif %}#}
+{#              {{ page.content }}#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{% endblock %}

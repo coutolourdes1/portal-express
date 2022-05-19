@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: link
+label: Enlace
+revision: 0
+description: 'Permite agregar un enlace con una imagen opcional.'

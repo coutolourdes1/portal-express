@@ -1,0 +1,10 @@
+name: 'Paragraph Descargas'
+description: 'Provides Descargas tipo de paragraphs and related configuration. Permite subir varios ficheros para que sean descargados por los usuarios.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - file
+  - isa_field_storage
+  - paragraphs
+package: isa

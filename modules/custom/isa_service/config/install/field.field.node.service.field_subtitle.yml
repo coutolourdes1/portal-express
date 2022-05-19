@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitle
+    - node.type.service
+id: node.service.field_subtitle
+field_name: field_subtitle
+entity_type: node
+bundle: service
+label: Subtitle
+description: 'Tapa o texto adicional que se muestra en el contenido.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

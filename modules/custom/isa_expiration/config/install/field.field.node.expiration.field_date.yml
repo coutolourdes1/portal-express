@@ -1,0 +1,23 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.expiration
+  module:
+    - datetime
+id: node.expiration.field_date
+field_name: field_date
+entity_type: node
+bundle: expiration
+label: Fecha
+description: 'Día que se vence.'
+required: true
+translatable: true
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+30 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 5ae0fcd2-b12d-4081-aedf-67b0313cd188
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Documentos
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/documentos'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f'
+  revision_translation_affected:
+    -
+      value: true

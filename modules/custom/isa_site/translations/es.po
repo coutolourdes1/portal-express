@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+
+msgid "Site"
+msgstr "Sitio"
+
+msgid "Provides site components."
+msgstr "Proporciona los componentes del sitio."

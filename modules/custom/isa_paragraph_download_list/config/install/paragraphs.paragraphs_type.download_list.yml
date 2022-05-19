@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: download_list
+label: Descargas
+icon_uuid: null
+icon_default: null
+description: 'Permite subir varios ficheros para que sean descargados por los usuarios.'
+behavior_plugins: {  }

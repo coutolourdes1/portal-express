@@ -1,0 +1,90 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *   - is_expanded: TRUE if the link has visible children within the current
+ *     menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree
+ *     that are not currently visible.
+ *   - in_active_trail: TRUE if the link is in the active trail.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see https://twig.symfony.com/doc/1.x/tags/macro.html
+#}
+<div class="container nav-menu-container">
+  <a class="navbar-brand" id="logo" href="{{ url('<front>') }}"><img src="{{ logo_url }}" alt="{{ site_name }}"></a>
+  <div class="nav-item dropdown buscadorMob d-lg-none">
+    <a class="nav-link ml-0 pr-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ion-android-search"></i></a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      {{ drupal_block('search_form_block') }}
+    </div>
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {{ menus.menu_links(items, attributes, 0) }}
+  </div>
+</div>
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if menu_level == 0 %}
+      <ul{{ attributes.AddClass('navbar-nav ml-auto nav-menu') }}>
+    {% else %}
+      <ul>
+    {% endif %}
+    {% for item in items %}
+
+      {% if menu_level == 0 %}
+        {% set item_class = item.in_active_trail ? 'nav-item active' :  'nav-item' %}
+      {% endif %}
+
+      {% if item.below %}
+        <li{{ item.attributes.AddClass('nav-item dropdown') }}>
+          <a class="nav-link dropdown-toggle" href="{{ item.url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ item.title }}
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+            {% for sub_item in item.below %}
+              <a class="dropdown-item" href="{{ sub_item.url }}">{{ sub_item.title }}</a>
+            {% endfor %}
+
+          </div>
+
+        </li>
+      {% else %}
+        <li{{ item.attributes.AddClass(item_class) }}>
+          <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+      <li class="nav-item dropdown buscadorDsk d-none d-lg-block">
+        <a class="nav-link ml-0 pr-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ion-android-search"></i></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{ drupal_block('search_form_block') }}
+        </div>
+      </li>
+    </ul>
+  {% endif %}
+{% endmacro %}

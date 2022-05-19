@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: iframe
+label: Iframe
+revision: 0
+description: 'Bloque que se le puede embeber una URL, puede ser usado para agregar mapa, vídeos o formularios.'

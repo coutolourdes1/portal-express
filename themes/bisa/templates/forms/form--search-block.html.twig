@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+<form {{ attributes.addClass('card', 'card-sm') }}>
+  <div class="card-body row no-gutters align-items-center">
+    <div class="col-auto">
+      <i class="ion-android-search"></i>
+    </div>
+    {{ children }}
+  </div>
+</form>

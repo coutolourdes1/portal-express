@@ -1,0 +1,16 @@
+name: 'Paragraph Imagen'
+description: 'Paragraph to manage Images'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:layout_builder'
+  - 'drupal:link'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'paragraphs:paragraphs'
+version: 8.x-1.0
+package: isa
+'interface translation project': isa_paragraph_image
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_paragraph_image/translations/%language.po

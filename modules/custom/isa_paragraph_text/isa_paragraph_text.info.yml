@@ -1,0 +1,14 @@
+name: 'Paragraph Text'
+description: 'Paragraph  with item title-text'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:field'
+  - 'drupal:system'
+  - 'drupal:text'
+  - 'drupal:views'
+  - 'isa_field_storage:isa_field_storage'
+  - 'paragraphs:paragraphs'
+version: 8.x-1.0
+package: isa

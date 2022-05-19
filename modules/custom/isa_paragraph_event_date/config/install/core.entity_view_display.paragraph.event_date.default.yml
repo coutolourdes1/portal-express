@@ -1,0 +1,33 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event_date.field_date
+    - field.field.paragraph.event_date.field_range_time
+    - paragraphs.paragraphs_type.event_date
+  module:
+    - datetime
+    - time_picker
+id: paragraph.event_date.default
+targetEntityType: paragraph
+bundle: event_date
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: large
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_range_time:
+    type: time_range_picker_formatter
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

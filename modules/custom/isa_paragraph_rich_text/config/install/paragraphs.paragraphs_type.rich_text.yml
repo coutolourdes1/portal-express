@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: rich_text
+label: 'Texto enriquecido'
+icon_uuid: null
+icon_default: null
+description: 'Permite etiquetas HTML.'
+behavior_plugins: {  }

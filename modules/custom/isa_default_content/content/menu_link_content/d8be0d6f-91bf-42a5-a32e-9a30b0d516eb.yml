@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: d8be0d6f-91bf-42a5-a32e-9a30b0d516eb
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    686c5b46-22b7-40ef-9998-c3e9a6a029d3: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Pymes
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:686c5b46-22b7-40ef-9998-c3e9a6a029d3'
+  revision_translation_affected:
+    -
+      value: true

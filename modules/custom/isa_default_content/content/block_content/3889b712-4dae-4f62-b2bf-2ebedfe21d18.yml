@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 3889b712-4dae-4f62-b2bf-2ebedfe21d18
+  bundle: simple
+  default_langcode: es
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Duplicado de facturas'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_formatted_body:
+    -
+      value: "<form class=\"form form--stacked\" action=\"#\">\r\n            <div class=\"form-group\">\r\n                <label class=\"form-label\" for=\"tributo\">Seleccione un tributo</label>\r\n                <select class=\"form-widget\" name=\"tributo\" id=\"tributo\">\r\n                <option value=\"0\">Seleccione una opción</option>\r\n                <option value=\"1\">1</option>\r\n                <option value=\"2\">2</option>\r\n                </select>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <label class=\"form-label\" for=\"numero\">Ingrese número</label>\r\n                <input class=\"form-widget\" type=\"text\" name=\"numero\" id=\"numero\">\r\n            </div>\r\n\r\n            <div class=\"form-group\">\r\n                <input class=\"button button--primary u-right\" type=\"submit\" value=\"Solicitar\">\r\n            </div>\r\n            </form>"
+      format: full_html
+  field_title:
+    -
+      value: 'Duplicado de facturas'

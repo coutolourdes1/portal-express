@@ -1,0 +1,36 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: ce02eb41-0b81-4b30-b2e7-773a50db4e1f
+  bundle: menu_link_content
+  default_langcode: es
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Ducimus, excepturi! Quaerat, illum.'
+  menu_name:
+    -
+      value: footer-col-2
+  link:
+    -
+      uri: 'http://google.com'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

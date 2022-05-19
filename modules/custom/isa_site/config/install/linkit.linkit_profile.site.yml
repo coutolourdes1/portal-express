@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: site
+label: Sitio
+description: 'General profile for the site.'
+matchers: {  }

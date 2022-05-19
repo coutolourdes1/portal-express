@@ -1,0 +1,24 @@
+{% set date = node.field_date.value|date('U') %}
+{% set place = content.field_place|field_value %}
+
+{% if node.body %}
+    {% set summary = content.body|field_value %}
+{% elseif node.field_description %}
+    {% set summary = content.field_description|field_value %}
+{% endif %}
+
+<div{{ attributes.addClass(['calendar-image']) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="calendar-date">
+        <span class="calendar-month">{{ date|format_date('custom','M') }}</span>
+        <span class="calendar-day">{{ date|date('d') }}</span>
+    </div>
+</div>
+<div class="media-body">
+    <h4 class="media-title">
+        <a href="{{ url }}">{{ label }}</a>
+    </h4>
+    <span class="media-info">{{ place }}</span>
+    <span class="media-info">{{ summary }}</span>
+</div>

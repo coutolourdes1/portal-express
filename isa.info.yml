@@ -1,0 +1,127 @@
+name: ISA
+type: profile
+description: 'General profile for generic sites.'
+version: 1.7.6
+exclusive: true
+distribution:
+  name: ISA
+keep_english: false
+themes:
+  - inten
+  - seven
+  - bisa
+install:
+  - automated_cron
+  - system
+  - node
+  - breakpoint
+  - ckeditor
+  - media
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - quickedit
+  - editor
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - dblog
+  - shortcut
+  - toolbar
+  - field_ui
+  - responsive_image
+  - syslog
+  - serialization
+  - admin_toolbar
+  - admin_toolbar_tools
+  - ctools
+  - pathauto
+  - subpathauto
+  - redirect
+  - smart_trim
+  - empty_page
+  - twig_tweak
+  - twig_field_value
+  - permissions_filter
+  - health_check_url
+  - google_analytics
+  - default_content
+  - webform
+  - metatag
+  - seo_checklist
+  - simple_sitemap
+  - metatag_routes
+  - yoast_seo
+  - sitemap
+  - hreflang
+  - easy_breadcrumb
+  - linkit
+  - editor_advanced_link
+  - w3c_validator
+  - search404
+  - menu_trail_by_path
+  - twigsuggest
+  - block_content_permissions
+  - time_picker
+  - blockgroup
+  - textarea_widget_for_text
+  - social_media
+  - smtp
+  - comment
+  - layout_builder
+  - layout_discovery
+  - bootstrap_layout_builder
+  - bootstrap_styles
+  - layout_builder_restrictions
+  - menu_block
+  - recaptcha_v3
+  - tvi
+  - views_block_placement_exposed_form_defaults
+  - menu_block
+  - maxlength
+  - scheduler
+  - extlink
+  - webform_ui
+  - recaptcha
+  - isa_core
+  - isa_site
+  - isa_field_storage
+  - isa_tags
+  - isa_municipios
+  - isa_page
+  - isa_search
+  - isa_feedback
+  - isa_paragraph_image
+  - isa_block_hero
+  - isa_menu_admin
+  - isa_site_config
+  - isa_social_networks
+  - isa_language
+  - isa_block_library
+  - isa_magnific_popup
+  - isa_block_header
+  - isa_block_card
+  - isa_block_accordion
+  - isa_block_alert
+  - isa_block_simple
+  - isa_expiration
+  - isa_block_links
+  - isa_block_enlace
+  - isa_layout_builder
+  - isa_block_download_list
+  - isa_block_highlighted_circle
+  - isa_block_highlighted_image
+  - isa_schedule
+  - isa_file_type
+  - isa_file
+  - isa_block_iframe
+  - isa_block_gallery
+  - isa_block_audio
+  - isa_public_information
+package: isa
+core_version_requirement: '^8.9 || ^9'
+'interface translation project': isa
+'interface translation server pattern': profiles/contrib/isa/translations/%language.po

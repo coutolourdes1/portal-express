@@ -1,0 +1,73 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlighted_image
+    - field.field.block_content.highlighted_image.field_image
+    - field.field.block_content.highlighted_image.field_link
+    - field.field.block_content.highlighted_image.field_link_2
+    - field.field.block_content.highlighted_image.field_subtitle
+    - field.field.block_content.highlighted_image.field_variant
+    - image.style.thumbnail
+  module:
+    - image
+    - link
+id: block_content.highlighted_image.default
+targetEntityType: block_content
+bundle: highlighted_image
+mode: default
+content:
+  field_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_link_2:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_subtitle:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_variant:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

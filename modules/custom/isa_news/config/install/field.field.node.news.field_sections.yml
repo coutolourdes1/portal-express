@@ -1,0 +1,73 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.news
+    - paragraphs.paragraphs_type.audios
+    - paragraphs.paragraphs_type.download_list
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.links_list
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.rich_text
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.news.field_sections
+field_name: field_sections
+entity_type: node
+bundle: news
+label: Secciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+      images: images
+      video: video
+      audios: audios
+      download_list: download_list
+      links_list: links_list
+      rich_text: rich_text
+      quote: quote
+      map: map
+    negate: 0
+    target_bundles_drag_drop:
+      audios:
+        weight: 9
+        enabled: true
+      download_list:
+        weight: 10
+        enabled: true
+      gallery:
+        weight: 5
+        enabled: true
+      images:
+        weight: 6
+        enabled: true
+      links_list:
+        weight: 13
+        enabled: true
+      map:
+        weight: 16
+        enabled: true
+      quote:
+        weight: 15
+        enabled: true
+      rich_text:
+        weight: 14
+        enabled: true
+      text_item:
+        weight: 7
+        enabled: false
+      video:
+        weight: 8
+        enabled: true
+field_type: entity_reference_revisions

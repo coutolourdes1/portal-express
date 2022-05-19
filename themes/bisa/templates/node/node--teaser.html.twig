@@ -1,0 +1,47 @@
+{% if node.field_image %}
+  {% set image_uri = node.field_image.entity.uri.value %}
+{% endif %}
+
+{% if node.body %}
+  {% set summary = content.body|field_value %}
+{% elseif node.field_description %}
+  {% set summary = content.field_description|field_value %}
+{% endif %}
+
+{% set date_str = node.date.value|date('U')|format_date('short_date') %}
+{% set tags  = content.field_tags|field_value %}
+
+<article class="item">
+  <div class="row">
+    {# No se va a mostrar los icono de compartir en los listados pos ahora #}
+{#    <div class="col-8 col-sm-9 col-md-10 {% if image_uri %}offset-4 offset-sm-3 offset-md-2{% endif %} btns">
+      {% include '@bisa/includes/shared-social-links.html.twig' %}
+    </div>#}
+    {% if tags %}
+      <div class="col-8 col-sm-9 col-md-10 {% if image_uri %}offset-4 offset-sm-3 offset-md-2{% endif %} tags">
+        {% for item in tags %}
+          <a href="{{ item['#url'] }}">{{ item['#title'] }}</a>
+          {% if not loop.last %}
+            <span>|</span>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+  <a href="{{ url }}">
+    <div class="row">
+      {% if image_uri %}
+        <div class="col-4 col-sm-3 col-md-2 pr-0 imgItem">
+          <img src="{{ image_uri | image_style('publication_thumbnail') }}">
+        </div>
+      {% endif %}
+      <div class="{% if image_uri %}col-8 col-sm-9 col-md-10{% else %} col-12{% endif %} itemTextos">
+        <h3>{{ label }}</h3>
+        <p>{{ summary|render|striptags }}</p>
+        <div class="data">
+          <div class="fecha">{{ date_str }}</div>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>

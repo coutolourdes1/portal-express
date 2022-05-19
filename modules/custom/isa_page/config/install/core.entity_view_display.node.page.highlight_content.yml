@@ -1,0 +1,132 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.highlight_content
+    - field.field.node.page.body
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_gallery
+    - field.field.node.page.field_image
+    - field.field.node.page.field_links
+    - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_secciones
+    - field.field.node.page.field_subtitle
+    - field.field.node.page.field_tags
+    - field.field.node.page.field_yoast_seo
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - image
+    - layout_builder
+    - layout_builder_restrictions
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_builder_restrictions:
+    allowed_block_categories:
+      - 'Block Group'
+      - 'Chaos Tools'
+      - 'Content fields'
+      - 'Custom block types'
+      - 'Custom blocks'
+      - Devel
+      - Forms
+      - 'Inline blocks'
+      - 'Isa Chatbot'
+      - 'Isa Feedback'
+      - 'Isa Site Config'
+      - 'Lists (Views)'
+      - Menus
+      - Sitemap
+      - 'Social media share'
+      - System
+      - User
+      - Webform
+      - core
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - 'bootstrap_layout_builder:blb_col_1'
+        - 'bootstrap_layout_builder:blb_col_2'
+        - 'bootstrap_layout_builder:blb_col_3'
+        - 'bootstrap_layout_builder:blb_col_4'
+        - 'bootstrap_layout_builder:blb_col_5'
+        - 'bootstrap_layout_builder:blb_col_6'
+        - 'bootstrap_layout_builder:blb_col_7'
+        - 'bootstrap_layout_builder:blb_col_8'
+        - 'bootstrap_layout_builder:blb_col_9'
+        - 'bootstrap_layout_builder:blb_col_10'
+        - 'bootstrap_layout_builder:blb_col_11'
+        - 'bootstrap_layout_builder:blb_col_12'
+      blacklisted_blocks:
+        'Custom block types':
+          - header
+      whitelisted_blocks:
+        'Block Group': {  }
+        'Chaos Tools': {  }
+        'Content fields': {  }
+        Devel: {  }
+        Forms: {  }
+        'Inline blocks': {  }
+        'Isa Chatbot': {  }
+        'Isa Feedback': {  }
+        'Isa Site Config': {  }
+        Menus: {  }
+        Sitemap: {  }
+        'Social media share': {  }
+        System: {  }
+        User: {  }
+        Webform: {  }
+        core: {  }
+id: node.page.highlight_content
+targetEntityType: node
+bundle: page
+mode: highlight_content
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_attachments: true
+  field_gallery: true
+  field_links: true
+  field_meta_tags: true
+  field_secciones: true
+  field_subtitle: true
+  field_tags: true
+  field_yoast_seo: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

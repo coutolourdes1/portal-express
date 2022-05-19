@@ -1,0 +1,4 @@
+bundle: isa
+excluded:
+  - core.entity_view_mode.paragraph.carrusel
+required: true

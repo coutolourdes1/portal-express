@@ -1,0 +1,63 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dates
+    - node.type.activity
+    - paragraphs.paragraphs_type.event_date
+  module:
+    - entity_reference_revisions
+id: node.activity.field_dates
+field_name: field_dates
+entity_type: node
+bundle: activity
+label: 'Días de la actividad'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      event_date: event_date
+    negate: 0
+    target_bundles_drag_drop:
+      audios:
+        weight: 13
+        enabled: false
+      download_list:
+        weight: 14
+        enabled: false
+      event_date:
+        weight: 15
+        enabled: true
+      gallery:
+        weight: 16
+        enabled: false
+      images:
+        weight: 17
+        enabled: false
+      links_list:
+        weight: 18
+        enabled: false
+      map:
+        weight: 19
+        enabled: false
+      multiple_images:
+        weight: 20
+        enabled: false
+      quote:
+        weight: 21
+        enabled: false
+      rich_text:
+        weight: 22
+        enabled: false
+      text_item:
+        weight: 23
+        enabled: false
+      video:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

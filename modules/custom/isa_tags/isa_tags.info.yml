@@ -1,0 +1,17 @@
+name: Tags
+description: 'Words to classify the contents and to be able to group them and filter them depending on their theme.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:language'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:taxonomy'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'tvi:tvi'
+version: 8.x-1.0
+package: isa
+'interface translation project': isa_tags
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_tags/translations/%language.po

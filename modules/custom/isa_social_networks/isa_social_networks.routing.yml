@@ -1,0 +1,7 @@
+isa_social_networks.config_form:
+  path: '/admin/portal-express/social-networks'
+  defaults:
+    _form: '\Drupal\isa_social_networks\Form\IsaSocialNetworksConfigForm'
+    _title: 'Social Networks Config'
+  requirements:
+    _permission: 'administer site configuration'

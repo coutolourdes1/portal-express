@@ -1,0 +1,9 @@
+msgid ""
+msgstr ""
+
+msgid "Paragraph to manage Images"
+msgstr "Párrafo para manejar las imágenes"
+
+msgid "Paragraph to manage images fields."
+msgstr "Párrafo para gestionar los campos de imágenes."
+

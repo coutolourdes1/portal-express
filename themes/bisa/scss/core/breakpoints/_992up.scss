@@ -1,0 +1,170 @@
+.spaceTop {
+	height: 100px;
+  }
+
+#intro {
+	background-attachment: fixed;
+}
+
+.preNav {
+	display: flex;
+}
+
+.fondoGris {
+	padding-right: 0;
+}
+
+/* NOTICIAS
+--------------------------------*/
+
+#noticias {
+	margin-bottom: 50px;
+	border-bottom: 1px solid $colorGrisClaro;
+	
+	.noticiaDestacada {
+	  border-bottom: none;
+	  margin-bottom: 0;
+	  padding-bottom: 0;
+	}
+
+	.seguirLeyendo {
+		text-align: right;
+	}
+
+	.noticia {
+		
+		h3 {
+			font-size: 16px;
+		}
+	}
+}
+
+/* CALENDARIO
+--------------------------------*/
+
+#calendario {
+	border-bottom: none;
+
+	.eventos {
+		padding-left: 10px;
+	}
+
+	.evento {
+		padding-right: 15px;
+	}
+
+	.contenidoEvento {
+		
+		.tituloEvento {
+			font-size: 19px;
+			font-weight: 600;
+		}
+	}
+}
+
+/* PUBLICACIONES
+--------------------------------*/
+
+#publicaciones {
+	margin-bottom: 50px;
+	// border-bottom: 1px solid $colorGrisClaro;
+
+	.seguirLeyendo {
+		text-align: right;
+	}
+
+	.publicacion {
+		
+		h3 {
+			font-size: 16px;
+		}
+	}
+}
+
+
+/* SERVICIOS
+--------------------------------*/
+
+#servicios {
+	background: linear-gradient($colorConOpacidad2,$colorDestacado);
+	background: $colorGrisClaro;
+	padding: 90px 0;
+  
+	.titulo {
+	  font-size: 55px;
+	}
+	
+	.texto {
+	  font-size: 16px;
+	  margin-bottom: 5px;
+	  max-width: 70%;
+	}
+
+	.servicioBtn {
+		display: block;
+	}
+
+	.servicio {
+	}
+}
+
+/* SECCION FLOTANTE
+--------------------------------------------------------------*/
+
+.flotante {
+	display: block;
+}
+
+
+/* -----------------------------------------------------------
+
+LISTADO TIPO (PAGINA INTERNA)
+
+--------------------------------------------------------------*/
+
+.listadoTipo {
+  
+	.item {
+
+		.btns {
+			left: -9px;
+		}
+
+		.tags {
+			left: -9px;
+		}
+
+		h3 {
+			font-size: 17px;
+		}
+
+		p {
+			font-size: 14px;
+			color: $colorTextoClaro;
+			min-height: 42px;
+		}
+	}
+}
+
+/* -----------------------------------------------------------
+
+AMPLIADO TIPO (PAGINA INTERNA)
+
+--------------------------------------------------------------*/
+.ampliadoTipo {
+
+	.data {
+
+		.tags {
+			display: inline-block;
+			padding-left: 20px;
+		}
+
+		.btns {
+			position: absolute;
+			top: 0px;
+			right: 0;
+		}
+
+	}
+}

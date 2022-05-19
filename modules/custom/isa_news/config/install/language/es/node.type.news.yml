@@ -1,0 +1,2 @@
+name: Noticias
+description: 'Tipo de contenido para agregar noticias de interés. Si marca *Promocionado a la página principal* la noticia se muestra en el bloque *Noticias recientes* en la página principal, si hay más de una noticia marcada, la lista está ordenada por el campo fecha.'

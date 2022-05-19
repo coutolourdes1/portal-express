@@ -1,0 +1,5 @@
+name: 'DevUtils'
+type: module
+description: 'Develop utils'
+core_version_requirement: '^8.9 || ^9'
+package: 'DP'

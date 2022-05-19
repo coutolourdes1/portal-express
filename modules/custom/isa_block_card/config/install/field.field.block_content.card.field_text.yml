@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.card
+    - field.storage.block_content.field_text
+id: block_content.card.field_text
+field_name: field_text
+entity_type: block_content
+bundle: card
+label: Texto
+description: 'Large plain text to display in the body of the card.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

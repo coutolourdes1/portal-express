@@ -1,0 +1,26 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - isa_site_config
+    - system
+  theme:
+    - inten
+id: sitecontactinformtion_2
+theme: inten
+region: right
+weight: 0
+provider: null
+plugin: isa_site_config_site_contact
+settings:
+  id: isa_site_config_site_contact
+  label: 'Atención presencial y telefónica'
+  provider: isa_site_config
+  label_display: visible
+  isa_site_config_address_map_settings: null
+visibility:
+  request_path:
+    id: request_path
+    pages: /contacto
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+
+msgid "Large block with title, image and descriptive text"
+msgstr "Bloque grande con título, imagen y texto descriptivo."

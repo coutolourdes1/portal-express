@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: informacion_turistica
+label: 'Información turística'
+type: 'canonical_entities:node'
+pattern: '/informacion-turistica/[node:title]'
+selection_criteria:
+  d5e81704-eaa1-4f02-a2f3-04ceb3935308:
+    id: node_type
+    negate: false
+    uuid: d5e81704-eaa1-4f02-a2f3-04ceb3935308
+    context_mapping:
+      node: node
+    bundles:
+      turist_information: turist_information
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.news
+id: node.news.field_weight
+field_name: field_weight
+entity_type: node
+bundle: news
+label: Peso
+description: 'Define el orden que se ve la noticia, se ordena de forma descendente.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

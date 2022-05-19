@@ -1,0 +1,14 @@
+msgid ""
+msgstr ""
+
+msgid "Authorities"
+msgstr "Autoridades"
+
+msgid "authorities"
+msgstr "autoridades"
+
+msgid "Provides the ability to create and manage information about the authorities of the agency."
+msgstr "Proporciona la capacidad de crear y gestionar información sobre las autoridades de la agencia."
+
+msgid "List the authorities of an agency."
+msgstr "Enumere las autoridades de una agencia."

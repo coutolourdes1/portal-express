@@ -1,0 +1,13 @@
+services:
+  isa.form_helper:
+    class: '\Drupal\isa\Form\FormHelper'
+    arguments:
+      - '@element_info'
+  isa.config_bit:
+    class: '\Drupal\isa\Config\ConfigBit'
+    arguments: ['@config.factory', '@config.manager', '@module_handler', '@database', '@plugin.cache_clearer']
+    tags:
+      - { name: 'event_subscriber' }
+  isa.definition_update_manager:
+    class: '\Drupal\isa\Entity\IsaEntityDefinitionUpdateManager'
+    arguments: ['@class_resolver', '@entity.definition_update_manager']

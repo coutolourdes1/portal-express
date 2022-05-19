@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 643f09c5-1dd5-4ca0-a93c-37e1564a7d5a
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    3c6c016d-9503-4850-8b88-0c05d60e33e6: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Clima
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:3c6c016d-9503-4850-8b88-0c05d60e33e6'
+  revision_translation_affected:
+    -
+      value: true

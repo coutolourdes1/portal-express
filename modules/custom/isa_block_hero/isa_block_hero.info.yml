@@ -1,0 +1,15 @@
+name: Hero
+type: module
+core_version_requirement: '^8.9 || ^9'
+version: 0.1.0
+package: isa
+dependencies:
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:link'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+'interface translation project': isa_block_hero
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_block_hero/translations/%language.po

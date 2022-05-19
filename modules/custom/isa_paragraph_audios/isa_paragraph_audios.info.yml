@@ -1,0 +1,11 @@
+name: 'Paragraph Audios'
+description: 'Provides Audios tipo de paragraphs and related configuration. Permite adjuntar varios ficheros de audio.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - file
+  - isa_field_storage
+  - paragraphs
+version: 0.1.0
+package: isa

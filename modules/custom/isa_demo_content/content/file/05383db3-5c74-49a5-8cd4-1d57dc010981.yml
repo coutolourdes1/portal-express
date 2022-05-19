@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 05383db3-5c74-49a5-8cd4-1d57dc010981
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: avatar.png
+  uri:
+    -
+      value: 'public://2020-12/avatar_16_0_3_0_3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 7119
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1607446969

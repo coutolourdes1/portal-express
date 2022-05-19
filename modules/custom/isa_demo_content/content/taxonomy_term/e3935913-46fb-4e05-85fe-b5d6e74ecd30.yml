@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: e3935913-46fb-4e05-85fe-b5d6e74ecd30
+  bundle: tags
+  default_langcode: es
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Internacional
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /internacional
+      langcode: es
+      pathauto: 1

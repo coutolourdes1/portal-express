@@ -1,0 +1,15 @@
+name: 'Block Card'
+description: 'Provider card similar to bootsrap 4.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:link'
+  - 'drupal:system'
+  - 'drupal:views'
+  - 'isa_field_storage:isa_field_storage'
+package: isa

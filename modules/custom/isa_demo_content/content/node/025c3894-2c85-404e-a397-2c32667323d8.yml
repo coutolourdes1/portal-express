@@ -1,0 +1,76 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 025c3894-2c85-404e-a397-2c32667323d8
+  bundle: authorities
+  default_langcode: es
+  depends:
+    05383db3-5c74-49a5-8cd4-1d57dc010981: file
+    004d837d-dad6-4762-b252-412b2c7d8ed9: node
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Nivel 4'
+  created:
+    -
+      value: 1607432482
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /autoridades/nivel-4
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n\r\n<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n\r\n<p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_date:
+    -
+      value: '2020-01-29'
+  field_email_address:
+    -
+      value: maildepersona@mail.com
+  field_image:
+    -
+      entity: 05383db3-5c74-49a5-8cd4-1d57dc010981
+      alt: 'Foto Barbara Viñas'
+      title: ''
+      width: 400
+      height: 400
+  field_name:
+    -
+      value: 'Barbara Viñas'
+  field_parent:
+    -
+      entity: 004d837d-dad6-4762-b252-412b2c7d8ed9
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+  field_telephone:
+    -
+      value: '098 543 231'
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

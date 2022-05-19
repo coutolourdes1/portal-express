@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: a60643ec-97c6-4023-8134-0038aa5601f5
+  bundle: tags
+  default_langcode: es
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Tiempo libre'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tiempo-libre
+      langcode: es
+      pathauto: 1

@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: documentos
+label: documentos
+type: 'canonical_entities:node'
+pattern: 'documentos/[node:title]'
+selection_criteria:
+  a067084c-045c-4fa6-8b13-9ddd49b772cc:
+    id: node_type
+    negate: false
+    uuid: a067084c-045c-4fa6-8b13-9ddd49b772cc
+    context_mapping:
+      node: node
+    bundles:
+      document: document
+  66c35f32-218b-4fa9-8224-bd8f0104f632:
+    id: language
+    negate: false
+    uuid: 66c35f32-218b-4fa9-8224-bd8f0104f632
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

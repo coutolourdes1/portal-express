@@ -1,0 +1,70 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set block_id = content['#block_content'].id() %}
+{% set items = content.field_items|field_value %}
+{% set accordion_id = 'accordion_'~ block_id %}
+
+<div{{ attributes.addClass(['layout-grid-box']) }}>
+  {% if label %}
+    <h3{{ title_attributes.addClass('titulo') }}>{{ label }}</h3>
+  {% endif %}
+  {{ title_prefix }}
+  {{ title_suffix }}
+  <div id="accordion_id" class="accordion accordion-flush">
+    {% for item in items %}
+      {% set item_id = item['#paragraph'].id() %}
+      {% set title = item['#paragraph'].field_title.0.value %}
+      {% set heading_id = 'heading_' ~ item_id %}
+      {% set collapse_id = 'collapse_' ~ item_id %}
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="{{ heading_id }}">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#{{ collapse_id }}"
+                  aria-expanded="false"
+                  aria-controls="{{ collapse_id }}"
+          >
+            {{ title }}
+          </button>
+        </h2>
+        <div id="{{ collapse_id }}"
+             class="accordion-collapse collapse"
+             aria-labelledby="{{ heading_id }}">
+          <div class="accordion-body">
+            {{ item }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>

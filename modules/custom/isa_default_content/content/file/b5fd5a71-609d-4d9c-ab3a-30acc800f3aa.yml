@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b5fd5a71-609d-4d9c-ab3a-30acc800f3aa
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: intro-bg.jpg
+  uri:
+    -
+      value: 'public://hero/intro-bg.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 360975
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1600710566

@@ -1,0 +1,8 @@
+name: Login with TuID
+description: Login with TuID
+version: 1.0.1
+core_version_requirement: '^8.9 || ^9'
+type: module
+package: Custom
+dependencies:
+    - openid_connect:openid_connect

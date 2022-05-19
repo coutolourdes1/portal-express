@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule
+    - node.type.schedule
+id: node.schedule.field_schedule
+field_name: field_schedule
+entity_type: node
+bundle: schedule
+label: Horario
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

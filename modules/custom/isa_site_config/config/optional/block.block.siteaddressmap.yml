@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - isa_site_config
+  theme:
+    - bisa
+id: siteaddressmap
+theme: bisa
+region: contact
+weight: -4
+provider: null
+plugin: isa_site_config_address_map
+settings:
+  id: isa_site_config_address_map
+  label: 'Site address map'
+  provider: isa_site_config
+  label_display: '0'
+  isa_site_config_address_map_settings: null
+visibility: {  }

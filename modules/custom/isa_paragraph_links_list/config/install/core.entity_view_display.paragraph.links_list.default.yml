@@ -1,0 +1,36 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.links_list.field_links
+    - field.field.paragraph.links_list.field_title
+    - paragraphs.paragraphs_type.links_list
+  module:
+    - link
+id: paragraph.links_list.default
+targetEntityType: paragraph
+bundle: links_list
+mode: default
+content:
+  field_links:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

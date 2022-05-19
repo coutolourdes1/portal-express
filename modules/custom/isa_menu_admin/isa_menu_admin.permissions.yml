@@ -1,0 +1,5 @@
+access admin menu:
+  title: 'Access Admin Menu'
+  description: 'Access to the path of the Admin Menu.'
+  restrict access: true
+  warning: 'Warning: Give to trusted roles only; this permission has security implications.'

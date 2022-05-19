@@ -1,0 +1,44 @@
+stages:
+  - build
+  - build-image
+  - deploy
+
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+
+build_composer:
+  stage: build
+  script:
+    - |-
+        TARGET=tag
+        if [ "${CI_COMMIT_REF_NAME}" = "develop" ]; then
+          TARGET=branch
+        fi
+
+        curl -k --show-error --fail --header "Job-Token: $CI_JOB_TOKEN" \
+             --data ${TARGET}=${CI_COMMIT_REF_NAME} \
+             "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/composer"
+  only:
+    - /^[0-9]+\.[0-9]+\.[0-9]+$/
+
+#build-image:
+#  image: docker:20-git
+#  services:
+#    - docker:20-dind
+#  stage: build-image
+#  script:
+#    - ./build-image.sh
+#  only:
+#    - /^[0-9]+\.[0-9]+\.[0-9]+$/
+#
+#update-deploy:
+#  stage: deploy
+#  image: registry.gitlab.com/digitalprojex-public/dockerfiles/ssh-client:latest
+#  script:
+#    - |
+#      if [ "${CI_SERVER_URL}" = "https://gitlab.com" ]; then
+#          $SSH_EXEC "cd /srv/devops && ./scripts/isa/portal-express.update.sh ${CI_COMMIT_REF_NAME}";
+#      fi
+#  only:
+#    - /^[0-9]+\.[0-9]+\.[0-9]+$/
+#    - master

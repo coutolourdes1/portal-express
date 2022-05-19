@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: thumbnail_big
+label: 'Thumbnail Big (350x350)'
+effects:
+  5d312e3a-59bc-46c8-8d07-428b82f2ec10:
+    uuid: 5d312e3a-59bc-46c8-8d07-428b82f2ec10
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 350
+      anchor: center-center

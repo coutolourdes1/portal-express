@@ -1,0 +1,8 @@
+name: isa_language
+description: 'Exporta and import all language of de configurations.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+version: 8.x-1.0
+package: isa
+dependencies:
+  - features

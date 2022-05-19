@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bisa (8.x-1.0)\n"
+"POT-Creation-Date: 2020-06-03 09:19+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "All Rights Reserved"
+msgstr "Todos los derechos reservados"
+
+msgid "Developed by"
+msgstr "Desarrollado por"
+
+msgid "+ keep reading"
+msgstr "+ seguir leyendo"
+
+msgid "see more news"
+msgstr "ver más noticias"
+
+msgid "see more posts"
+msgstr "ver más publicaciones"
+
+msgid "General profile for generic sites."
+msgstr "Perfil general para los sitios genéricos."
+
+msgid "You're here:"
+msgstr "Estas aquí:"
+
+msgid "What are you looking for?"
+msgstr "¿Qué estás buscando?"
+
+
+
+

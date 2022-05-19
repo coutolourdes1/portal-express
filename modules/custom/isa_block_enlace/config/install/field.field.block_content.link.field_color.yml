@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.link
+    - field.storage.block_content.field_color
+  module:
+    - options
+id: block_content.link.field_color
+field_name: field_color
+entity_type: block_content
+bundle: link
+label: Color
+description: 'Define el color del borde del bloque, no seleccionar ninguno para no mostrar borde.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,11 @@
+name: 'ISA Layout Builder'
+type: module
+description: 'Configuracion de layoutbuilder para el perfil de isa'
+core_version_requirement: '^8.9 || ^9'
+package: 'ISA'
+dependencies:
+  - layout_builder
+  - isa_layout_page
+
+'interface translation project': isa_layout_builder
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_layout_builder/translations/%language.po

@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function isa_block_iframe_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['block_content_iframe_form', 'block_content_iframe_edit_form'])) {
+    $form['field_width']['#states'] = [
+      'visible' => [
+        ':input[name="field_iframe_type"]' => ['value' => 'free']
+      ]];
+
+    $form['field_height']['#states'] = [
+      'visible' => [
+        ':input[name="field_iframe_type"]' => ['value' => 'free']
+      ]];
+  }
+}

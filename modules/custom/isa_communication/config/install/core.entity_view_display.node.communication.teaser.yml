@@ -1,0 +1,66 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.communication.body
+    - field.field.node.communication.field_attachments
+    - field.field.node.communication.field_image
+    - field.field.node.communication.field_meta_tags
+    - field.field.node.communication.field_subtitle
+    - field.field.node.communication.field_tags
+    - field.field.node.communication.field_yoast_seo
+    - node.type.communication
+  module:
+    - image
+    - smart_trim
+    - user
+id: node.communication.teaser
+targetEntityType: node
+bundle: communication
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: trim
+      trim_options:
+        text: true
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_attachments: true
+  field_meta_tags: true
+  field_subtitle: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

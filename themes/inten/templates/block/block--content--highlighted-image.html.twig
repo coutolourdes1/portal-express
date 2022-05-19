@@ -1,0 +1,87 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a block.
+ *
+ * Available variables:
+ * - plugin_id: The ID of the block implementation.
+ * - label: The configured label of the block if visible.
+ * - configuration: A list of the block's configuration values.
+ *   - label: The configured label for the block.
+ *   - label_display: The display settings for the label.
+ *   - provider: The module or other provider that provided this block plugin.
+ *   - Block plugin specific settings will also be stored here.
+ * - content: The content of this block.
+ * - attributes: array of HTML attributes populated by modules, intended to
+ *   be added to the main container tag of this template.
+ *   - id: A valid HTML ID and guaranteed unique.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_block()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set link_url = content.field_link|field_value|first['#url'] %}
+{% set link_text = content.field_link|field_value|first['#title'] %}
+{% set main_link_url = content.field_link_2|field_value|first['#url'] %}
+{% set main_link_text = content.field_link_2|field_value|first['#title'] %}
+{% set subtitle = content.field_subtitle|field_value %}
+{% set image_uri = content.field_image|field_value %}
+{% set variant = content.field_variant|field_value|render %}
+
+{% set blockClass =  ['bloque-destacado-imagen-boton'] %}
+{% set cardClass = '' %}
+{% set overlayClass = 'card-img-overlay' %}
+
+{% if variant == "solid" %}
+    {% set blockClass =  ['bloque-destacado-imagen-o-solido-boton'] %}
+    {% set cardClass = 'card-solid' %}
+{% endif %}
+
+{% if variant == "link" %}
+    {% set blockClass =  ['bloque-destacado-imagen-enlace'] %}
+    {% set overlayClass = 'card-text-overlay' %}
+{% endif %}
+
+<div{{ attributes.addClass(blockClass) }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+
+    {% if variant == "link" %}
+    <a href="{{ link_url }}">
+        {% endif %}
+
+        <div class="card-img {{ cardClass }}">
+            <div class="card-img-bg">
+                {% if image_uri %}
+                    <img src="{{ image_uri }}" class="img-fluid" alt="">
+                {% endif %}
+            </div>
+            <div class="{{ overlayClass }}">
+                {% if variant == "link" %}
+                    <p class="card-detalle"> {{ link_text }} </p>
+                    <p class="card-title"> {{ subtitle }} </p>
+                {% else %}
+                    <a href="{{ link_url }}" class="card-title"> {{ link_text }} </a>
+                    <p class="card-text"> {{ subtitle }} </p>
+                    {% if main_link_url and variant == "simple" %}
+                        <a href="{{ main_link_url }}" class="btn btn-lg btn-primary">{{ main_link_text }}</a>
+                    {% endif %}
+                {% endif %}
+            </div>
+            {% if main_link_url and variant == "solid" %}
+                <a href="{{ main_link_url }}" class="btn btn-lg btn-secondary">{{ main_link_text }}</a>
+            {% endif %}
+        </div>
+
+        {% if variant == "link" %}
+    </a>
+    {% endif %}
+</div>

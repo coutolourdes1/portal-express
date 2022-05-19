@@ -1,0 +1,16 @@
+name: 'Block Alert'
+description: 'Provides wings just like bootstrap 4.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:options'
+  - 'drupal:system'
+  - 'drupal:text'
+  - 'drupal:views'
+  - 'isa_field_storage:isa_field_storage'
+version: 8.x-1.0
+package: isa

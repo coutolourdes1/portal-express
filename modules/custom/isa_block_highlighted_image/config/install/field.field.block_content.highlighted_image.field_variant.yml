@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlighted_image
+    - field.storage.block_content.field_variant
+  module:
+    - options
+id: block_content.highlighted_image.field_variant
+field_name: field_variant
+entity_type: block_content
+bundle: highlighted_image
+label: Variante
+description: 'Define como se muestra el bloque.'
+required: true
+translatable: false
+default_value:
+  -
+    value: simple
+default_value_callback: ''
+settings: {  }
+field_type: list_string

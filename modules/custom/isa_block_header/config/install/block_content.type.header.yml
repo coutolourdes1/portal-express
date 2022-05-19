@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: header
+label: Encabezado
+revision: 0
+description: 'Custom header of pages'

@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d35e8003-31ae-48a7-a20d-060f29af5244
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: publicacion03.jpg
+  uri:
+    -
+      value: 'public://2020-11/publicacion03_0_2_7_0_4_1_3_16_0_3_0_3.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 306674
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1606257230

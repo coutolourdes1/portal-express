@@ -1,0 +1,32 @@
+name: Site
+description: 'Provides site components.'
+type: module
+dependencies:
+  - 'bootstrap_layout_builder:bootstrap_layout_builder'
+  - 'captcha:captcha'
+  - 'ctools:ctools'
+  - 'drupal:block_content'
+  - 'drupal:ckeditor'
+  - 'drupal:editor'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:filter'
+  - 'drupal:language'
+  - 'drupal:media'
+  - 'drupal:node'
+  - 'drupal:system'
+  - 'drupal:taxonomy'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'empty_page:empty_page'
+  - 'extlink:extlink'
+  - 'google_analytics:google_analytics'
+  - 'isa_field_storage:isa_field_storage'
+  - 'linkit:linkit'
+  - 'pathauto:pathauto'
+  - 'recaptcha:recaptcha'
+version: 1.0.1
+package: isa
+'interface translation project': isa_site
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_site/translations/%language.po
+core_version_requirement: '^8.9 || ^9'

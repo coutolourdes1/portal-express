@@ -1,0 +1,30 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+body{
+  padding: 3px;
+}
+
+.bpw-floating-button{
+  border-radius: 40px;
+  width: 55px;
+  height: 55px;
+}
+
+.bpw-widget-btn:focus, .bpw-widget-btn:hover {
+  background: #1a9ce8;
+}
+
+.bpw-widget-btn {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+  font-size: 27px;
+}
+
+.bpw-floating-button svg{
+  display: none;
+}
+
+.bpw-floating-button i:before {
+  font-family: FontAwesome;
+  content: "\f086";
+}

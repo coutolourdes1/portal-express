@@ -1,0 +1,75 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: f92459bf-7485-4605-86d0-70f62d95f4fd
+  bundle: news
+  default_langcode: es
+  depends:
+    4e923a26-a6d5-4f63-926a-68fac0bd60f8: file
+    b787a2d8-a050-46ae-8098-82e2a496c7f0: taxonomy_term
+    e6badace-c890-420f-af98-48a62c57819b: taxonomy_term
+    a60643ec-97c6-4023-8134-0038aa5601f5: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Se realizó un encuentro binacional de escuelas en Yaguarón'
+  created:
+    -
+      value: 1606255338
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /noticias/se-realizo-un-encuentro-binacional-escuelas-yaguaron
+      langcode: es
+      pathauto: 1
+  field_comments:
+    -
+      status: 2
+      cid: 0
+      last_comment_timestamp: 1636900997
+      last_comment_name: ''
+      last_comment_uid: 1
+      comment_count: 0
+  field_date:
+    -
+      value: '2020-11-12'
+  field_image:
+    -
+      entity: 4e923a26-a6d5-4f63-926a-68fac0bd60f8
+      alt: 'Ultrices ad diam torquent scelerisque a lacinia hendrerit.'
+      title: 'Ultrices ad diam torquent scelerisque a lacinia hendrerit.'
+      width: 352
+      height: 263
+  field_subtitle:
+    -
+      value: 'Vivamus iaculis sem vitae urna vulputate, nec pharetra turpis porttitor. Nulla blandit sollicitudin velit, at laoreet dolor vehicula et. Cras interdum erat a luctus suscipit. Donec vitae neque volutpat urna interdum mattis sed eget tellus. Nunc auctor pharetra eros.'
+  field_tags:
+    -
+      entity: b787a2d8-a050-46ae-8098-82e2a496c7f0
+    -
+      entity: e6badace-c890-420f-af98-48a62c57819b
+    -
+      entity: a60643ec-97c6-4023-8134-0038aa5601f5
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''

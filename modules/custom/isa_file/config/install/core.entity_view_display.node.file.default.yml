@@ -1,0 +1,82 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.file.field_date
+    - field.field.node.file.field_description
+    - field.field.node.file.field_file
+    - field.field.node.file.field_municipio
+    - field.field.node.file.field_type_file
+    - field.field.node.file.field_weight
+    - node.type.file
+  module:
+    - datetime
+    - file
+    - user
+id: node.file.default
+targetEntityType: node
+bundle: file
+mode: default
+content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: large
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_file:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_municipio:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_type_file:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_weight:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

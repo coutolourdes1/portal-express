@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.download_list.field_files
+    - field.field.paragraph.download_list.field_title
+    - paragraphs.paragraphs_type.download_list
+  module:
+    - file
+id: paragraph.download_list.default
+targetEntityType: paragraph
+bundle: download_list
+mode: default
+content:
+  field_files:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

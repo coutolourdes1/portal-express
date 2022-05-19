@@ -1,0 +1,68 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.highlight_content
+    - field.field.node.turist_information.body
+    - field.field.node.turist_information.field_emails
+    - field.field.node.turist_information.field_image
+    - field.field.node.turist_information.field_link
+    - field.field.node.turist_information.field_municipio
+    - field.field.node.turist_information.field_place
+    - field.field.node.turist_information.field_sections
+    - field.field.node.turist_information.field_tags
+    - field.field.node.turist_information.field_telephone
+    - node.type.turist_information
+  module:
+    - image
+    - layout_builder
+    - smart_trim
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.turist_information.highlight_content
+targetEntityType: node
+bundle: turist_information
+mode: highlight_content
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image_url
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_emails: true
+  field_link: true
+  field_municipio: true
+  field_place: true
+  field_sections: true
+  field_tags: true
+  field_telephone: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

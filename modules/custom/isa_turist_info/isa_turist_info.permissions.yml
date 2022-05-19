@@ -1,0 +1,5 @@
+administer isa turist information:
+  title: 'Administer isa turist information settings'
+  restrict access: true
+access isa turist information overview:
+  title: 'Access isa turist information overview page'

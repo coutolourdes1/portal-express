@@ -1,0 +1,16 @@
+name: 'Paragraph Galería'
+description: 'Provides Galería tipo de paragraphs and related configuration. Galería de imágenes y vídeos mixta que se muestra como un carrusel.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:layout_builder'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_paragraph_image:isa_paragraph_image'
+  - 'isa_paragraph_multiple_images:isa_paragraph_multiple_images'
+  - 'isa_paragraph_video:isa_paragraph_video'
+  - 'paragraph_owl:paragraph_owl'
+  - 'paragraphs:paragraphs'
+package: isa

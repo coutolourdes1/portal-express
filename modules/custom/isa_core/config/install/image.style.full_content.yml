@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: full_content
+label: 'Full Content'
+effects:
+  1ce174fc-e23b-48a3-a1ed-e05899f07287:
+    uuid: 1ce174fc-e23b-48a3-a1ed-e05899f07287
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1110
+      height: 720
+      anchor: center-center

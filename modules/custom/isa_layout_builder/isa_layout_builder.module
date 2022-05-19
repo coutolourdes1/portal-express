@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_layout_builder.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+/**
+ * Implements hook_help().
+ */
+function isa_layout_builder_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isa_layout_builder module.
+    case 'help.page.isa_layout_builder':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Configuracion de layoutbuilder para el perfil de isa') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ *
+ * Implements hook_preprocess_views_view_field().
+ */
+function isa_layout_builder_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  /** @var Drupal\views\Plugin\views\field\EntityField $field */
+  $field = $variables['field'];
+
+  if ($view->storage->id() == 'layout_pages' && $field->options["id"] == 'view_node_1') {
+    $site_config = Drupal::config('system.site');
+    $current_front = $site_config->get('page.front');
+    $alias = $variables['output']->__toString();
+    $path = \Drupal::service('path_alias.manager')->getPathByAlias($alias);
+
+    if ($path == $current_front || $alias == $current_front) {
+      $output = 'Homepage';
+    }
+    else {
+      $url = Url::fromRoute('isa_layout_builder.confirm_set_front');
+      $url = $url->setOption('query', ['alias' => $alias]);
+      $url = $url->setOption('attributes', [
+        'class' => [
+          'button',
+          'button--small',
+        ],
+      ]);
+      $output = Link::fromTextAndUrl(t('Set as front page'), $url);;
+    }
+
+    $variables['output'] = $output;
+  }
+}

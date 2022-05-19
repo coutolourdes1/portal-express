@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.audio
+id: block_content.audio
+target_entity_type_id: block_content
+target_bundle: audio
+default_langcode: site_default
+language_alterable: false

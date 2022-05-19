@@ -1,0 +1,9 @@
+isa_site_config.config_form:
+  path: '/admin/portal-express/config'
+  defaults:
+    _form: '\Drupal\isa_site_config\Form\ConfigForm'
+    _title: 'General Config'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

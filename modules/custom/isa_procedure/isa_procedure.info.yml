@@ -1,0 +1,27 @@
+name: Procedure
+description: 'Provides Procedure tipo de contenido and related configuration. Immigration and other procedures.'
+type: module
+dependencies:
+  - 'drupal:block'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:language'
+  - 'drupal:layout_builder'
+  - 'drupal:link'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:system'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_tags:isa_tags'
+  - 'smart_trim:smart_trim'
+  - 'yoast_seo:yoast_seo'
+package: isa
+version: 1.0.0
+'interface translation project': isa_procedure
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_procedure/translations/%language.po
+core_version_requirement: '^8.9 || ^9'

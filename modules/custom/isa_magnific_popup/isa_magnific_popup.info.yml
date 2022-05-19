@@ -1,0 +1,9 @@
+name: isa_magnific_popup
+description: 'Custom settings for magnific_popup modules.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+version: 0.1.0
+package: isa
+dependencies:
+  - magnific_popup
+

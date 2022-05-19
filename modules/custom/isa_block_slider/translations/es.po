@@ -1,0 +1,8 @@
+msgid ""
+msgstr ""
+
+msgid "Slider"
+msgstr "Carrusel"
+
+msgid "slider"
+msgstr "carrusel"

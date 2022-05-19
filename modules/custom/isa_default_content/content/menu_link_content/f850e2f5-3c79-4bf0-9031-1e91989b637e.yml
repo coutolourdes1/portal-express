@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: f850e2f5-3c79-4bf0-9031-1e91989b637e
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    3c6c016d-9503-4850-8b88-0c05d60e33e6: menu_link_content
+    1727d53d-0106-423f-8a22-3db8014d8706: node
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Misión - Visión - Valores'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      target_uuid: 1727d53d-0106-423f-8a22-3db8014d8706
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: false
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:3c6c016d-9503-4850-8b88-0c05d60e33e6'
+  revision_translation_affected:
+    -
+      value: true

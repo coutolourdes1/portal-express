@@ -1,0 +1,14 @@
+langcode: es
+status: true
+dependencies: {  }
+name: icon
+label: 'Icon (68x68)'
+effects:
+  39a4fc75-c265-4d51-84b4-d0c1774533a7:
+    uuid: 39a4fc75-c265-4d51-84b4-d0c1774533a7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 68
+      height: 68
+      anchor: center-center

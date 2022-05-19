@@ -1,0 +1,30 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if breadcrumb %}
+  <span class="caminoAntes">{{ 'Estas aquí:'| t }}</span>
+  {% for item in breadcrumb %}
+    {% if loop.last and item.text|length > 30 %}
+      <sapn class="ubicacion isa-bredcrumb">
+    {% else %}
+      <sapn class="ubicacion">
+    {% endif %}  
+    {% if item.url %}
+      <a href="{{ item.url }}">{{ item.text }}</a>
+    {% else %}
+      {{ item.text }}
+    {% endif %}
+    </sapn>
+    {% if not loop.last %}
+      <span class="sep">/</span>
+    {% endif %}
+  {% endfor %}
+{% endif %}

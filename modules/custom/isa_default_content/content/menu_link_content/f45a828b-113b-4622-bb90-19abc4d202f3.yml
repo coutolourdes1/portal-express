@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: f45a828b-113b-4622-bb90-19abc4d202f3
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    99e34df8-eec7-4273-b308-496114f5fb68: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Guía del viajero'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:99e34df8-eec7-4273-b308-496114f5fb68'
+  revision_translation_affected:
+    -
+      value: true

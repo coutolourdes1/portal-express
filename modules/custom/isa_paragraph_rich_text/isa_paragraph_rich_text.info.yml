@@ -1,0 +1,10 @@
+name: 'Paragraph Texto enriquecido'
+description: 'Provides Texto enriquecido tipo de paragraphs and related configuration. Permite etiquetas HTML.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - field
+  - isa_field_storage
+  - paragraphs
+  - text
+package: isa

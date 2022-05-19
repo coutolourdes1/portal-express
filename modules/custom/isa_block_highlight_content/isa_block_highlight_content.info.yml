@@ -1,0 +1,20 @@
+name: 'Highlight Content'
+description: 'Bloque de contenido destacado con título, imagen y descripción '
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - block_content
+  - datetime
+  - entity_reference_revisions
+  - field
+  - isa_communication
+  - isa_field_storage
+  - isa_news
+  - isa_page
+  - isa_turist_info
+  - language
+  - layout_builder
+  - time_picker
+  - user
+version: 0.1.0
+package: isa

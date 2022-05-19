@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: f9814f97-c43b-4ad8-a799-b0dfa6d80e80
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: noticia02.png
+  uri:
+    -
+      value: 'public://2020-11/noticia02_0_2_7_0_4_1_3_16_0_3_0_3.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 67881
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1606255591

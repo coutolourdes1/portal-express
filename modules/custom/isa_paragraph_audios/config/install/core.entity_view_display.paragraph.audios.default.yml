@@ -1,0 +1,35 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.audios.field_audios
+    - field.field.paragraph.audios.field_title
+    - paragraphs.paragraphs_type.audios
+  module:
+    - file
+id: paragraph.audios.default
+targetEntityType: paragraph
+bundle: audios
+mode: default
+content:
+  field_audios:
+    weight: 1
+    label: hidden
+    settings:
+      controls: true
+      multiple_file_display_type: tags
+      autoplay: false
+      loop: false
+    third_party_settings: {  }
+    type: file_audio
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

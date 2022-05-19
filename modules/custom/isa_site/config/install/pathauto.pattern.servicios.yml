@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: servicios
+label: servicios
+type: 'canonical_entities:node'
+pattern: 'servicios/[node:title]'
+selection_criteria:
+  111e637f-2049-47e8-b93b-976cf4185a6b:
+    id: node_type
+    negate: false
+    uuid: 111e637f-2049-47e8-b93b-976cf4185a6b
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+  b3990668-4574-4394-b298-b82266933c82:
+    id: language
+    negate: false
+    uuid: b3990668-4574-4394-b298-b82266933c82
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

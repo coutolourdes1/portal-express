@@ -1,0 +1,172 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 29bc614b-04a8-439f-a20f-572e25457a3b
+  bundle: page
+  default_langcode: es
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Políticas de privacidad'
+  created:
+    -
+      value: 1598905733
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /politicas-privacidad
+      langcode: es
+      pathauto: 0
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sodales nulla augue, id eleifend diam eleifend a. Quisque aliquam commodo elit. Curabitur at placerat eros. Fusce malesuada neque consequat risus aliquam tincidunt. Fusce nibh enim, rutrum pretium volutpat non, pretium posuere massa. Aenean id odio vel dolor consectetur mattis. Curabitur pulvinar orci erat, ac tincidunt eros sodales at. Integer consequat dui tellus, ac pellentesque urna faucibus at. Pellentesque mi libero, convallis sit amet laoreet vel, mollis id sapien. Etiam vitae mi justo. Sed quis purus ac dui finibus elementum eu sit amet sem. Quisque blandit gravida leo a rutrum. Fusce id orci enim. Nulla nisl nulla, viverra vel urna vel, dictum eleifend erat.</p>\r\n\r\n<p>Cras eget mauris orci. In sodales suscipit lacus et suscipit. Ut dictum libero ac magna sagittis aliquam. Quisque aliquet enim in diam pulvinar auctor. Nam finibus ut justo ut pulvinar. Praesent at lorem aliquam, congue ante et, egestas leo. Mauris luctus lectus in tortor imperdiet bibendum. Maecenas mattis quam ex, in eleifend massa pretium at. Donec sagittis ultricies purus nec interdum. Nam porttitor imperdiet ipsum vel bibendum. Suspendisse ac rutrum felis, ac convallis orci. Suspendisse volutpat sem orci, ac pulvinar magna placerat hendrerit. Maecenas mollis ante sit amet faucibus sollicitudin. Aliquam iaculis justo in nibh maximus vehicula. Curabitur fermentum sapien sagittis elit tincidunt, in cursus est dictum.</p>\r\n\r\n<p>Phasellus semper fermentum erat, vel interdum risus semper a. Ut a dolor feugiat, rutrum enim quis, rhoncus massa. Aliquam erat volutpat. Sed ultrices luctus quam at imperdiet. Nullam nec urna id mauris sagittis elementum vel pretium dui. Nunc luctus porttitor est, id lacinia tortor lobortis sit amet. Proin quis justo nec ligula luctus hendrerit.</p>\r\n\r\n<p>Aenean porta, nisi vitae lacinia ultrices, libero lorem tristique tortor, at tempor purus leo a sapien. Vestibulum consequat auctor erat. Quisque imperdiet gravida urna sed iaculis. Phasellus ultricies tempor maximus. Nullam vitae arcu aliquet, lobortis augue ut, volutpat sem. Proin iaculis risus sed bibendum fermentum. Duis maximus risus et dolor sodales mollis a id erat. Nullam quis imperdiet nulla.</p>\r\n\r\n<p>In elementum dolor eu est dapibus, at molestie felis mattis. Suspendisse ullamcorper dolor eu nulla pharetra, blandit blandit urna mattis. Phasellus dictum euismod purus, at gravida elit placerat nec. Quisque at ligula sed ex convallis efficitur. Pellentesque et sem lacinia, vulputate velit eu, facilisis erat. Proin consequat eu ante quis egestas. Curabitur id aliquam lectus. Suspendisse potenti. Aenean non sem nisl. Vivamus a mi id nulla sagittis consequat. Aliquam ornare ipsum quis interdum semper.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_yoast_seo:
+    -
+      status: '0'
+      focus_keyword: ''
+      title: ''
+      description: ''
+  layout_builder__layout:
+    -
+      section:
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          cb149902-8242-4ae8-84ad-07c3854c1e04:
+            uuid: cb149902-8242-4ae8-84ad-07c3854c1e04
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_subtitle'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          5115bcf5-5f6e-40d3-813e-6b5d1e36dffd:
+            uuid: 5115bcf5-5f6e-40d3-813e-6b5d1e36dffd
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_image'
+              formatter:
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+          614a82cf-1e5f-4b4f-b28b-fa6c6aba89d9:
+            uuid: 614a82cf-1e5f-4b4f-b28b-fa6c6aba89d9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          875de6db-cb28-4b55-8ff6-917d0b4e2af1:
+            uuid: 875de6db-cb28-4b55-8ff6-917d0b4e2af1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_images'
+              formatter:
+                label: hidden
+                settings:
+                  thumbnail_image_style: thumbnail_big
+                  popup_image_style: ''
+                  gallery_type: all_items
+                third_party_settings: {  }
+                type: magnific_popup
+            additional: {  }
+            weight: 3
+          02c4a385-0020-4e47-af9a-488ae04724d1:
+            uuid: 02c4a385-0020-4e47-af9a-488ae04724d1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_links'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 4
+          18a1009f-3155-494d-a314-c25613c71354:
+            uuid: 18a1009f-3155-494d-a314-c25613c71354
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_attachments'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 5
+          a2a71dfb-b8e4-4cdc-8177-66f02894234d:
+            uuid: a2a71dfb-b8e4-4cdc-8177-66f02894234d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:page:field_meta_tags'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: metatag_empty_formatter
+            additional: {  }
+            weight: 7
+        third_party_settings: {  }

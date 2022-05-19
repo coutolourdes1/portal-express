@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: links_list
+label: Enlaces
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

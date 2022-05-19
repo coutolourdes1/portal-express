@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 5a47a553-7ad0-44f5-8e8f-cabdc17220f7
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    3c6c016d-9503-4850-8b88-0c05d60e33e6: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Monumentos históricos'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -45
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:3c6c016d-9503-4850-8b88-0c05d60e33e6'
+  revision_translation_affected:
+    -
+      value: true

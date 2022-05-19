@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Tags
+vid: tags
+description: 'Palabras para clasificar los contenidos y poder agruparlos y filtrarlos según su tema'
+weight: 0

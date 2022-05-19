@@ -1,0 +1,9 @@
+{% if content %}
+    <div {{ attributes.addClass(['grid']) }}>
+        {% if content.main %}
+            <div {{ region_attributes.main.addClass(['grid-item']) }}>
+                {{ content.main }}
+            </div>
+        {% endif %}
+    </div>
+{% endif %}

@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.iframe
+id: node.iframe.status
+field_name: status
+entity_type: node
+bundle: iframe
+label: Publicado
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

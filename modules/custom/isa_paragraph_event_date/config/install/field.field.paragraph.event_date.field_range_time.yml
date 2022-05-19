@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_range_time
+    - paragraphs.paragraphs_type.event_date
+  module:
+    - time_picker
+id: paragraph.event_date.field_range_time
+field_name: field_range_time
+entity_type: paragraph
+bundle: event_date
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time_range_picker

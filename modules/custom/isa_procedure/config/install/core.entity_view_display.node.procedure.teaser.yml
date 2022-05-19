@@ -1,0 +1,59 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.procedure.body
+    - field.field.node.procedure.field_attachments
+    - field.field.node.procedure.field_links
+    - field.field.node.procedure.field_subtitle
+    - field.field.node.procedure.field_tags
+    - field.field.node.procedure.field_yoast_seo
+    - node.type.procedure
+  module:
+    - smart_trim
+    - user
+id: node.procedure.teaser
+targetEntityType: node
+bundle: procedure
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_attachments: true
+  field_links: true
+  field_subtitle: true
+  field_yoast_seo: true
+  langcode: true
+  search_api_excerpt: true

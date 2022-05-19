@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Archivo'
+vid: file_type
+description: 'Lista de ficheros para descargar.'
+weight: 0

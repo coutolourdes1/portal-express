@@ -1,0 +1,64 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.gallery
+    - field.storage.block_content.field_medias
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.multiple_images
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: block_content.gallery.field_medias
+field_name: field_medias
+entity_type: block_content
+bundle: gallery
+label: Medias
+description: 'Imágenes y vídeos a mostrar en el bloque.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      images: images
+      video: video
+      multiple_images: multiple_images
+    target_bundles_drag_drop:
+      audios:
+        weight: 12
+        enabled: false
+      download_list:
+        weight: 13
+        enabled: false
+      gallery:
+        weight: 14
+        enabled: false
+      images:
+        enabled: true
+        weight: 4
+      links_list:
+        weight: 16
+        enabled: false
+      map:
+        weight: 17
+        enabled: false
+      multiple_images:
+        enabled: true
+        weight: 18
+      quote:
+        weight: 19
+        enabled: false
+      rich_text:
+        weight: 20
+        enabled: false
+      text_item:
+        weight: 5
+        enabled: false
+      video:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.highlighted_image
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.highlighted_image.field_link
+field_name: field_link
+entity_type: block_content
+bundle: highlighted_image
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

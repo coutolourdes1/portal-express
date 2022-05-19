@@ -1,0 +1,12 @@
+name: 'Portal Express'
+mail: portal-express@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: /search404
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+uuid: ''

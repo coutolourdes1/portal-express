@@ -1,0 +1,58 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.service.body
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_meta_tags
+    - field.field.node.service.field_subtitle
+    - field.field.node.service.field_tags
+    - field.field.node.service.field_weight
+    - field.field.node.service.field_yoast_seo
+    - node.type.service
+  module:
+    - metatag
+    - text
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_subtitle:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tags:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_icon: true
+  field_weight: true
+  field_yoast_seo: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

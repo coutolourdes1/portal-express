@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Municipios
+vid: municipios
+description: 'Listado de Municipios'
+weight: 0

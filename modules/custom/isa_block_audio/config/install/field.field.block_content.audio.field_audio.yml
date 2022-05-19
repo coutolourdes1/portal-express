@@ -1,0 +1,26 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.audio
+    - field.storage.block_content.field_audio
+  module:
+    - file
+id: block_content.audio.field_audio
+field_name: field_audio
+entity_type: block_content
+bundle: audio
+label: Audios
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: mp3
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

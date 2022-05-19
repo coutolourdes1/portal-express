@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: simple
+label: Simple
+revision: 0
+description: 'Bloque simple con un texto.'

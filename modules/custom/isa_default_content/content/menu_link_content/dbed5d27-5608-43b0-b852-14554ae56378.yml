@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: dbed5d27-5608-43b0-b852-14554ae56378
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Comunicados
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/comunicados'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f'
+  revision_translation_affected:
+    -
+      value: true

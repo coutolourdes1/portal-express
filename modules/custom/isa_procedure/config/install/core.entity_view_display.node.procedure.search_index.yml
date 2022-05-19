@@ -1,0 +1,94 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.procedure.body
+    - field.field.node.procedure.field_attachments
+    - field.field.node.procedure.field_links
+    - field.field.node.procedure.field_subtitle
+    - field.field.node.procedure.field_tags
+    - field.field.node.procedure.field_yoast_seo
+    - node.type.procedure
+  module:
+    - file
+    - layout_builder
+    - link
+    - smart_trim
+    - user
+    - yoast_seo
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.procedure.search_index
+targetEntityType: node
+bundle: procedure
+mode: search_index
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 1
+    settings:
+      trim_length: 130
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+    third_party_settings: {  }
+    region: content
+  field_attachments:
+    weight: 2
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_links:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_subtitle:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tags:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_yoast_seo:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: yoastseo_formatter
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

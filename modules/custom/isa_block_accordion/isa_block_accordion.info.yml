@@ -1,0 +1,17 @@
+name: 'Block Accordion'
+description: 'Collapse behavior to create an accordion.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block'
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:language'
+  - 'drupal:system'
+  - 'drupal:views'
+  - 'entity_reference_revisions:entity_reference_revisions'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_paragraph_text:isa_paragraph_text'
+  - 'paragraphs:paragraphs'
+version: 1.0.0
+package: isa

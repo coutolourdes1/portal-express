@@ -1,0 +1,28 @@
+name: Communication
+description: 'Provides Communication content type and related configuration. Space to make an official communication to interested parties.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'captcha:captcha'
+  - 'drupal:field'
+  - 'drupal:file'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:layout_builder'
+  - 'drupal:menu_ui'
+  - 'drupal:node'
+  - 'drupal:path'
+  - 'drupal:text'
+  - 'drupal:user'
+  - 'drupal:views'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'isa_tags:isa_tags'
+  - 'metatag:metatag'
+  - 'scheduler:scheduler'
+  - 'smart_trim:smart_trim'
+  - 'yoast_seo:yoast_seo'
+version: 8.x-1
+package: isa
+'interface translation project': isa_communication
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_communication/translations/%language.po

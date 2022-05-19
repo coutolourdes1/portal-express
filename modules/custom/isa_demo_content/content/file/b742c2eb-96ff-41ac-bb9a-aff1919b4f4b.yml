@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b742c2eb-96ff-41ac-bb9a-aff1919b4f4b
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 'Delain – Suckerpunch.mp3'
+  uri:
+    -
+      value: 'public://2021-11/Delain – Suckerpunch.mp3'
+  filemime:
+    -
+      value: audio/mpeg
+  filesize:
+    -
+      value: 10745114
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636903875

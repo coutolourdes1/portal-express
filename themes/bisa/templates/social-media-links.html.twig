@@ -1,0 +1,42 @@
+{#
+/**
+ * Available variables
+ * - elements: array of element contains social media link.
+ *
+ */
+#}
+
+
+<div class="social-media-sharing">
+  <ul class="">
+    {% set classes = [
+    'share'
+    ]
+    %}
+    {% for name, element in elements %}
+      {% set icon = name %}
+      {% if name == 'facebook_share' %}
+        {% set icon = 'facebook' %}
+      {% endif %}
+      {% if name == 'facebook_msg' %}
+        {% set icon = 'facebook-messenger' %}
+      {% endif %}
+      {% if name == 'email' %}
+        {% set icon = 'envelope' %}
+      {% endif %}
+
+      {% if element.forward_dialog == 1 %}
+        {% set classes = classes|merge(['use-ajax']) %}
+        {% set dialogType = "data-dialog-type=dialog" %}
+        {% set dialogOptions = "data-dialog-options=" ~ {'width': '600'}|json_encode %}
+      {% endif %}
+      <li>
+        <a {{ dialogType }} {{ dialogOptions }} {{ element.attr.target }} {{ element.attr.rel }} {{ element.attr.class.addClass(classes) }}  {{ element.api }}
+          title="{{ element.text }}">
+            <i class="fa fa-{{ icon }}"></i>
+         </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+

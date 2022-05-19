@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+
+msgid "Templates, forms among others."
+msgstr "Plantillas, formas entre otras."
+
+msgid "Documents"
+msgstr "Documentos"
+
+msgid "View to show information related to the Institution''s Documents, List of Documents, TC Document, Blocks of Documents."
+msgstr "Ver para mostrar la información relacionada con los Documentos de la Institución, Lista de Documentos, Documento TC, Bloques de Documentos."

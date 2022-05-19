@@ -1,0 +1,26 @@
+<div class="box-body">
+    <h3 class="box-title">Intendencia</h3>
+    <div class="box-image">
+        <img src="{{ site_contact_image_url }}" alt="Mapa Organismo" class="img-fluid">
+    </div>
+    {% if site_phone %}
+        <span class="box-subtitle">
+            <span class="Icon Icon--phone Icon--small u-mr1"></span>
+            <strong>{{ site_phone }}</strong>
+        </span>
+    {% endif %}
+    <dl class="box-definitions">
+        {% if site_address %}
+            <dt>Dirección:</dt>
+            <dd>{{ site_address }}</dd>
+        {% endif %}
+        {% if site_schedule %}
+            <dt>Horario de atención:</dt>
+            <dd>{{ site_schedule }}</dd>
+        {% endif %}
+        {% if site_email %}
+            <dt>Email:</dt>
+            <dd><a href="{{ site_email }}">{{ site_email }}</a></dd>
+        {% endif %}
+    </dl>
+</div>

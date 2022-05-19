@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: resoluciones
+label: resoluciones
+type: 'canonical_entities:node'
+pattern: 'resoluciones/[node:title]'
+selection_criteria:
+  a6c12f55-86ca-4b49-919f-7c19bde838e7:
+    id: node_type
+    negate: false
+    uuid: a6c12f55-86ca-4b49-919f-7c19bde838e7
+    context_mapping:
+      node: node
+    bundles:
+      resolution: resolution
+  e4fbc17c-5372-45cc-bdfe-8b51361b3853:
+    id: language
+    negate: false
+    uuid: e4fbc17c-5372-45cc-bdfe-8b51361b3853
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

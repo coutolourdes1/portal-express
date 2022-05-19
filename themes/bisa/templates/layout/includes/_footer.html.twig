@@ -1,0 +1,19 @@
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-lg-left text-center">
+        <div class="copyright">
+          &copy; <strong>Portal Express</strong>. {{ 'All Rights Reserved'|t }}
+        </div>
+        <div class="credits">
+          {{ 'Developed by'|t }} <a href="http://isaportal.com.uy/inicio" target="_blank">ISA Ltda</a>
+        </div>
+      </div>
+      {% if page.footer %}
+        <div class="col-lg-6">
+          {{ page.footer }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</footer>

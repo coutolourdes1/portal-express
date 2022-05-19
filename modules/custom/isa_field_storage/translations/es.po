@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+
+msgid "It stores the configuration of all the storage fields of the profile, the modules that use these fields must have it as a dependency."
+msgstr "It stores the configuration of all the storage fields of the profile, the modules that use these fields must have it as a dependency."

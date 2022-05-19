@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+<div id="calendarioListado" class="col-lg-12">
+  <div class="eventos">
+    {% for row in rows %}
+    <article class="evento col-6 {% if loop.index is odd %} offset-6 {% endif %}">
+      {{- row.content -}}
+    </article>
+    {% endfor %}
+  </div>
+</div>

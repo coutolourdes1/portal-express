@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Contains isa_feedback.module.
+ */
+use Drupal\Core\Form\FormStateInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function isa_feedback_theme($existing, $type, $theme, $path) {
+  return [
+    'isa_feedback_block' => [
+      'variables' => [
+        'url' => NULL,
+        'description' => NULL
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for the FORM_ID() form.
+ */
+function isa_feedback_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if($form_id=== 'webform_submission_contacto_add_form') {
+    $form['#validate'][] = '_isa_feedback_form_validate';
+  }
+}
+
+/**
+ * Validates submission values in the FORM_ID() form.
+ */
+function _isa_feedback_form_validate(array &$form, FormStateInterface $form_state) {
+  $terms = $form_state->getValue('terms');
+  if($terms !== 'Acepto los términos') {
+    $form_state->setErrorByName('', 'Debe aceptar los términos de la cláusula.');
+  }
+}

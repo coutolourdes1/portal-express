@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: fbaa7a77-14c9-43ad-890a-e34d86b1c4e2
+  bundle: link
+  default_langcode: en
+  depends:
+    3c52fabd-a0f8-49cd-ba70-d060474e2658: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Carreras universitarias en Melo'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 3c52fabd-a0f8-49cd-ba70-d060474e2658
+      alt: ''
+      title: ''
+      width: 68
+      height: 68
+  field_link:
+    -
+      uri: 'internal:/'
+      title: 'Carreras universitarias en Melo'
+      options: {  }

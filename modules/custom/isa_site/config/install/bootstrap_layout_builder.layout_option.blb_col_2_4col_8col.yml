@@ -1,0 +1,12 @@
+langcode: es
+status: true
+dependencies: {  }
+id: blb_col_2_4col_8col
+layout_id: blb_col_2
+label: '4 Col -  8 Col'
+structure: '4 8'
+breakpoints:
+  desktop: desktop
+  tablet: tablet
+  mobile: 0
+weight: 0

@@ -1,0 +1,10 @@
+langcode: es
+first_day: 1
+country:
+  default: UY
+timezone:
+  default: America/Montevideo
+  user:
+    configurable: false
+    default: 0
+    warn: false

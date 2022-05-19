@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: links
+label: Enlaces
+revision: 0
+description: 'Contiene una lista de enlaces.'

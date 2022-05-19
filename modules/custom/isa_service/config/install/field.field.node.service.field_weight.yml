@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.service
+id: node.service.field_weight
+field_name: field_weight
+entity_type: node
+bundle: service
+label: Weight
+description: 'Criterio de ordenamiento para mostrar los servicios en la página de inicio, se ordena de menor a mayor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

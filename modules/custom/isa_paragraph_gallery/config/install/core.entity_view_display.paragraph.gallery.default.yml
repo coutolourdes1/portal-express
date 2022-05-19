@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_medias
+    - field.field.paragraph.gallery.field_title
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - paragraph_owl
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_medias:
+    type: paragraph_owl_field_formatter
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: carrusel
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true

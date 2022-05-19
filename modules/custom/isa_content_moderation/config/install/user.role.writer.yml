@@ -1,0 +1,74 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.activity
+    - node.type.authorities
+    - node.type.communication
+    - node.type.document
+    - node.type.file
+    - node.type.news
+    - node.type.page
+    - node.type.schedule
+    - node.type.turist_information
+    - workflows.workflow.content_publishing
+  module:
+    - content_moderation
+    - empty_page
+    - media
+    - node
+    - search
+    - search_api_page
+    - sitemap
+    - system
+    - toolbar
+id: writer
+label: Escritor
+weight: -5
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access sitemap'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create activity content'
+  - 'create authorities content'
+  - 'create communication content'
+  - 'create document content'
+  - 'create file content'
+  - 'create news content'
+  - 'create page content'
+  - 'create schedule content'
+  - 'create turist_information content'
+  - 'delete own activity content'
+  - 'delete own authorities content'
+  - 'delete own file content'
+  - 'delete own news content'
+  - 'delete own page content'
+  - 'delete own schedule content'
+  - 'edit own activity content'
+  - 'edit own authorities content'
+  - 'edit own file content'
+  - 'edit own news content'
+  - 'edit own page content'
+  - 'edit own schedule content'
+  - 'search content'
+  - 'use advanced search'
+  - 'use content_publishing transition archive_content'
+  - 'use content_publishing transition create_new_draft'
+  - 'use content_publishing transition ready_for_review'
+  - 'view activity revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view authorities revisions'
+  - 'view communication revisions'
+  - 'view document revisions'
+  - 'view empty pages'
+  - 'view latest version'
+  - 'view media'
+  - 'view news revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view search api pages'
+  - 'view the administration theme'

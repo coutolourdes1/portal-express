@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_links
+    - node.type.page
+  module:
+    - link
+id: node.page.field_links
+field_name: field_links
+entity_type: node
+bundle: page
+label: Links
+description: 'Algunos contenidos relacionados con la página.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

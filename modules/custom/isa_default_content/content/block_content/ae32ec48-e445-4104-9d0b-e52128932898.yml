@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: ae32ec48-e445-4104-9d0b-e52128932898
+  bundle: link
+  default_langcode: en
+  depends:
+    7b52dfe9-079c-411c-a38e-c56c6760134c: file
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Guía de trámites'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_image:
+    -
+      entity: 7b52dfe9-079c-411c-a38e-c56c6760134c
+      alt: ''
+      title: ''
+      width: 68
+      height: 68
+  field_link:
+    -
+      uri: 'internal:/'
+      title: 'Guía de trámites'
+      options: {  }

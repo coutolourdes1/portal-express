@@ -1,0 +1,13 @@
+name: 'Paragraph Video'
+description: 'Provides Video tipo de paragraphs and related configuration. Iframe para agregar un vídeos.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:field'
+  - 'drupal:layout_builder'
+  - 'drupal:link'
+  - 'isa_core:isa_core'
+  - 'isa_field_storage:isa_field_storage'
+  - 'paragraphs:paragraphs'
+version: 0.1.0
+package: isa

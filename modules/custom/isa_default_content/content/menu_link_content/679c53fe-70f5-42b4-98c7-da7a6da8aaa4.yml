@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 679c53fe-70f5-42b4-98c7-da7a6da8aaa4
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    686c5b46-22b7-40ef-9998-c3e9a6a029d3: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Vivienda
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: 0
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:686c5b46-22b7-40ef-9998-c3e9a6a029d3'
+  revision_translation_affected:
+    -
+      value: true

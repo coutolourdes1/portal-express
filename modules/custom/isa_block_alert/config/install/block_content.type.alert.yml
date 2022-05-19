@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: alert
+label: Alerta
+revision: 0
+description: 'Message in a block highlighted with a background color'

@@ -1,0 +1,26 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: 5c8bfd1a-2fb2-406e-b3b8-7e51de61c100
+  bundle: simple
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  info:
+    -
+      value: 'Dirección - Oficina Central'
+  reusable:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  field_formatted_body:
+    -
+      value: "<p>Dirección: Justino Muniz 591</p>\r\n\r\n<p>Teléfono: [598 464] 26551 al 26558</p>\r\n\r\n<p>Horario de atención al público de 12:30 a 18:00 hs</p>\r\n"
+      format: basic_html
+  field_title:
+    -
+      value: 'Oficina Central'

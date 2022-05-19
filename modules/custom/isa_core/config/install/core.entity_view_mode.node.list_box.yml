@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.list_box
+label: 'List Box'
+targetEntityType: node
+cache: true

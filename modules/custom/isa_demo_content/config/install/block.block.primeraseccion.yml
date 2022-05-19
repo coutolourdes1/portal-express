@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-col-1
+  module:
+    - system
+  theme:
+    - inten
+id: primeraseccion
+theme: inten
+region: footer
+weight: -12
+provider: null
+plugin: 'system_menu_block:footer-col-1'
+settings:
+  id: 'system_menu_block:footer-col-1'
+  label: 'Primera sección'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

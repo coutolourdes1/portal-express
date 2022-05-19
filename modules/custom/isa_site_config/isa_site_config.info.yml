@@ -1,0 +1,16 @@
+name: 'Isa Site Config'
+type: module
+description: 'General config for ISA Profile'
+core_version_requirement: ^8 || ^9
+package: isa
+dependencies:
+  - isa_menu_admin
+  - simple_gmap
+  - block
+  - isa_social_networks
+
+'interface translation project': isa_site_config
+'interface translation server pattern': profiles/contrib/isa/modules/custom/isa_site_config/translations/%language.po
+
+libraries-override:
+  time_picker/time_picker: isa_site_config/time_picker

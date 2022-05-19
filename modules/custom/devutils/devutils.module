@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains devutils.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function devutils_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the devutils module.
+    case 'help.page.devutils':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Develop utils') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: download_list
+label: 'Lista de Descargas'
+revision: 0
+description: 'Contiene una lista de descargas.'

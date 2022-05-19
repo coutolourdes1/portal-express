@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:8ba4a8c7-9251-4d88-99cc-31a37bf58bd2'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: noticias
+theme: bisa
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:8ba4a8c7-9251-4d88-99cc-31a37bf58bd2'
+settings:
+  id: 'block_content:8ba4a8c7-9251-4d88-99cc-31a37bf58bd2'
+  label: Noticias
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /noticias
+    negate: false
+    context_mapping: {  }

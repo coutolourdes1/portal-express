@@ -1,0 +1,12 @@
+name: 'Paragraph Fecha y Hora'
+description: 'Contiene una fecha y un horario de horario.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - datetime
+  - field
+  - isa_field_storage
+  - paragraphs
+  - time_picker
+version: 0.1.0
+package: isa

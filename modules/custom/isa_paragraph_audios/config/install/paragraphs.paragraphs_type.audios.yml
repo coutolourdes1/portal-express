@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: audios
+label: Audios
+icon_uuid: null
+icon_default: null
+description: 'Permite adjuntar varios ficheros de audio.'
+behavior_plugins: {  }

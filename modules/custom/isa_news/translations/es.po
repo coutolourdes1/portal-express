@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+
+msgid "Module that creates and manages what is related to the content type news."
+msgstr "Módulo que crea y gestiona lo relacionado con el tipo de contenido de las noticias."
+
+msgid "Some content related to the news."
+msgstr "Algunos contenidos relacionados con las noticias."
+
+msgid "News"
+msgstr "Noticias"
+
+msgid "news"
+msgstr "noticias"
+
+msgid "Content type to add news of interest. If check *Promoted to front page* the news is display in block *Recent news* in front page, if are more of one news marked, the list is order by date field."
+msgstr "Tipo de contenido para agregar noticias de interés. Si marca * Promocionado a la página principal * la noticia se muestra en el bloque * Noticias recientes * en la página principal, si hay más de una noticia marcada, la lista está ordenada por campo de fecha."
+
+msgid "All news in site."
+msgstr "Todas las noticias en el sitio."
+
+msgid "Recent news"
+msgstr "Noticias Recientes"
+
+msgid "Latest news block to display on the home page."
+msgstr "Bloque de últimas noticias para mostrar en la página de inicio."
+
+msgid "Text that is displayed at the beginning of the expanded one to catch the reader's attention."
+msgstr "Texto que se muestra al inicio del ampliado para captar la atención del lector."
+

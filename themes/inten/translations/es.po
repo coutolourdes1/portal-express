@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: inten (8.x-1.0)\n"
+"POT-Creation-Date: 2021-15-09 09:19+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados."
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Showing @limit of @total results"
+msgstr "Mostrando @limit de @total resultados"
+
+
+msgid "Showing from @start to @finish of @total results"
+msgstr "Mostrando del @start al @finish de @total resultados"

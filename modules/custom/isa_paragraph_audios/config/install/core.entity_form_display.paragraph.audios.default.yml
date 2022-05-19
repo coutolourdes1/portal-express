@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.audios.field_audios
+    - field.field.paragraph.audios.field_title
+    - paragraphs.paragraphs_type.audios
+  module:
+    - file
+id: paragraph.audios.default
+targetEntityType: paragraph
+bundle: audios
+mode: default
+content:
+  field_audios:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

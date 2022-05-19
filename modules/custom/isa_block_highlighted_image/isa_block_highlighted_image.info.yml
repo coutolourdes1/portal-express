@@ -1,0 +1,14 @@
+name: 'Destacado Imagen'
+description: 'Bloque destacado con imágen.'
+type: module
+core_version_requirement: '^8.9 || ^9'
+dependencies:
+  - 'drupal:block_content'
+  - 'drupal:field'
+  - 'drupal:image'
+  - 'drupal:language'
+  - 'drupal:link'
+  - 'drupal:options'
+  - 'isa_field_storage:isa_field_storage'
+version: 1.0.0
+package: isa

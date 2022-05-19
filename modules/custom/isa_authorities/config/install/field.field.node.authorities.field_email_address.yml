@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_address
+    - node.type.authorities
+id: node.authorities.field_email_address
+field_name: field_email_address
+entity_type: node
+bundle: authorities
+label: 'Correo electrónico'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

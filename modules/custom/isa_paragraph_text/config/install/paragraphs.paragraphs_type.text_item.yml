@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {  }
+id: text_item
+label: 'Text Item'
+icon_uuid: null
+icon_default: null
+description: 'Item with title and plain text.'
+behavior_plugins: {  }

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header:0654d236-fc04-4bf6-ab15-0127d1799824'
+  module:
+    - block_content
+    - system
+  theme:
+    - bisa
+id: resoluciones
+theme: bisa
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:0654d236-fc04-4bf6-ab15-0127d1799824'
+settings:
+  id: 'block_content:0654d236-fc04-4bf6-ab15-0127d1799824'
+  label: Resoluciones
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /resoluciones
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 40c92001-cb9b-4967-95a9-e6d921ff24a0
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    99e34df8-eec7-4273-b308-496114f5fb68: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Destinos
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -48
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:99e34df8-eec7-4273-b308-496114f5fb68'
+  revision_translation_affected:
+    -
+      value: true

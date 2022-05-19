@@ -1,0 +1,20 @@
+<?php
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ */
+function isa_core_install(){
+  // Crear rol WebMaster
+  $user = User::create();
+
+  // Mandatory.
+  $user->setPassword('WebMaster.123');
+  $user->enforceIsNew();
+  $user->setEmail('webmaster@pe.com');
+  $user->setUsername('webmaster');
+  $user->addRole('webmaster');
+  $user->activate();
+  $resultSaveUser = $user->save();
+}

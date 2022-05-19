@@ -1,0 +1,105 @@
+<?php
+
+/**
+ * @file
+ * Contains isa_site_config.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\block\Entity\Block;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function isa_site_config_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isa_site_config module.
+    case 'help.page.isa_site_config':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('General Config') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme()
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ *
+ */
+function isa_site_config_theme($existing, $type, $theme, $path) {
+  return [
+    'isa_site_config_site_contact' => [
+      'variables' => [
+        'site_name' => NULL,
+        'site_description' => NULL,
+        'site_phone' => NULL,
+        'site_email' => NULL,
+        'site_address' => NULL,
+        'site_schedule' => NULL,
+        'site_contact_image_url' => NULL,
+        'twitter' => NULL,
+        'facebook' => NULL,
+        'instagram' => NULL,
+        'linkedin' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_page() for page.html.twig.
+ */
+function isa_site_config_preprocess_page(array &$variables) {
+  $config = Drupal::config('isa_site_config.config');
+  $variables['site_description'] = $config->get('description');
+  $variables['site_email'] = $config->get('email');
+  $variables['site_phone'] = $config->get('phone');
+  $variables['site_address'] = $config->get('address');
+}
+
+function isa_site_config_link_alter(&$variables) {
+  if ($variables['url']->isExternal()) {
+    $variables['options']['attributes'] = ['target' => '_blank'];
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function isa_site_config_form_user_login_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#submit'][] = 'isa_site_config_user_login_submit';
+}
+
+/**
+ * Form submission handler for user_login_form().
+ *
+ * Redirects the user to the dashboard after logging in.
+ */
+function isa_site_config_user_login_submit(&$form, FormStateInterface $form_state) {
+  $url = Url::fromRoute('<front>');
+  $form_state->setRedirectUrl($url);
+}
+
+/**
+ * Fix error to time_picker,
+ * https://www.drupal.org/project/time_picker/issues/3182894
+ *
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */
+function isa_site_config_field_widget_time_range_picker_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $element['#attached']['library'] = ['isa_site_config/time_picker'];
+  // Agregando configuacion para https://github.com/luncheon/clocklet
+  $element['start']['#attributes']['data-clocklet'] = "format: hh:mm A; alignment: left; placement: top;";
+  $element['end']['#attributes']['data-clocklet'] = "format: hh:mm A; alignment: left; placement: top;";
+}

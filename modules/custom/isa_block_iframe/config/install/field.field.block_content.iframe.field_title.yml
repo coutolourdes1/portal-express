@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.iframe
+    - field.storage.block_content.field_title
+id: block_content.iframe.field_title
+field_name: field_title
+entity_type: block_content
+bundle: iframe
+label: Título
+description: 'Texto que se muestra sobre el iframe.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

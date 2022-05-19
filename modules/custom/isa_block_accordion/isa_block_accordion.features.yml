@@ -1,0 +1,7 @@
+bundle: isa
+excluded:
+  - block.block.views_block__our_services_block_1
+  - field.field.paragraph.text_item.field_text
+  - field.field.paragraph.text_item.field_title
+  - paragraphs.paragraphs_type.text_item
+required: true

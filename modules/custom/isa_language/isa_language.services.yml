@@ -1,0 +1,9 @@
+services:
+  isa_language.generator:
+    class: Drupal\isa_language\LanguageGenerator
+    arguments: ['@file_system','@features.manager','@config.storage','@app.root',  '@messenger', '@logger.channel.isa_language']
+
+  logger.channel.isa_language:
+    parent: logger.channel_base
+    arguments: ['isa_language']
+

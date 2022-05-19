@@ -1,0 +1,59 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 3c1de079-9bde-4cc8-9748-24278c1662b1
+  bundle: procedure
+  default_langcode: es
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Abbas Huic Valde Vel'
+  created:
+    -
+      value: 1607007340
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /tramites/abbas-huic-valde-vel
+      langcode: es
+      pathauto: 1
+  body:
+    -
+      value: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex lacus, mollis pharetra enim sit amet, feugiat porttitor augue. Morbi vestibulum pulvinar augue, sit amet pulvinar diam blandit non. Phasellus ultrices interdum fermentum. Sed egestas non nunc eget mollis. In sed venenatis purus. Vivamus dui nunc, fermentum ut mauris nec, imperdiet semper ipsum. Etiam auctor odio nec porta porttitor. In lobortis aliquet mi, vitae varius purus faucibus at.</p>\r\n\r\n<p>Proin pharetra nisl nunc, vel aliquam leo facilisis bibendum. Cras nec turpis non ipsum pharetra scelerisque quis sed lectus. Proin nunc dolor, fringilla non blandit vitae, auctor hendrerit urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla eget ipsum ut libero sodales consectetur vel eu ex. Sed vitae luctus elit. Sed in erat ligula. Nunc non scelerisque sapien. Ut in lacus ac diam blandit hendrerit et eget sapien. Curabitur maximus dui in nisl pellentesque commodo. Mauris vel libero quis ex pharetra consectetur. Sed nec nisl rutrum, bibendum mi vitae, dapibus nisi. Cras tincidunt blandit risus. Aenean velit diam, maximus sed leo sit amet, suscipit vestibulum massa.</p>\r\n\r\n<p>Cras sapien erat, luctus in neque at, fermentum placerat elit. Nulla commodo orci purus, nec eleifend orci faucibus in. Sed dictum est a euismod feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur mattis pellentesque diam. Sed vitae pretium lacus, congue varius ligula. Etiam a nisi accumsan, egestas dui vel, aliquet nisi. Curabitur tempus cursus nibh, sed fermentum velit venenatis ut. Etiam sodales diam nec hendrerit congue. Vestibulum bibendum urna elit, ut scelerisque ipsum tempus.</p>\r\n"
+      format: basic_html
+      summary: ''
+  field_links:
+    -
+      uri: 'http://example.com'
+      title: 'Cras sapien'
+      options: {  }
+    -
+      uri: 'internal:/'
+      title: 'Proin pharetra'
+      options: {  }
+  field_subtitle:
+    -
+      value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ex lacus, mollis pharetra enim sit amet, feugiat porttitor augue. Morbi vestibulum pulvinar augue, sit amet pulvinar diam blandit non. Phasellus ultrices interdum fermentum. Sed egestas non nunc eget mollis. In sed venenatis purus. '
+  field_yoast_seo:
+    -
+      status: ''
+      focus_keyword: ''
+      title: ''
+      description: ''

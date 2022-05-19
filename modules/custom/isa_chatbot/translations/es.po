@@ -1,0 +1,11 @@
+msgid ""
+msgstr ""
+
+msgid "Chatbot Settings"
+msgstr "Configuración del Chatbot"
+
+msgid "Host"
+msgstr "Servidor"
+
+msgid "Chatbot Identifier"
+msgstr "Identificador del Chatbot"

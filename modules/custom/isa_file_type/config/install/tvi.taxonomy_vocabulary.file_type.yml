@@ -1,0 +1,6 @@
+enable_override: true
+view: list_files
+view_display: page_1
+inherit_settings: true
+pass_arguments: false
+langcode: es

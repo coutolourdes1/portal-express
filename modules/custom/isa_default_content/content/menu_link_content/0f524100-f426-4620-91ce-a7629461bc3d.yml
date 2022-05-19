@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 0f524100-f426-4620-91ce-a7629461bc3d
+  bundle: menu_link_content
+  default_langcode: es
+  depends:
+    f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Noticias
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/noticias'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f'
+  revision_translation_affected:
+    -
+      value: true

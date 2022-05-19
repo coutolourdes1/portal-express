@@ -1,0 +1,30 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.event_date.field_date
+    - field.field.paragraph.event_date.field_range_time
+    - paragraphs.paragraphs_type.event_date
+  module:
+    - datetime
+    - time_picker
+id: paragraph.event_date.default
+targetEntityType: paragraph
+bundle: event_date
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_range_time:
+    type: time_range_picker_widget
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

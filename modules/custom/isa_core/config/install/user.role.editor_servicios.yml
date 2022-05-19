@@ -1,0 +1,61 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_content_permissions
+    - empty_page
+    - file
+    - filter
+    - layout_builder
+    - media
+    - node
+    - system
+    - toolbar
+id: editor_servicios
+label: 'Editor Servicios'
+weight: -6
+is_admin: null
+permissions:
+  - 'access admin menu'
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access toolbar'
+  - 'administer empty pages'
+  - 'configure editable layout_page node layout overrides'
+  - 'create and edit custom blocks'
+  - 'create download_list block content'
+  - 'create gallery block content'
+  - 'create highlight_content block content'
+  - 'create iframe block content'
+  - 'create layout_page content'
+  - 'create link block content'
+  - 'create links block content'
+  - 'create page content'
+  - 'create simple block content'
+  - 'delete any page content'
+  - 'delete layout_page revisions'
+  - 'delete own layout_page content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any page content'
+  - 'edit own layout_page content'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'use content_publishing transition archive_content'
+  - 'use content_publishing transition create_new_draft'
+  - 'use content_publishing transition publish'
+  - 'use content_publishing transition ready_for_review'
+  - 'use content_publishing transition to_correct'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view empty pages'
+  - 'view latest version'
+  - 'view layout_page revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view the administration theme'

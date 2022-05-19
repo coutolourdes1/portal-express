@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: autoridades
+label: autoridades
+type: 'canonical_entities:node'
+pattern: 'autoridades/[node:title]'
+selection_criteria:
+  245197f3-9f5f-4c55-9268-d8d7cf3a89d1:
+    id: node_type
+    negate: false
+    uuid: 245197f3-9f5f-4c55-9268-d8d7cf3a89d1
+    context_mapping:
+      node: node
+    bundles:
+      activity: activity
+  126cea57-8f95-4d71-a768-68f5f7e1dc44:
+    id: language
+    negate: false
+    uuid: 126cea57-8f95-4d71-a768-68f5f7e1dc44
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+
+msgid "Activity"
+msgstr "Actividad"
+
+msgid "Activities"
+msgstr "Actividades"
+
+msgid "activity"
+msgstr "actividad"
+
+msgid "activities"
+msgstr "actividades"
+
+msgid "Activities Calendar"
+msgstr "Calendario de actividades"
+
+msgid "Item to show in the activities calendar."
+msgstr "Elemento para mostrar en el calendario de actividades."
+
+msgid "Views to show the Calendar of Activities, List of Activities, TC Activity, Block of Activities"
+msgstr "Vistas para mostrar el calendario de actividades, lista de actividades, actividad de CT, bloque de actividades"
+
+msgid "Grid"
+msgstr "Cuadrilla"
+
+msgid "Timeline"
+msgstr "Línea de Tiempo"
+
+msgid "Viewing the activity calendar"
+msgstr "Vista del Calendario de Actividades"
+
+msgid "Select the way to display the activity calendar"
+msgstr "Seleccione la forma de mostrar el calendario de actividades"
+
+msgid "Activity Settings"
+msgstr "Configuración de Actividad"
+
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+msgid "End time"
+msgstr "Hora de fin"
+
+msgid "Start time"
+msgstr "Hora de inicio"
+
+msgid "Upcoming events"
+msgstr "Próximos Eventos"
+
+msgid "Please enter valid time formate."
+msgstr "Introduzca un formato de hora válido."
+
+msgid "Please enter valid time format."
+msgstr "Introduzca un formato de hora válido."
+
+msgid "Please enter valid time formate : End time greater than Start time."
+msgstr "Introduzca un formato de hora válido: hora de finalización mayor que hora de inicio."
+
+msgid "Please enter valid time format : End time greater than Start time."
+msgstr "Introduzca un formato de hora válido: hora de finalización mayor que hora de inicio."

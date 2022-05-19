@@ -1,0 +1,118 @@
+name: 'ISA Default Content'
+type: module
+description: 'Site default contents'
+core_version_requirement: '^8.9 || ^9'
+package: 'isa'
+dependencies:
+  - isa_page
+  - default_content
+  - pathauto
+  - isa_block_header
+  - isa_block_slider
+  - isa_block_hero
+default_content:
+  node:
+    - 29bc614b-04a8-439f-a20f-572e25457a3b
+    - fa0f755c-3742-4ba3-9e11-4eab2188d0ff
+    - 73982bb1-01c7-4053-a291-98eb140e80a2
+    - 1727d53d-0106-423f-8a22-3db8014d8706
+    - 606e085e-88d8-44bc-a142-6bef83f32fe7
+  block_content:
+    - 7441ce92-d13b-4fa7-9b50-404c1641e090
+    - c9f0414e-86ee-4311-b6db-b6b5f14905b3
+    # Direcciones del footer
+    - 5c8bfd1a-2fb2-406e-b3b8-7e51de61c100
+    - d4890209-ced3-4cc5-9adc-b6fa207f5ba9
+    # Municipios de la pagina de inicio
+    - 5222109d-cf5e-48ab-ac17-a61f5029e2df
+    # Enlace con imagen del home
+    - ae32ec48-e445-4104-9d0b-e52128932898
+    - e9953da9-f537-4766-8a73-9b4b46b9d7ca
+    - fbaa7a77-14c9-43ad-890a-e34d86b1c4e2
+    # Duplicado de facturas
+    - 3889b712-4dae-4f62-b2bf-2ebedfe21d18
+  file:
+    - b5fd5a71-609d-4d9c-ab3a-30acc800f3aa
+    - c57584ec-b0df-4b99-b051-fa7d02e6b93f
+    - ea97bec2-8454-4d6d-9d1c-660096c8601c
+    - 42b2522b-8fc3-49ef-bc4a-63aa51769f95
+    - 06396b64-2ec2-4cf4-8f28-e37d65b20dcf
+    # Bloques de enlaces
+    - 7b52dfe9-079c-411c-a38e-c56c6760134c
+    - c40f6f56-9089-4ada-a73c-938334cd19c3
+    - 3c52fabd-a0f8-49cd-ba70-d060474e2658
+  menu_link_content:
+    # Main
+    - 1e0ed844-cbe9-48a4-940f-8b1b75f27612
+    - f850e2f5-3c79-4bf0-9031-1e91989b637e
+    - 456729f4-2ddc-4133-8016-3d1540b3449e
+    - 39408f65-7e91-4a90-8aab-6d83e3a11275
+    - 168e070e-bd10-4ba5-b8ba-2cb922f8976e
+    - 5f2ca669-9949-4d96-a8e5-1cdfbe296e01
+    - 3ccb05b4-f481-41f8-8490-56aa5af14212
+    - 838378a2-09a4-4626-b3e4-43acc28a324f
+    - 7b0aab6c-abf9-4831-88ac-1eb2d7fdf2c2
+    - 0291c489-83bb-4129-847f-de4836ea2515
+    - c52258a5-d0e8-456d-9dfa-18d4a4d6bc2d
+    - 82e1c355-0752-4b16-b4f7-79b267b82c0a
+    - a9a3d086-17b7-436d-95a8-9e267d73aff9
+    - 98f22f32-3c34-4c0c-8840-1c6e3dbbd2e4
+    - f8d7f7b1-306b-422b-b9fb-4da4c4f0a54f
+    - decfe628-b1f6-4f18-869e-0189b435a343
+    - 686c20e4-a3da-45a0-83d2-4f4ac21864d8
+    - 88f90e64-d139-416b-86b5-a5111cfcbcbe
+    - d8be0d6f-91bf-42a5-a32e-9a30b0d516eb
+    - c100c198-ee49-411c-a093-507c4da34c01
+    - 679c53fe-70f5-42b4-98c7-da7a6da8aaa4
+    - b432fe4d-e6de-4f3c-810e-575441af51f6
+    - 6b51f3d8-bda9-4652-8ac2-a5813e725249
+    - 036dc381-76a9-483a-b6fe-fdc6407da3d5
+    - f6a53837-260e-4a8b-a49a-8cb1dc895e49
+    - cd254ffa-5122-48a3-b80b-03d366be3d93
+    - 9a69356f-dc34-44b7-aaac-52d387512a28
+    - 9564c6b0-da7d-4503-a8a2-387450d3d761
+    - 643f09c5-1dd5-4ca0-a93c-37e1564a7d5a
+    - 6cb1a39e-4e0d-4145-8802-e2e83226bf8d
+    - cf183662-b7cf-4c3a-8a93-6703f54487a9
+    - a588d359-6aa9-4cf4-8b2a-4cd48381e597
+    - 5a47a553-7ad0-44f5-8e8f-cabdc17220f7
+    - 3c6c016d-9503-4850-8b88-0c05d60e33e6
+    - 686c5b46-22b7-40ef-9998-c3e9a6a029d3
+    - f093afbd-f781-4b4f-b0c0-0a6423f1fcec
+    - 218afae6-b04b-4bfa-bb53-ad6faa00eb4c
+    - 0f524100-f426-4620-91ce-a7629461bc3d
+    - 619ea142-c981-40e5-90be-a1ff3e64435b
+    - dbed5d27-5608-43b0-b852-14554ae56378
+    - 5ae0fcd2-b12d-4081-aedf-67b0313cd188
+    - 6e88366a-14a2-4905-9772-182cbc341c80
+    - 40c92001-cb9b-4967-95a9-e6d921ff24a0
+    - f45a828b-113b-4622-bb90-19abc4d202f3
+    - 5b963e92-51ca-4779-8280-56cee8361888
+    - 7221989a-0e02-4e7a-b222-3b5a7a483039
+    - 99e34df8-eec7-4273-b308-496114f5fb68
+    # Footer
+    - a4c2017f-320b-4dbc-adb9-d022985c4bb8
+    - adf6cbb7-6f36-4d7e-88c0-f9bc2abe81fb
+    - ede2e76c-2041-4623-931e-f45d681bd424
+    # Header Top
+    - a5fd5405-058f-47ad-a137-8c131cc360a1
+    - 8a178cb7-2b55-40f5-9d79-7cb0a69adf0e
+    - 28cf3922-1930-4f77-9bac-5b04c95b8f4f
+    - 0205ab80-0652-467f-b563-59d40ac6cdab
+    - 2277c807-1a6b-46bc-8485-a14a79c6c94c
+    # Footer Primera seccion
+    - 669c61ef-07e9-4c68-87c0-ede9367a9a01
+    - 698e0b61-7c82-434a-904d-a74fec7a7370
+    - 9bc462af-0a32-43a3-89c9-acc77c9049d6
+    - 089de5df-79f2-4894-953e-24c197d2fab2
+    # Footer Segunda seccion
+    - dee15155-a650-428d-9465-f31387ce5e81
+    - abf29adc-b60f-4ea5-b3a3-1ddf322eed0e
+    - 21c8f3e7-69cf-4821-a4b7-4d5b612685c1
+    - ce02eb41-0b81-4b30-b2e7-773a50db4e1f
+    # Footer Tercera seccion
+    - a8190376-caa7-4e96-b5b4-0f915ffe0bbe
+    - 5d4bb658-b4d5-4ab1-a1fe-ea5bc11e66d5
+    - 9817434e-a678-4348-beea-66e94c9be30c
+    - be592817-d76d-453d-901b-4de3427707ab
+

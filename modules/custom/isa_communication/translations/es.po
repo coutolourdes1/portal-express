@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+
+msgid "Communication"
+msgstr "Comunicado"
+
+msgid "communication"
+msgstr "comunicado"
+
+msgid "Communications"
+msgstr "Comunicados"
+
+msgid "communications"
+msgstr "comunicados"
+
+msgid "Provides Communication content type and related configuration. Space to make an official communication to interested parties."
+msgstr "Proporciona el tipo de contenido Comunicado y la configuración relacionada. Espacio para realizar una comunicación oficial a los interesados."
+
+msgid "Attachments"
+msgstr "Archivos adjuntos"
+
+msgid "Documents related to the release."
+msgstr "Documentos relacionados con el lanzamiento."
+
+msgid "Space to make an official communication to interested parties."
+msgstr "Espacio para realizar una comunicación oficial a los interesados."
+
+msgid "View to display information related to the Institution''s Releases, Release List, Release TC, Release Blocks"
+msgstr "Vista para mostrar información relacionada con las versiones de la institución, la lista de versiones, el TC de versiones y los bloques de versiones."
+
+msgid "Home Communications"
+msgstr "Comunicados inicio"
+
+msgid "Latest posts block for home page."
+msgstr "Bloque de las últimas publicaciones para la página de inicio."
+
+msgid "see more posts"
+msgstr "ver más publicaciones"

@@ -1,0 +1,77 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secciones
+    - node.type.page
+    - paragraphs.paragraphs_type.audios
+    - paragraphs.paragraphs_type.download_list
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.links_list
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.multiple_images
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.page.field_secciones
+field_name: field_secciones
+entity_type: node
+bundle: page
+label: Secciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      audios: audios
+      download_list: download_list
+      gallery: gallery
+      images: images
+      links_list: links_list
+      map: map
+      multiple_images: multiple_images
+      video: video
+    negate: 0
+    target_bundles_drag_drop:
+      audios:
+        weight: 13
+        enabled: true
+      download_list:
+        weight: 14
+        enabled: true
+      event_date:
+        weight: 15
+        enabled: false
+      gallery:
+        weight: 16
+        enabled: true
+      images:
+        weight: 17
+        enabled: true
+      links_list:
+        weight: 18
+        enabled: true
+      map:
+        weight: 19
+        enabled: true
+      multiple_images:
+        weight: 20
+        enabled: true
+      quote:
+        weight: 21
+        enabled: false
+      rich_text:
+        weight: 22
+        enabled: false
+      text_item:
+        weight: 23
+        enabled: false
+      video:
+        weight: 24
+        enabled: true
+field_type: entity_reference_revisions

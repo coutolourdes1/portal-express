@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - isa_site_config
+  theme:
+    - bisa
+id: sitecontactinformtion
+theme: bisa
+region: contact
+weight: -5
+provider: null
+plugin: isa_site_config_site_contact
+settings:
+  id: isa_site_config_site_contact
+  label: 'Site contact informtion'
+  provider: isa_site_config
+  label_display: '0'
+  isa_site_config_address_map_settings: null
+visibility: {  }

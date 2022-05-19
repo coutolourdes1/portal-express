@@ -1,0 +1,27 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 2f9271e5-8bd5-4016-9de1-c6b36f0bf04a
+  default_langcode: es
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: 720x350-green_1.png
+  uri:
+    -
+      value: 'public://2021-11/720x350-green_1.png'
+  filemime:
+    -
+      value: image/png
+  filesize:
+    -
+      value: 14954
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1636901825
