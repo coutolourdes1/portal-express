@@ -1,0 +1,11 @@
+uuid: ba1471d2-390b-43f9-9c49-9979b2444cac
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.presentacion
+id: node.presentacion
+target_entity_type_id: node
+target_bundle: presentacion
+default_langcode: site_default
+language_alterable: false

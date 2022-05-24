@@ -1,0 +1,41 @@
+uuid: 3d7c8604-4b72-42bb-90b3-93f0e3d4a4b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.presentacion.body
+    - field.field.node.presentacion.field_presentacion_imagen
+    - node.type.presentacion
+  module:
+    - image
+    - text
+    - user
+id: node.presentacion.default
+targetEntityType: node
+bundle: presentacion
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_presentacion_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

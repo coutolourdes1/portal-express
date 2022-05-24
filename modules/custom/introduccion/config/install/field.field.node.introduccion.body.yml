@@ -1,0 +1,23 @@
+uuid: 10cd2189-ce61-4792-b7ff-61760eee8c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.introduccion
+  module:
+    - text
+id: node.introduccion.body
+field_name: body
+entity_type: node
+bundle: introduccion
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

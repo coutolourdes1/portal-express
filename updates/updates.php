@@ -23,7 +23,7 @@ function isa_update_9001(){
       'isa_field_storage',
     ]);
     \Drupal::service('module_installer')->install([
-      'museos_destacado', 
+      'introduccion', 'presentacion', 
     ]);
   }
 

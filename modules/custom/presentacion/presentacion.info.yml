@@ -1,0 +1,8 @@
+name: 'Presentacion'
+description: 'Presentacion para cada Museo y Sitio Patrimonial'
+type: module
+core_version_requirement: '^9'
+dependencies:
+  - "isa_field_storage: isa_field_storage"
+version: 1.0.0
+package: ISA

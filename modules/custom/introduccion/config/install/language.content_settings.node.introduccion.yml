@@ -1,0 +1,11 @@
+uuid: 6d3cca4b-0c23-4b41-b6ea-487b2217a29d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.introduccion
+id: node.introduccion
+target_entity_type_id: node
+target_bundle: introduccion
+default_langcode: site_default
+language_alterable: false
