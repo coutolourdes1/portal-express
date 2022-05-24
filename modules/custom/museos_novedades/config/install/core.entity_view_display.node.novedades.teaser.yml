@@ -1,0 +1,40 @@
+uuid: dc475134-688a-44c4-9390-5a2418b7b340
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.novedades.body
+    - field.field.node.novedades.field_categoria_novedades
+    - field.field.node.novedades.field_fecha_novedades
+    - field.field.node.novedades.field_imagen_novedades
+    - field.field.node.novedades.field_titulo_novedades
+    - node.type.novedades
+  module:
+    - text
+    - user
+id: node.novedades.teaser
+targetEntityType: node
+bundle: novedades
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_categoria_novedades: true
+  field_fecha_novedades: true
+  field_imagen_novedades: true
+  field_titulo_novedades: true
+  langcode: true
+  search_api_excerpt: true

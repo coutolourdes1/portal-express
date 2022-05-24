@@ -1,0 +1,19 @@
+uuid: e3bfb49a-3c3e-4c5e-aa69-ffcd7dfc169a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_novedades
+    - node.type.novedades
+id: node.novedades.field_titulo_novedades
+field_name: field_titulo_novedades
+entity_type: node
+bundle: novedades
+label: titulo-novedades
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

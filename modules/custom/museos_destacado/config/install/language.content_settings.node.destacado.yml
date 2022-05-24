@@ -1,0 +1,11 @@
+uuid: 8c115ac6-ff39-47a1-9348-19e2c3841897
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.destacado
+id: node.destacado
+target_entity_type_id: node
+target_bundle: destacado
+default_langcode: site_default
+language_alterable: false

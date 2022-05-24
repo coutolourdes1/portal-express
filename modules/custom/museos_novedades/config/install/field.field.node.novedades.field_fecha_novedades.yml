@@ -1,0 +1,21 @@
+uuid: b85d1772-9b4c-420d-b992-4e4d9d48269d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_novedades
+    - node.type.novedades
+  module:
+    - datetime
+id: node.novedades.field_fecha_novedades
+field_name: field_fecha_novedades
+entity_type: node
+bundle: novedades
+label: fecha-novedades
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

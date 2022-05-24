@@ -1,0 +1,28 @@
+uuid: 547b6e1f-c37e-47a0-957c-c7537e087845
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.destacado.field_destacado_categoria
+    - field.field.node.destacado.field_destacado_descripcion
+    - field.field.node.destacado.field_destacado_titu
+    - node.type.destacado
+  module:
+    - user
+id: node.destacado.teaser
+targetEntityType: node
+bundle: destacado
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_destacado_categoria: true
+  field_destacado_descripcion: true
+  field_destacado_titu: true
+  langcode: true
+  search_api_excerpt: true

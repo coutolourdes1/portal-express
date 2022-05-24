@@ -1,0 +1,29 @@
+uuid: 85850f80-721f-451f-a5c3-da693c8915ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destacado_categoria
+    - node.type.destacado
+    - taxonomy.vocabulary.department
+id: node.destacado.field_destacado_categoria
+field_name: field_destacado_categoria
+entity_type: node
+bundle: destacado
+label: destacado-categoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      department: department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

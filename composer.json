@@ -96,6 +96,7 @@
         "drupal/multivalue_form_element": "^1.0@beta"
     },
     "extra": {
+        
         "enable-patching": true,
         "patches": {
             "drupal/default_content": {

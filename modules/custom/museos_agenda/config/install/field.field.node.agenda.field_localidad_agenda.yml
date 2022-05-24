@@ -1,0 +1,29 @@
+uuid: 068b37f6-8e3e-4d8a-bbac-963d042e67a5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localidad_agenda
+    - node.type.agenda
+    - taxonomy.vocabulary.department
+id: node.agenda.field_localidad_agenda
+field_name: field_localidad_agenda
+entity_type: node
+bundle: agenda
+label: localidad-agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      department: department
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

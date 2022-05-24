@@ -18,4 +18,12 @@ function isa_update_9001(){
     ]);
   }
 
+  function isa_update_9003(){
+    _isa_import_config([
+      'isa_field_storage',
+    ]);
+    \Drupal::service('module_installer')->install([
+      'museos_destacado', 
+    ]);
+  }
 

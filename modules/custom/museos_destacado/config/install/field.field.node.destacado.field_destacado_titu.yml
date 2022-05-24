@@ -1,0 +1,19 @@
+uuid: 0c9fe12c-c742-46b8-9785-4f2b03966f75
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destacado_titu
+    - node.type.destacado
+id: node.destacado.field_destacado_titu
+field_name: field_destacado_titu
+entity_type: node
+bundle: destacado
+label: destacado-titulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

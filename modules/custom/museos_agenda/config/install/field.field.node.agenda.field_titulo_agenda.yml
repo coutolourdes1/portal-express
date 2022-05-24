@@ -1,0 +1,19 @@
+uuid: 46ee63fe-09ac-4792-a76f-208b24942e4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titulo_agenda
+    - node.type.agenda
+id: node.agenda.field_titulo_agenda
+field_name: field_titulo_agenda
+entity_type: node
+bundle: agenda
+label: titulo-agenda
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,48 @@
+uuid: 9c0d3429-f056-4963-afc5-0c303ab69047
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.field_agenda_descripcion
+    - field.field.node.agenda.field_localidad_agenda
+    - field.field.node.agenda.field_titulo_agenda
+    - node.type.agenda
+  module:
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  field_agenda_descripcion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_localidad_agenda:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_titulo_agenda:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -121,6 +121,8 @@ install:
   - isa_block_gallery
   - isa_block_audio
   - isa_public_information
+  - pruebas
+  - museos_agenda
 package: isa
 core_version_requirement: '^8.9 || ^9'
 'interface translation project': isa

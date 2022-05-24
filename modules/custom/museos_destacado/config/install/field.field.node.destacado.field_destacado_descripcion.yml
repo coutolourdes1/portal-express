@@ -1,0 +1,21 @@
+uuid: 9c197a68-e1f4-48c0-9a76-42893d710e50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_destacado_descripcion
+    - node.type.destacado
+  module:
+    - text
+id: node.destacado.field_destacado_descripcion
+field_name: field_destacado_descripcion
+entity_type: node
+bundle: destacado
+label: destacado-descripcion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,48 @@
+uuid: 30c7df82-234e-432c-8cb2-780f2c998508
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.destacado.field_destacado_categoria
+    - field.field.node.destacado.field_destacado_descripcion
+    - field.field.node.destacado.field_destacado_titu
+    - node.type.destacado
+  module:
+    - text
+    - user
+id: node.destacado.default
+targetEntityType: node
+bundle: destacado
+mode: default
+content:
+  field_destacado_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_destacado_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_destacado_titu:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

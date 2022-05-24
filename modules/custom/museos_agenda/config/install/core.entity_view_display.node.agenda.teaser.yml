@@ -1,0 +1,28 @@
+uuid: f27a71a3-20fc-451f-bffa-7209c3f32be6
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.agenda.field_agenda_descripcion
+    - field.field.node.agenda.field_localidad_agenda
+    - field.field.node.agenda.field_titulo_agenda
+    - node.type.agenda
+  module:
+    - user
+id: node.agenda.teaser
+targetEntityType: node
+bundle: agenda
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_agenda_descripcion: true
+  field_localidad_agenda: true
+  field_titulo_agenda: true
+  langcode: true
+  search_api_excerpt: true

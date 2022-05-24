@@ -1,0 +1,21 @@
+uuid: fdd84e26-82c8-44f7-8a1e-d5b85366d31e
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_agenda_descripcion
+field_name: field_agenda_descripcion
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

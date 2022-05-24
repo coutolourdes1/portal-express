@@ -1,0 +1,11 @@
+uuid: b507315f-9b73-4d34-a5e9-55e884b035f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.novedades
+id: node.novedades
+target_entity_type_id: node
+target_bundle: novedades
+default_langcode: site_default
+language_alterable: false

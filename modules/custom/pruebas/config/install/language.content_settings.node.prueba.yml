@@ -1,0 +1,11 @@
+uuid: c163e608-3b84-4ad6-a364-874524c0b939
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.prueba
+id: node.prueba
+target_entity_type_id: node
+target_bundle: prueba
+default_langcode: site_default
+language_alterable: false
