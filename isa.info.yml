@@ -123,6 +123,8 @@ install:
   - isa_public_information
   - pruebas
   - museos_agenda
+  - introduccion
+  - presentacion
 package: isa
 core_version_requirement: '^8.9 || ^9'
 'interface translation project': isa
