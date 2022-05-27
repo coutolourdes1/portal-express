@@ -2,6 +2,8 @@
 
 use Drupal\field\Entity\FieldConfig;
 use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\Entity\Vocabulary;
 
 function isa_update_9001(){
     \Drupal::service('module_installer')->uninstall([
@@ -27,3 +29,24 @@ function isa_update_9001(){
     ]);
   }
 
+  function isa_update_9007(){
+
+    Vocabulary::create([
+      'vid' => 'ejemplo',
+      'name' => 'Ejemplo',
+    ])->save();
+
+    $vocab = 'ejemplo';
+    $items = [
+      'Blue',
+      'Red',
+      'Hot Pink',
+    ];
+    foreach ($items as $item) {
+      $term = Term::create(array(
+        'parent' => array(),
+        'name' => $item,
+        'vid' => $vocab,
+      ))->save();
+    }
+  }
