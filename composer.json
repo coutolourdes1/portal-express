@@ -94,7 +94,6 @@
         "drupal/extlink": "^1.6",
         "drupal/material_icons": "^1.0",
         "drupal/multivalue_form_element": "^1.0@beta"
-        
     },
     "extra": {
         

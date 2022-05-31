@@ -63,3 +63,12 @@ function isa_update_9001(){
       'isa_field_storage', 'isa_news'
     ]);
   }
+
+  function isa_update_9009(){
+    \Drupal::service('module_installer')->install([
+      'museos_destacado', 'museos_novedades',
+    ]);
+    _isa_import_config([
+      'isa_field_storage',
+    ]);
+  }

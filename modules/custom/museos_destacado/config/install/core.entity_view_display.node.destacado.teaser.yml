@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.destacado.field_destacado_categoria
     - field.field.node.destacado.field_destacado_descripcion
     - field.field.node.destacado.field_destacado_titu
     - node.type.destacado

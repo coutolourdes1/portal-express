@@ -1,0 +1,10 @@
+uuid: 563dc597-06cb-41f5-a81c-93b7f16fc996
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vg9VQ80MVg-OxUh80KYo2qFscONNZJZlwofuFZDyVbI
+name: Departamento
+vid: department
+description: 'Organiza las diferentes divisiones de las autoridades.'
+weight: 0

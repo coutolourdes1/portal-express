@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.destacado.field_destacado_categoria
     - field.field.node.destacado.field_destacado_descripcion
     - field.field.node.destacado.field_destacado_titu
     - node.type.destacado
