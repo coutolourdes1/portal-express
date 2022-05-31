@@ -93,7 +93,9 @@
         "drupal/scheduler": "^2.0@alpha",
         "drupal/extlink": "^1.6",
         "drupal/material_icons": "^1.0",
-        "drupal/multivalue_form_element": "^1.0@beta"
+        "drupal/multivalue_form_element": "^1.0@beta",
+        "drupal/image_widget_crop": "^2.3",
+        "drupal/crop": "^2.2"
     },
     "extra": {
         
