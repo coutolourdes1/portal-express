@@ -1,0 +1,9 @@
+name: 'Museos'
+type: theme
+description: 'Theme for museos'
+package: ISAPY
+core_version_requirement: '^8.9 || ^9'
+base theme: inten
+
+libraries:
+  - museos/global-styling

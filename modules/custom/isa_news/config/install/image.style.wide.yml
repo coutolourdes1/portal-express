@@ -1,0 +1,28 @@
+uuid: 48edda81-0f2e-4663-9a7f-574ebd91bce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.wide_1280x720_
+  module:
+    - crop
+_core:
+  default_config_hash: LswCVLg8z4Zk1u6pV1Dpj1qUj5YY2CQ7_ojx7bJQ8qk
+name: wide
+label: 'Wide (1280x720)'
+effects:
+  72a9acba-cc73-42f4-9297-6f6aa86cd0ce:
+    uuid: 72a9acba-cc73-42f4-9297-6f6aa86cd0ce
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1280
+      height: 720
+      anchor: center-center
+  d80fc8af-d473-47af-a427-87d07a37a88f:
+    uuid: d80fc8af-d473-47af-a427-87d07a37a88f
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: wide_1280x720_
+      automatic_crop_provider: null

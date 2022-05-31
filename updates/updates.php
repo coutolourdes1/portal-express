@@ -29,7 +29,7 @@ function isa_update_9001(){
     ]);
   }
 
-  function isa_update_9007(){
+  function isa_update_9004(){
 
     Vocabulary::create([
       'vid' => 'ejemplo',
@@ -49,4 +49,17 @@ function isa_update_9001(){
         'vid' => $vocab,
       ))->save();
     }
+  }
+
+  function isa_update_9005(){
+    \Drupal::service('module_installer')->install([
+      'image_widget_crop', 'crop',
+    ]);
+  }
+
+
+  function isa_update_9007(){
+    _isa_import_config([
+      'isa_field_storage', 'isa_news'
+    ]);
   }

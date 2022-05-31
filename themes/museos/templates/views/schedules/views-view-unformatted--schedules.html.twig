@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set item_id = rows|first.content['#row']._entity.field_municipio.target_id %}
+{% set heading_id = "heading" ~ item_id  %}
+{% set collapse_id = "collapse" ~ item_id  %}
+
+<div class="accordion-item">
+  {% if title %}
+    <h2 class="accordion-header" id="{{ heading_id }}">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{ collapse_id }}" aria-expanded="false" aria-controls="{{ collapse_id }}">
+        {{ title }}
+      </button>
+    </h2>
+  {% endif %}
+
+  <div id="{{ collapse_id }}" class="accordion-collapse collapse" aria-labelledby="{{ heading_id }}" data-bs-parent="#accordionTabla">
+    <div class="accordion-body">
+      <div class="row-tablaHorarios">
+
+        {% for row in rows %}
+          {%
+            set row_classes = [
+            default_row_class ? 'col-info-horario',
+          ]
+          %}
+          <p{{ row.attributes.addClass(row_classes) }}>
+            {{ row.content }}
+          </p>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+</div>

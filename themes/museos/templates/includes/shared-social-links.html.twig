@@ -1,0 +1,17 @@
+<div class="bloque-fecha-y-compartir">
+    <div class="Page-date">
+        <div class="Bar-cell">
+            <div class="Page-date">{{ date }}</div>
+        </div>
+    </div>
+    <div class="dropdown" tabindex="0">
+        <div class="dropdown-btn">
+            <span class="material-icons material-icons-round">share</span>
+            Compartir
+        </div>
+        <div class="dropdown-menu">
+            {{ drupal_block('social_sharing_block') }}
+        </div>
+    </div>
+
+</div>

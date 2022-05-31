@@ -1,0 +1,18 @@
+{{ form }}
+
+{% if search_title %}
+    <h2 class="page-title">{{ search_title }}</h2>
+{% endif %}
+
+{{ no_results_found }}
+
+{{ search_help }}
+
+<ul class="list list--media">
+    {% for result in results %}
+        <li class="media">
+            {{ result }}
+        </li>
+    {% endfor %}
+</ul>
+{{ pager }}

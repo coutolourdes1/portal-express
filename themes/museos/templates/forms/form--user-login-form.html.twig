@@ -1,0 +1,12 @@
+<form{{ attributes.addClass(['Form', 'user-login']) }}>
+    <div class="Form-group">
+        {{ element.name }}
+    </div>
+    <div class="Form-group">
+        {{ element.pass }}
+    </div>
+
+    {{ element.actions.submit }}
+    {{ element.form_build_id }}
+    {{ element.form_id }}
+</form>

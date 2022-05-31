@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+<p class="Page-description">{{ description }}</p>
+<form{{ attributes.addClass('Form') }}>
+    {{ title_prefix }}
+    <p class="u-textRight u-textSmall">Los campos indicados con * son obligatorios</p>
+    <fieldset>
+        <legend class="Form-title">Datos de contacto</legend>
+        <fieldset>
+            <legend>Información personal</legend>
+            <div class="Form-group">
+                {{ element.elements.name }}
+            </div>
+            <div class="Form-group">
+                {{ element.elements.email }}
+            </div>
+            <div class="Form-group">
+                {{ element.elements.message }}
+            </div>
+            <div class="hidden">
+                {{ element.elements.municipality }}
+            </div>
+        </fieldset>
+        <fieldset class="Field-description">
+            <legend>Cláusula de consentimiento informado</legend>
+            <p><em>"De conformidad con la Ley N° 18.331, de 11 de agosto de 2008, de Protección de Datos Personales y
+                    Acción de Habeas Data (LPDP), los datos suministrados por usted quedarán incorporados en una base de
+                    datos, la cual será procesada exclusivamente para la siguiente finalidad:
+                    {{ purpose }}.</em></p>
+            <p>Los datos personales serán tratados con el grado de protección adecuado, tomándose las medidas de
+                seguridad necesarias para evitar su alteración, pérdida, tratamiento o acceso no autorizado por parte de
+                terceros que lo puedan utilizar para finalidades distintas para las que han sido solicitadas al
+                usuario.</p>
+            <p>El responsable de la base de datos es {{ site_name }} y la dirección donde podrá ejercer los derechos de
+                acceso, rectificación, actualización, inclusión o supresión, es
+                {{ address }}, según lo establecido en la LPDP".</p>
+            {{ element.elements.terms }}
+        </fieldset>
+        {% if element.elements.captcha %}
+            {{ element.elements.captcha }}
+        {% endif %}
+
+    </fieldset>
+
+    {{ element.elements.actions }}
+    {{ element.form_build_id }}
+    {{ element.form_token }}
+    {{ element.form_id }}
+
+    {{ title_suffix }}
+</form>

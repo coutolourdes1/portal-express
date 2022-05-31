@@ -1,0 +1,55 @@
+<footer class="footer">
+    <div class="footer-nav">
+        <div class="footer-container">
+            <div class="footer-grid">
+                {{ page.footer }}
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div class="footer-header">
+            <div class="footer-container">
+                <div class="footer-bar">
+                    <div class="footer-bar-cell u-size1of2">
+                    </div>
+                    {{ page.footer_bar }}
+                    <div class="footer-bar-cell u-size1of2 text-right">
+                        <ul class="footer-social-media">
+                            {% if twitter %}
+                                <li><a href="{{ twitter }}"><span class="Icon Icon--twitter"></span></a></li>
+                            {% endif %}
+
+                            {% if facebook %}
+                                <li><a href="{{ facebook }}"><span class="Icon Icon--facebook"></span></a></li>
+                            {% endif %}
+
+                            {% if instagram %}
+                                <li><a href="{{ instagram }}"><span class="Icon Icon--instagram"></span></a></li>
+                            {% endif %}
+
+                            {% if linkedin %}
+                                <li><a href="{{ linkedin }}"><span class="Icon Icon--linkedin"></span></a></li>
+                            {% endif %}
+
+                            {% if youtube %}
+                                <li><a href="{{ youtube }}"><span class="Icon Icon--youtube"></span></a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-addresses">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    {{ page.footer_addresses }}
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-container">
+                {{ page.footer_bottom }}
+            </div>
+        </div>
+    </div>
+</footer>

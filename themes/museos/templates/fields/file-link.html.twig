@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a link to a file.
+ *
+ * Available variables:
+ * - attributes: The HTML attributes for the containing element.
+ * - link: A link to the file.
+ * - file_size: The size of the file.
+ *
+ * @see template_preprocess_file_link()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<a class="Download" href="{{ link['#url'] }}" title="Descargar: {{ link['#title'] }}" target="_blank">
+  <div class="Media-image">
+      <span class="Download-icon">
+      <span class="material-icons material-icons-round">file_download</span>
+      </span>
+  </div>
+  <div class="Media-body">
+      <div class="Download-title">{{ file_name }} ( {{ file_size }} )</div>
+      <div class="Download-description">{{ description }}</div>
+  </div>
+</a>

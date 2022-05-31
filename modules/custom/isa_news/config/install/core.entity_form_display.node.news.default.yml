@@ -1,3 +1,4 @@
+uuid: 22b25184-a7ff-4d41-96bb-10475cf48f56
 langcode: es
 status: true
 dependencies:
@@ -16,9 +17,8 @@ dependencies:
     - image.style.thumbnail
     - node.type.news
   module:
-    - content_moderation
     - datetime
-    - image
+    - image_widget_crop
     - maxlength
     - metatag
     - paragraphs
@@ -26,6 +26,8 @@ dependencies:
     - scheduler
     - text
     - yoast_seo
+_core:
+  default_config_hash: S7xVDJtTwP8OESzM8Xl_efMfqeq3S7DbRgHss3fHlc8
 id: node.news.default
 targetEntityType: node
 bundle: news
@@ -54,12 +56,20 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: image_widget_crop
     weight: 3
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      crop_preview_image_style: full_image
+      crop_list:
+        - wide_1280x720_
+      crop_types_required:
+        - wide_1280x720_
+      warn_multiple_usages: false
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
   field_meta_tags:
     type: metatag_firehose
@@ -67,6 +77,7 @@ content:
     region: content
     settings:
       sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_municipalities:
     type: options_select

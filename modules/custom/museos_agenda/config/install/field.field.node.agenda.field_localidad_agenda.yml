@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_localidad_agenda
     - node.type.agenda
-    - taxonomy.vocabulary.department
 id: node.agenda.field_localidad_agenda
 field_name: field_localidad_agenda
 entity_type: node
