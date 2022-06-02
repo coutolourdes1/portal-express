@@ -1,0 +1,46 @@
+<header class="layout-header">
+    <div class="layout-header-container">
+        <div class="layout-header-top">
+            <div class="header-grid">
+                <div class="header-grid-item">
+                    <p class="header-grid-title"> hola pepe </p>
+                    {{ drupal_menu('top-menu') }}
+                </div>
+            </div>
+        </div>
+        <div class="header-body">
+            <div class="header-bottom">
+                <div class="header-bottom-container">
+                    <h1 class="header-logo">
+                        <a href="{{ url('<front>') }}">
+                            <img class="img-responsive" src="{{ banner_url }}" alt="{{ site_slogan }}"/>
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-bottom-container">
+                    <button class="header-menu-button js-toggleMainNav">
+                        <span class="header-menu-icon"><span></span></span> <span
+                                class="header-menu-button-text">Menu</span>
+                    </button>
+                </div>
+                <div class="header-bottom-container">
+                    <div class="header-search">
+                        <div class="search">
+                            <form action="/buscar" method="get" accept-charset="UTF-8"
+                                  data-drupal-form-fields="edit-keys"
+                            >
+                                <input type="search"
+                                       placeholder="Buscar..." title="Buscar"
+                                       data-drupal-selector="edit-keys"
+                                       id="edit-keys" name="keys" maxlength="128" class="search-input">
+                                <input
+                                        class="search-button" type="submit" value="Buscar"/></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ page.header }}
+

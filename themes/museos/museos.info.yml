@@ -3,7 +3,7 @@ type: theme
 description: 'Theme for museos'
 package: ISAPY
 core_version_requirement: '^8.9 || ^9'
-base theme: inten
+base theme: generico
 
 libraries:
   - museos/global-styling

@@ -1,0 +1,22 @@
+name: Generico
+type: theme
+description: 'Nuevo tema generico'
+core_version_requirement: ^8 || ^9
+base theme: false
+
+regions:
+  header: Header
+  nav: Main navigation
+  hero: Hero
+  breadcrumb: Breadcrumb
+  highlight: Highlight
+  left: Left
+  content: Content
+  right: Right
+  footer: Footer
+  footer_bar: Footer Bar
+  footer_addresses: Footer Addresses
+  footer_bottom: Footer Bottom
+
+libraries:
+  - generico/global-styling
